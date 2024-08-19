@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Triển khai Ứng dụng ShareNote với Auto Scaling Group :: Deploy ShareNote Application on Auto Scaling Group</title>
+    <title>AWS Serverless web app basic :: AWS Account Setup</title>
 
     
-    <link href="/css/nucleus.css?1724046793" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1724046793" rel="stylesheet">
-    <link href="/css/hybrid.css?1724046793" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1724046793" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1724046793" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724046793" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1724046793" rel="stylesheet">
-    <link href="/css/theme.css?1724046793" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1724046793" rel="stylesheet">
+    <link href="/css/nucleus.css?1724061268" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1724061268" rel="stylesheet">
+    <link href="/css/hybrid.css?1724061268" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1724061268" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1724061268" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724061268" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1724061268" rel="stylesheet">
+    <link href="/css/theme.css?1724061268" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1724061268" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1724046793" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1724061268" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1724046793"></script>
+    <script src="/js/jquery-3.3.1.min.js?1724061268"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1724046793"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1724046793"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1724061268"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1724061268"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1724046793"></script>
+<script type="text/javascript" src="/js/search.js?1724061268"></script>
 
     
   </div>
@@ -82,13 +82,65 @@
  
   
     
-    <li data-nav-id="/1-prerequisite/" title="Các bước chuẩn bị" class="dd-item 
+    <li data-nav-id="/1-introduction/" title="Giới thiệu" class="dd-item 
         
         
         
         ">
-      <a href="/1-prerequisite/">
-          <b>1. </b>Các bước chuẩn bị
+      <a href="/1-introduction/">
+          <b>1. </b>Giới thiệu
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-preparation/" title="Các bước chuẩn bị" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-preparation/">
+          <b>2. </b>Các bước chuẩn bị
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-deployment-frontend/" title="Triển khai Web Front-end" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3-deployment-frontend/">
+          <b>3. </b>Triển khai Web Front-end
           
             <i class="fas fa-check read-icon"></i>
           
@@ -113,13 +165,13 @@
  
   
     
-    <li data-nav-id="/1-prerequisite/1-security-group/" title="Tạo Security Group" class="dd-item 
+    <li data-nav-id="/3-deployment-frontend/1-s3-bucket/" title="Khởi tạo S3 Bucket" class="dd-item 
         
         
         
         ">
-      <a href="/1-prerequisite/1-security-group/">
-          <b>1.1 </b>Tạo Security Group
+      <a href="/3-deployment-frontend/1-s3-bucket/">
+          <b>3.1 </b>Khởi tạo S3 Bucket
           
             <i class="fas fa-check read-icon"></i>
           
@@ -141,13 +193,13 @@
  
   
     
-    <li data-nav-id="/1-prerequisite/2-database/" title="Tạo ShareNote Database" class="dd-item 
+    <li data-nav-id="/3-deployment-frontend/2-route53-acm/" title="Cấu hình Route 53 và Certificate Manager" class="dd-item 
         
         
         
         ">
-      <a href="/1-prerequisite/2-database/">
-          <b>1.2 </b>Tạo ShareNote Database
+      <a href="/3-deployment-frontend/2-route53-acm/">
+          <b>3.2 </b>Cấu hình Route 53 và Certificate Manager
           
             <i class="fas fa-check read-icon"></i>
           
@@ -169,44 +221,13 @@
  
   
     
-    <li data-nav-id="/1-prerequisite/3-deploy-sharenote/" title="Triển khai Máy ảo ShareNote" class="dd-item 
+    <li data-nav-id="/3-deployment-frontend/3-cloudfront/" title="Cấu hình Cloudfront" class="dd-item 
         
         
         
         ">
-      <a href="/1-prerequisite/3-deploy-sharenote/">
-          <b>1.3 </b>Triển khai Máy ảo ShareNote
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-prerequisite/3-deploy-sharenote/1.3.1-createec2/" title="Tạo máy ảo EC2 Ubuntu" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/1-prerequisite/3-deploy-sharenote/1.3.1-createec2/">
-          <b>1.3.1 </b>Tạo máy ảo EC2 Ubuntu
+      <a href="/3-deployment-frontend/3-cloudfront/">
+          <b>3.3 </b>Cấu hình Cloudfront
           
             <i class="fas fa-check read-icon"></i>
           
@@ -228,78 +249,13 @@
  
   
     
-    <li data-nav-id="/1-prerequisite/3-deploy-sharenote/1.3.2-configure-db-sharenote/" title="Thiết lập cấu hình Database cho ShareNote" class="dd-item 
+    <li data-nav-id="/3-deployment-frontend/4-waf/" title="Tạo WAF" class="dd-item 
         
         
         
         ">
-      <a href="/1-prerequisite/3-deploy-sharenote/1.3.2-configure-db-sharenote/">
-          <b>1.3.2 </b>Thiết lập cấu hình Database cho ShareNote
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-prerequisite/3-deploy-sharenote/1.3.3-autostart/" title="Thiết lập khởi chạy ứng dụng khi khởi chạy instance" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/1-prerequisite/3-deploy-sharenote/1.3.3-autostart/">
-          <b>1.3.3 </b>Thiết lập khởi chạy ứng dụng khi khởi chạy instance
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-prerequisite/4-create-ami/" title="Khởi tạo AMI từ Máy ảo" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/1-prerequisite/4-create-ami/">
-          <b>1.4 </b>Khởi tạo AMI từ Máy ảo
+      <a href="/3-deployment-frontend/4-waf/">
+          <b>3.4 </b>Tạo WAF
           
             <i class="fas fa-check read-icon"></i>
           
@@ -328,13 +284,13 @@
  
   
     
-    <li data-nav-id="/2-launch-template/" title="Khởi tạo Launch Template" class="dd-item 
+    <li data-nav-id="/4-sns/" title="Khởi tạo SNS" class="dd-item 
         
         
         
         ">
-      <a href="/2-launch-template/">
-          <b>2. </b>Khởi tạo Launch Template
+      <a href="/4-sns/">
+          <b>4. </b>Khởi tạo SNS
           
             <i class="fas fa-check read-icon"></i>
           
@@ -354,13 +310,13 @@
  
   
     
-    <li data-nav-id="/3-target-group/" title="Khởi tạo Target Group" class="dd-item 
+    <li data-nav-id="/5-cognito/" title="Khởi tạo Cognito" class="dd-item 
         
         
         
         ">
-      <a href="/3-target-group/">
-          <b>3. </b>Khởi tạo Target Group
+      <a href="/5-cognito/">
+          <b>5. </b>Khởi tạo Cognito
           
             <i class="fas fa-check read-icon"></i>
           
@@ -380,13 +336,13 @@
  
   
     
-    <li data-nav-id="/4-load-balance/" title="Khởi tạo Load Balancer" class="dd-item 
+    <li data-nav-id="/6-dynamodb/" title="Thiết lập DynamoDB" class="dd-item 
         
         
         
         ">
-      <a href="/4-load-balance/">
-          <b>4. </b>Khởi tạo Load Balancer
+      <a href="/6-dynamodb/">
+          <b>6. </b>Thiết lập DynamoDB
           
             <i class="fas fa-check read-icon"></i>
           
@@ -406,13 +362,285 @@
  
   
     
-    <li data-nav-id="/5-asg/" title="Khởi tạo Auto Scaling Group" class="dd-item 
+    <li data-nav-id="/7-api-gateway/" title="Thiết lập API Gateway" class="dd-item 
         
         
         
         ">
-      <a href="/5-asg/">
-          <b>5. </b>Khởi tạo Auto Scaling Group
+      <a href="/7-api-gateway/">
+          <b>7. </b>Thiết lập API Gateway
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-api-gateway/1-create-method/" title="Tạo Method" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/7-api-gateway/1-create-method/">
+          <b>7.1 </b>Tạo Method
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-api-gateway/2-create-stages/" title="Tạo Stages" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/7-api-gateway/2-create-stages/">
+          <b>7.2 </b>Tạo Stages
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-api-gateway/3-create-authorizers/" title="Tạo Authorizers" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/7-api-gateway/3-create-authorizers/">
+          <b>7.3 </b>Tạo Authorizers
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-api-gateway/4-enable-cors/" title="Thiết lập cấu hình CORS" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/7-api-gateway/4-enable-cors/">
+          <b>7.4 </b>Thiết lập cấu hình CORS
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-api-gateway/5-api-postman/" title="Kiểm tra api với Postman" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/7-api-gateway/5-api-postman/">
+          <b>7.5 </b>Kiểm tra api với Postman
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/8-lambda-function/" title="Triển khai Lambda function" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/8-lambda-function/">
+          <b>8. </b>Triển khai Lambda function
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/8-lambda-function/1-config-lambda/" title="Cấu hình Lambda Function" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/8-lambda-function/1-config-lambda/">
+          <b>8.1 </b>Cấu hình Lambda Function
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/8-lambda-function/2-test-lambda/" title="Kiểm tra Lambda Function" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/8-lambda-function/2-test-lambda/">
+          <b>8.2 </b>Kiểm tra Lambda Function
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/10-clean-resource/" title="Dọn dẹp tài nguyên" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/10-clean-resource/">
+          <b>9. </b>Dọn dẹp tài nguyên
           
             <i class="fas fa-check read-icon"></i>
           
@@ -432,39 +660,13 @@
  
   
     
-    <li data-nav-id="/6-testing/" title="Kiểm tra Kết quả" class="dd-item 
+    <li data-nav-id="/9-test-webapp/" title="Kiểm tra Web App" class="dd-item 
         
         
         
         ">
-      <a href="/6-testing/">
-          <b>6. </b>Kiểm tra Kết quả
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/7-clean-up/" title="Dọn dẹp tài nguyên" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/7-clean-up/">
-          <b>7. </b>Dọn dẹp tài nguyên
+      <a href="/9-test-webapp/">
+          <b>10. </b>Kiểm tra Web App
           
             <i class="fas fa-check read-icon"></i>
           
@@ -486,11 +688,7 @@
         <ul>
           
               <li> 
-                  <a class="padding" href="http://awsstudygroup.com"><i class='fab fa-aws'></i> AWS Study Group - Blog</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="https://www.facebook.com/groups/660548818043427/"><i class='fab fa-facebook'></i> AWS Study Group - FB Group</a>
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
               </li>
           
         </ul>
@@ -558,7 +756,7 @@
       <left>
     
      <b> Workshop</b> <br>
-    <img src="https://hitwebcounter.com/counter/counter.php?page=7831210&style=0038&nbdigits=9&type=page&initCount=0" title="Migrate" Alt="web counter"   border="0" /></a>  <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830891&style=0038&nbdigits=9&type=page&initCount=0" title="Migrate" Alt="web counter"   border="0" /></a>  <br>
      <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
     <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
      
@@ -567,7 +765,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>17-09-2021</font></i>
+        <i><font color=orange>14-10-2021</font></i>
     </left>
     <left>
         <br>
@@ -606,28 +804,34 @@
 </span>
 
  
-<h1 id="triển-khai-ứng-dụng-sharenote-với-auto-scaling-group">Triển khai Ứng dụng ShareNote với Auto Scaling Group</h1>
-<h4 id="tổng-quan">Tổng quan</h4>
-<p>Ở bài thực hành này, chúng ta sẽ tiến hành việc triển khai ứng dụng với <strong>Auto Scaling Group</strong> nhằm đảm bảo khả năng co giãn của ứng dụng đó theo nhu cầu của người truy cập.
-Thêm vào đó, chúng ta cũng sẽ triển khai <strong>Load Balancer</strong> nhằm cân bằng tải và điều phối các yêu cầu truy cập từ phía người dùng đến Application Tier của chúng ta.</p>
-<p>Hãy chắc chắn rằng bạn đã xem qua tài liệu <a href="https://000004.awsstudygroup.com/">Triển khai Ứng dụng ShareNote trên Máy ảo Windows/AmazonLinux</a> và nắm được cách triển khai ứng dụng trên máy ảo. Chúng ta sẽ cần sử dụng máy ảo được triển khai ShareNote cho việc triển khai đồng loạt và mở rộng trong Auto Scaling Group.</p>
-<h4 id="auto-scaling-group">Auto Scaling Group</h4>
-<p><strong>Auto Scaling Group</strong> (<em>nhóm co giãn tự động</em>) là một nhóm các EC2 Instance. Nhóm này có thể co giãn số lượng của các EC2 Instance thành viên theo <strong>chính sách co giãn</strong> (<em>scaling policy</em>) mà bạn đặt ra.</p>
-<h4 id="launch-template">Launch Template</h4>
-<p><strong>Launch Template</strong> (<em>khuôn mẫu khởi tạo</em>) là một tính năng giúp bạn tạo khuôn mẫu cho việc khởi tạo các EC2 Instance. Nhờ thế, bạn có thể quy trình hóa và đơn giản hóa công tác khởi tạo các EC2 Instance cho dịch vụ <strong>Auto Scaling</strong> (<em>co giãn tự động</em>).</p>
-<h4 id="load-balancer">Load Balancer</h4>
-<p><strong>Load Balancer</strong> (<em>máy cân bằng tải</em>) là một công cụ có thể phân phối lưu lượng dữ liệu được trao đổi tới các tài nguyên AWS (cụ thể trong bài lab này là các EC2 Instances) trong <strong>Target Group</strong>.</p>
-<h4 id="target-group">Target Group</h4>
-<p><strong>Target Group</strong> (<em>nhóm mục tiêu</em>) là một nhóm những thành phần tài nguyên AWS sẽ nhận lưu lượng dữ liệu được phân phối và truyền tải bởi <strong>Load Balancer</strong>.</p>
-<h4 id="nội-dung">Nội dung:</h4>
+<h1 id="serverless-web-application-building-on-aws">Serverless Web Application Building on AWS</h1>
+<h4 id="overview">Overview</h4>
+<p>In this first lab, you will be creating your new <strong>AWS</strong> account and use Multi-factor Authentication (<strong>MFA</strong>) to improve your account security. Next, you will create an <strong>Administrator Group</strong> and <strong>Admin User</strong> to manage access to resources in your account instead of using the root user. <br>
+Finally, we will step through account authentication with <strong>AWS Support</strong> in the event you experience authentication problems.</p>
+<h4 id="aws-account">AWS Account</h4>
+<p><strong>An AWS account</strong> is the basic container for all the AWS resources you can create as an AWS customer. By default, each AWS account will have a <em>root user</em>. The <em>root user</em> has full access within your AWS account, and root user permissions cannot be limited. When you first create your AWS account, you will be assessing it as the <em>root user</em>.</p>
+
+<div class="notices note" ><p>As a best practice, do not use the AWS account <em>root user</em> for any task where it&rsquo;s not required. Instead, create a new IAM user for each person that requires administrator access. Thereafter, the users in the administrators user group should set up the user groups, users, and so on, for the AWS account. All future interaction should be through the AWS account&rsquo;s users and their own keys instead of the root user. However, to perform some account and service management tasks, you must log in using the root user credentials.</p>
+</div>
+
+<h4 id="multi-factor-authentication-mfa">Multi-Factor Authentication (MFA)</h4>
+<p><strong>MFA</strong> adds extra security because it requires users to provide unique authentication from an AWS supported MFA mechanism in addition to their regular sign-in credentials when they access AWS websites or services.</p>
+<h4 id="iam-user-group">IAM User Group</h4>
+<p>An <strong>IAM user group</strong> is a collection of IAM users. User groups let you specify permissions for multiple users, which can make it easier to manage the permissions for those users. Any user in that user group automatically has the permissions that are assigned to the user group.</p>
+<h4 id="iam-user">IAM User</h4>
+<p>An <strong>IAM user</strong> is an entity that you create in AWS to represent the person or application that uses it to interact with AWS. A user in AWS consists of a name and credentials. <br>
+Please note that an IAM user with administrator permissions is not the same thing as the AWS account root user.</p>
+<h4 id="aws-support">AWS Support</h4>
+<p>AWS Basic Support offers all AWS customers access to our Resource Center, Service Health Dashboard, Product FAQs, Discussion Forums, and Support for Health Checks – at no additional charge. Customers who desire a deeper level of support can subscribe to AWS Support at the Developer, Business, or Enterprise level.</p>
+<p>Customers who choose AWS Support gain one-on-one, fast-response support from AWS engineers. The service helps customers use AWS&rsquo;s products and features. With pay-by-the-month pricing and unlimited support cases, customers are freed from long-term commitments. Customers with operational issues or technical questions can contact a team of support engineers and receive predictable response times and personalized support.</p>
+<h4 id="main-content">Main Content</h4>
 <ol>
-<li><a href="/1-prerequisite/">Các bước chuẩn bị</a></li>
-<li><a href="/2-launch-template/">Khởi tạo Launch Template</a></li>
-<li><a href="/3-target-group/">Khởi tạo Target Group</a></li>
-<li><a href="5-load-balance">Khởi tạo Load Balancer</a></li>
-<li><a href="4-asg">Khởi tạo Auto Scaling Group</a></li>
-<li><a href="/6-testing/">Kiểm tra kết quả</a></li>
+<li><a href="1-create-new-aws-account/">Creating a new AWS Account</a></li>
+<li><a href="2-MFA-Setup-For-AWS-User-(root)">Setting up MFA for the AWS Account root user</a></li>
+<li><a href="3-create-admin-user-and-group/">Creating an Administrator Accounts and Groups</a></li>
+<li><a href="4-verify-new-account/">Getting support for Account Authentication</a></li>
 </ol>
+<!-- raw HTML omitted -->
 	
   
         
@@ -669,21 +873,6 @@ Thêm vào đó, chúng ta cũng sẽ triển khai <strong>Load Balancer</strong
 
                     
                     
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                     
 
                     
@@ -769,9 +958,6 @@ Thêm vào đó, chúng ta cũng sẽ triển khai <strong>Load Balancer</strong
             
         
                     
-            
-        
-                    
                         
             
             
@@ -849,8 +1035,140 @@ Thêm vào đó, chúng ta cũng sẽ triển khai <strong>Load Balancer</strong
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -897,7 +1215,7 @@ Thêm vào đó, chúng ta cũng sẽ triển khai <strong>Load Balancer</strong
 	 
 		
 		
-			<a class="nav nav-next" href="/1-prerequisite/" title="Các bước chuẩn bị" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/1-introduction/" title="Giới thiệu" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -907,19 +1225,19 @@ Thêm vào đó, chúng ta cũng sẽ triển khai <strong>Load Balancer</strong
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1724046793"></script>
-    <script src="/js/perfect-scrollbar.min.js?1724046793"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1724046793"></script>
-    <script src="/js/jquery.sticky.js?1724046793"></script>
-    <script src="/js/featherlight.min.js?1724046793"></script>
-    <script src="/js/highlight.pack.js?1724046793"></script>
+    <script src="/js/clipboard.min.js?1724061268"></script>
+    <script src="/js/perfect-scrollbar.min.js?1724061268"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1724061268"></script>
+    <script src="/js/jquery.sticky.js?1724061268"></script>
+    <script src="/js/featherlight.min.js?1724061268"></script>
+    <script src="/js/highlight.pack.js?1724061268"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1724046793"></script>
-    <script src="/js/learn.js?1724046793"></script>
-    <script src="/js/hugo-learn.js?1724046793"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1724061268"></script>
+    <script src="/js/learn.js?1724061268"></script>
+    <script src="/js/hugo-learn.js?1724061268"></script>
 
-    <link href="/mermaid/mermaid.css?1724046793" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1724046793"></script>
+    <link href="/mermaid/mermaid.css?1724061268" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1724061268"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
