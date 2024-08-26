@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Logic Processing, User Management, and System Interaction on AWS Account Setup</title>
-    <link>//localhost:1313/1-introduction/2-system/</link>
+    <link>/1-introduction/2-system/</link>
     <description>Recent content in Logic Processing, User Management, and System Interaction on AWS Account Setup</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="//localhost:1313/1-introduction/2-system/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/1-introduction/2-system/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

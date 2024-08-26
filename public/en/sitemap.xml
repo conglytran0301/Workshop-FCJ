@@ -2,457 +2,457 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/5-cognito/1-create-userpool/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <loc>/5-cognito/1-create-userpool/</loc>
+    <lastmod>2024-08-19T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/5-cognito/1-create-userpool/"
+                href="/vi/5-cognito/1-create-userpool/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/5-cognito/1-create-userpool/"
+                href="/5-cognito/1-create-userpool/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-deployment-frontend/2-cloudfront/1-create-cloudfront/</loc>
+    <loc>/2-preparation/1-clone-code/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-deployment-frontend/2-cloudfront/1-create-cloudfront/"
+                href="/vi/2-preparation/1-clone-code/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-deployment-frontend/2-cloudfront/1-create-cloudfront/"
+                href="/2-preparation/1-clone-code/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-preparation/1-clone-code/</loc>
+    <loc>/3-deployment-frontend/1-s3-bucket/1-create-s3/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-preparation/1-clone-code/"
+                href="/vi/3-deployment-frontend/1-s3-bucket/1-create-s3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-preparation/1-clone-code/"
+                href="/3-deployment-frontend/1-s3-bucket/1-create-s3/"
                 />
   </url><url>
-    <loc>//localhost:1313/1-introduction/</loc>
+    <loc>/8-api-gateway/1-create-api/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/1-introduction/"
+                href="/vi/8-api-gateway/1-create-api/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/1-introduction/"
+                href="/8-api-gateway/1-create-api/"
                 />
   </url><url>
-    <loc>//localhost:1313/1-introduction/1-frontend/</loc>
+    <loc>/3-deployment-frontend/2-cloudfront/1-create-cloudfront/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/1-introduction/1-frontend/"
+                href="/vi/3-deployment-frontend/2-cloudfront/1-create-cloudfront/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/1-introduction/1-frontend/"
+                href="/3-deployment-frontend/2-cloudfront/1-create-cloudfront/"
                 />
   </url><url>
-    <loc>//localhost:1313/8-api-gateway/1-create-api/</loc>
+    <loc>/3-deployment-frontend/1-s3-bucket/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/8-api-gateway/1-create-api/"
+                href="/vi/3-deployment-frontend/1-s3-bucket/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/8-api-gateway/1-create-api/"
+                href="/3-deployment-frontend/1-s3-bucket/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-deployment-frontend/1-s3-bucket/1-create-s3/</loc>
+    <loc>/1-introduction/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-deployment-frontend/1-s3-bucket/1-create-s3/"
+                href="/vi/1-introduction/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-deployment-frontend/1-s3-bucket/1-create-s3/"
+                href="/1-introduction/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-deployment-frontend/1-s3-bucket/</loc>
+    <loc>/1-introduction/1-frontend/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-deployment-frontend/1-s3-bucket/"
+                href="/vi/1-introduction/1-frontend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-deployment-frontend/1-s3-bucket/"
+                href="/1-introduction/1-frontend/"
                 />
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>/</loc>
     <lastmod>1970-01-01T07:33:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/"
+                href="/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/"
+                href="/"
                 />
   </url><url>
-    <loc>//localhost:1313/5-cognito/2-test-userpool/</loc>
+    <loc>/5-cognito/2-test-userpool/</loc>
+    <lastmod>2024-08-19T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/5-cognito/2-test-userpool/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/5-cognito/2-test-userpool/"
+                />
+  </url><url>
+    <loc>/3-deployment-frontend/2-cloudfront/2-cloudfront-s3policy/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-deployment-frontend/2-cloudfront/2-cloudfront-s3policy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-deployment-frontend/2-cloudfront/2-cloudfront-s3policy/"
+                />
+  </url><url>
+    <loc>/3-deployment-frontend/2-cloudfront/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-deployment-frontend/2-cloudfront/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-deployment-frontend/2-cloudfront/"
+                />
+  </url><url>
+    <loc>/8-api-gateway/2-create-method/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/8-api-gateway/2-create-method/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/8-api-gateway/2-create-method/"
+                />
+  </url><url>
+    <loc>/2-preparation/2-domain-name/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-preparation/2-domain-name/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-preparation/2-domain-name/"
+                />
+  </url><url>
+    <loc>/1-introduction/2-system/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/1-introduction/2-system/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/1-introduction/2-system/"
+                />
+  </url><url>
+    <loc>/2-preparation/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-preparation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-preparation/"
+                />
+  </url><url>
+    <loc>/3-deployment-frontend/1-s3-bucket/2-upload-s3/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-deployment-frontend/1-s3-bucket/2-upload-s3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-deployment-frontend/1-s3-bucket/2-upload-s3/"
+                />
+  </url><url>
+    <loc>/3-deployment-frontend/3-route53-acm/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-deployment-frontend/3-route53-acm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-deployment-frontend/3-route53-acm/"
+                />
+  </url><url>
+    <loc>/8-api-gateway/3-create-authorizers/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/8-api-gateway/3-create-authorizers/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/8-api-gateway/3-create-authorizers/"
+                />
+  </url><url>
+    <loc>/3-deployment-frontend/1-s3-bucket/3-web-hosting/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-deployment-frontend/1-s3-bucket/3-web-hosting/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-deployment-frontend/1-s3-bucket/3-web-hosting/"
+                />
+  </url><url>
+    <loc>/3-deployment-frontend/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-deployment-frontend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-deployment-frontend/"
+                />
+  </url><url>
+    <loc>/3-deployment-frontend/2-cloudfront/3-lambda-edge/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-deployment-frontend/2-cloudfront/3-lambda-edge/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-deployment-frontend/2-cloudfront/3-lambda-edge/"
+                />
+  </url><url>
+    <loc>/4-sns/</loc>
     <lastmod>2024-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/5-cognito/2-test-userpool/"
+                href="/vi/4-sns/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/5-cognito/2-test-userpool/"
+                href="/4-sns/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-preparation/2-domain-name/</loc>
+    <loc>/8-api-gateway/4-create-stages/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-preparation/2-domain-name/"
+                href="/vi/8-api-gateway/4-create-stages/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-preparation/2-domain-name/"
+                href="/8-api-gateway/4-create-stages/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-deployment-frontend/2-cloudfront/2-cloudfront-s3policy/</loc>
+    <loc>/3-deployment-frontend/4-waf/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-deployment-frontend/2-cloudfront/2-cloudfront-s3policy/"
+                href="/vi/3-deployment-frontend/4-waf/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-deployment-frontend/2-cloudfront/2-cloudfront-s3policy/"
+                href="/3-deployment-frontend/4-waf/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-deployment-frontend/2-cloudfront/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3-deployment-frontend/2-cloudfront/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3-deployment-frontend/2-cloudfront/"
-                />
-  </url><url>
-    <loc>//localhost:1313/3-deployment-frontend/1-s3-bucket/2-upload-s3/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3-deployment-frontend/1-s3-bucket/2-upload-s3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3-deployment-frontend/1-s3-bucket/2-upload-s3/"
-                />
-  </url><url>
-    <loc>//localhost:1313/1-introduction/2-system/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/1-introduction/2-system/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/1-introduction/2-system/"
-                />
-  </url><url>
-    <loc>//localhost:1313/2-preparation/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/2-preparation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/2-preparation/"
-                />
-  </url><url>
-    <loc>//localhost:1313/8-api-gateway/2-create-method/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/8-api-gateway/2-create-method/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/8-api-gateway/2-create-method/"
-                />
-  </url><url>
-    <loc>//localhost:1313/3-deployment-frontend/1-s3-bucket/3-web-hosting/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3-deployment-frontend/1-s3-bucket/3-web-hosting/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3-deployment-frontend/1-s3-bucket/3-web-hosting/"
-                />
-  </url><url>
-    <loc>//localhost:1313/3-deployment-frontend/2-cloudfront/3-lambda-edge/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3-deployment-frontend/2-cloudfront/3-lambda-edge/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3-deployment-frontend/2-cloudfront/3-lambda-edge/"
-                />
-  </url><url>
-    <loc>//localhost:1313/3-deployment-frontend/3-route53-acm/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3-deployment-frontend/3-route53-acm/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3-deployment-frontend/3-route53-acm/"
-                />
-  </url><url>
-    <loc>//localhost:1313/8-api-gateway/3-create-authorizers/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/8-api-gateway/3-create-authorizers/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/8-api-gateway/3-create-authorizers/"
-                />
-  </url><url>
-    <loc>//localhost:1313/3-deployment-frontend/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3-deployment-frontend/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3-deployment-frontend/"
-                />
-  </url><url>
-    <loc>//localhost:1313/4-sns/</loc>
+    <loc>/5-cognito/</loc>
     <lastmod>2024-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/4-sns/"
+                href="/vi/5-cognito/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/4-sns/"
+                href="/5-cognito/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-deployment-frontend/4-waf/</loc>
+    <loc>/8-api-gateway/5-enable-cors/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-deployment-frontend/4-waf/"
+                href="/vi/8-api-gateway/5-enable-cors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-deployment-frontend/4-waf/"
+                href="/8-api-gateway/5-enable-cors/"
                 />
   </url><url>
-    <loc>//localhost:1313/8-api-gateway/4-create-stages/</loc>
+    <loc>/8-api-gateway/6-config-api/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/8-api-gateway/4-create-stages/"
+                href="/vi/8-api-gateway/6-config-api/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/8-api-gateway/4-create-stages/"
+                href="/8-api-gateway/6-config-api/"
                 />
   </url><url>
-    <loc>//localhost:1313/5-cognito/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/5-cognito/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/5-cognito/"
-                />
-  </url><url>
-    <loc>//localhost:1313/8-api-gateway/5-enable-cors/</loc>
+    <loc>/6-dynamodb/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/8-api-gateway/5-enable-cors/"
+                href="/vi/6-dynamodb/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/8-api-gateway/5-enable-cors/"
+                href="/6-dynamodb/"
                 />
   </url><url>
-    <loc>//localhost:1313/8-api-gateway/6-config-api/</loc>
+    <loc>/7-lambda-function/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/8-api-gateway/6-config-api/"
+                href="/vi/7-lambda-function/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/8-api-gateway/6-config-api/"
+                href="/7-lambda-function/"
                 />
   </url><url>
-    <loc>//localhost:1313/6-dynamodb/</loc>
+    <loc>/8-api-gateway/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/6-dynamodb/"
+                href="/vi/8-api-gateway/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/6-dynamodb/"
+                href="/8-api-gateway/"
                 />
   </url><url>
-    <loc>//localhost:1313/7-lambda-function/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <loc>/9-test-webapp/</loc>
+    <lastmod>2024-08-19T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/7-lambda-function/"
+                href="/vi/9-test-webapp/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/7-lambda-function/"
+                href="/9-test-webapp/"
                 />
   </url><url>
-    <loc>//localhost:1313/8-api-gateway/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <loc>/10-clean-resource/</loc>
+    <lastmod>2024-08-19T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/8-api-gateway/"
+                href="/vi/10-clean-resource/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/8-api-gateway/"
+                href="/10-clean-resource/"
                 />
   </url><url>
-    <loc>//localhost:1313/9-test-webapp/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <loc>/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/9-test-webapp/"
+                href="/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/9-test-webapp/"
+                href="/categories/"
                 />
   </url><url>
-    <loc>//localhost:1313/10-clean-resource/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <loc>/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/10-clean-resource/"
+                href="/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/10-clean-resource/"
-                />
-  </url><url>
-    <loc>//localhost:1313/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/categories/"
-                />
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/tags/"
+                href="/tags/"
                 />
   </url>
 </urlset>

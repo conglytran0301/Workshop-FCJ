@@ -21,7 +21,7 @@ In this article, we will build a Web application system that uses serverless ser
 4. [Initialize SNS](4-sns/)
 5. [Initialize Cognito](5-cognito/)
 6. [Initialize DynamoDB](6-dynamodb/)
-7. [Implementing a Lambda function](7-lambda-function/)
+7. [Deploy Lambda function](7-lambda-function/)
 8. [Setting up API Gateway](8-api-gateway/)
 9. [Check Web Application](9-test-webapp/)
 10. [Clean up resources](10-clean-resource/)
