@@ -1,48 +1,90 @@
 +++
-title = "Tạo WAF"
+title = "Khởi tạo WAF"
 date = 2020-05-14T00:38:32+07:00
 weight = 4
 chapter = false
 pre = "<b>3.4 </b>"
 +++
 
-**Nội dung:**
+#### Khởi tạo WAF
 
-- [Tạo tài khoản AWS](#tạo-tài-khoản-aws)
-- [Thêm phương thức thanh toán](#thêm-phương-thức-thanh-toán)
-- [Xác thực số điện thoại của bạn](#xác-thực-số-điện-thoại-của-bạn)
-- [Chọn Support Plan](#chọn-support-plan)
-- [Đợi account của bạn được kích hoạt](#đợi-account-của-bạn-được-kích-hoạt)
+{{% notice note %}}
+Khi tạo 1 **Web ACL** thì các bạn sẽ mất 5$ cho 1 tháng sử dụng.
+{{% /notice %}}
 
-#### Tạo tài khoản AWS
+1. Truy cập vào [AWS Management Console](https://aws.amazon.com/vi/free/?gclid=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE&trk=c4f45c53-585c-4b31-8fbf-d39fbcdc603a&sc_channel=ps&ef_id=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE:G:s&s_kwcid=AL!4422!3!637354294239!e!!g!!aws!19043613274!143453611386&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)
 
-1. Đi đến trang [Amazon Web Service homepage](https://aws.amazon.com/).
-2. Chọn **Create an AWS Account** ở góc trên bên phải.
-   - **\*Ghi Chú:** Nếu bạn không thấy **Create an AWS Account**, chọn **Sign In to the Console** sau đó chọn **Create a new AWS Account**.\*
-3. Nhập thông tin tài khoảng và chọn **Continue**.
-   - **\*Quan Trọng**: Hãy chắc chắn bạn nhập đúng thông tin, đặc biệt là email.\*
-4. Chọn loại account.
-   - **\*Ghi chú**: Personal và Professional đều có chung tính năng.\*
-5. Nhập thông tin công ty hoặc thông tin cá nhân của bạn.
-6. Đọc và đồng ý [AWS Customer Agreement](https://aws.amazon.com/agreement/).
-7. Chọn **Create Account** và **Continue**.
+- Tìm **WAF**
+- Chọn **WAF**
 
-#### Thêm phương thức thanh toán
+![01-WAF](/images/3/3-waf-01.png?width=90pc)
 
-- Nhập thông tin thẻ tín dụng của bạn và chọn **Verify and Add**.
-  - **\*Ghi chú**: Bạn có thể chọn 1 địa chỉ khác cho tài khoản của bạn bằng cách chọn **Use a new address** trước khi **Verify and Add**.\*
+2. Trong giao diện **WAF**
 
-#### Xác thực số điện thoại của bạn
+- Chọn **Create web ACL**
 
-1. Nhập số điện thoại.
-2. Nhập mã security check sau đó chọn **Send SMS**.
-3. Nhập mã code được gửi đến số điện thoại của bạn.
+![02-WAF](/images/3/3-waf-02.png?width=90pc)
 
-#### Chọn Support Plan
+3. Trong giao diện **Create web ACL**
 
-- Trong trang **Select a support plan**, chọn 1 plan có hiệu lực, để so sánh giữa cách plan, bạn hãy xem [Compare AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/).
+Step 1 **Describe web ACL and associate it to AWS resources**
 
-#### Đợi account của bạn được kích hoạt
+- **Resource type** chọn **Amazon CloudFront distributions**
+- **Name** nhập `WAF-Demo`
 
-- Sau khi chọn **Support plan**, account thường được kích sau sau vài phút, nhưng quá trình có thể cần tốn đến 24 tiếng. Bạn vẫn có thể đăng nhập vào account AWS lúc này, Trang chủ AWS có thể sẽ hiển thị một nút “Complete Sign Up” trong thời gian này, cho dù bạn đã hoàn thành tất cả các bước ở phần đăng kí.
-- Sau khi nhận được email xác nhận account của bạn đã được kích hoạt, bạn có thể truy cập vào tất cả dịch vụ của AWS.
+![03-WAF](/images/3/3-waf-03.png?width=90pc)
+
+- **Associated AWS resources** chọn **Add AWS resources**
+
+![04-WAF](/images/3/3-waf-04.png?width=90pc)
+
+- Chọn tên miền bạn đã đăng kí cho **Cloudfront**
+- Sau đó chọn **Add**
+
+![05-WAF](/images/3/3-waf-05.png?width=90pc)
+
+- **CloudFront distributions** chọn **Default**
+- Chọn **Next**
+
+![06-WAF](/images/3/3-waf-06.png?width=90pc)
+
+Step 2 **Add rules and rule groups**
+
+- **Rules** chọn **Add rules**
+- Chọn **Add managed rule groups**
+
+![07-WAF](/images/3/3-waf-07.png?width=90pc)
+
+- Chọn **AWS managed rule groups**
+
+![08-WAF](/images/3/3-waf-08.png?width=90pc)
+
+- Tìm phần **Free rule groups**
+- **Amazon IP reputation list** chọn **Add to web ACL**
+
+![09-WAF](/images/3/3-waf-09.png?width=90pc)
+
+- Kéo xuống và chọn **Add rules**
+
+![10-WAF](/images/3/3-waf-10.png?width=90pc)
+
+- **Default action** chọn **Allow**
+- Chọn **Next**
+
+![11-WAF](/images/3/3-waf-11.png?width=90pc)
+
+Step 3 **Set rule priority**
+
+- Chọn **Next**
+
+![12-WAF](/images/3/3-waf-12.png?width=90pc)
+
+Step 4 **Configure metrics**
+
+- Chọn **Next**
+
+![13-WAF](/images/3/3-waf-13.png?width=90pc)
+
+- Kiểm tra lại và chọn **Create web ACL**
+
+![14-WAF](/images/3/3-waf-14.png?width=90pc)

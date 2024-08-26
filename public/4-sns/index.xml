@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Khởi tạo SNS on AWS Account Setup</title>
+    <title>SNS Initiation on AWS Account Setup</title>
     <link>//localhost:1313/4-sns/</link>
-    <description>Recent content in Khởi tạo SNS on AWS Account Setup</description>
+    <description>Recent content in SNS Initiation on AWS Account Setup</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>

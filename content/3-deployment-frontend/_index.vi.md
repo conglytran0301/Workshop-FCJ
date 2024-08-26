@@ -6,43 +6,11 @@ chapter = false
 pre = "<b>3. </b>"
 +++
 
+Web frontend trong kiến trúc này là phần giao diện người dùng của ứng dụng, được triển khai và quản lý trên các dịch vụ của AWS để đảm bảo tính hiệu quả và an toàn. Nội dung tĩnh của frontend, bao gồm HTML, CSS, và JavaScript, được lưu trữ trên dịch vụ lưu trữ đối tượng, sau đó được phân phối đến người dùng thông qua mạng phân phối nội dung (CDN). Điều này giúp đảm bảo trang web tải nhanh và hoạt động ổn định trên toàn cầu. Để bảo mật, frontend được bảo vệ bởi tường lửa ứng dụng web (WAF) và sử dụng chứng chỉ SSL/TLS, được quản lý thông qua các dịch vụ của AWS, đảm bảo dữ liệu người dùng được mã hóa và an toàn. Ngoài ra, hệ thống DNS của AWS được cấu hình để điều hướng tên miền đến các tài nguyên cần thiết, tạo nên một kiến trúc web frontend mạnh mẽ và an toàn.
+
 **Nội dung:**
 
-- [Tạo tài khoản AWS](#tạo-tài-khoản-aws)
-- [Thêm phương thức thanh toán](#thêm-phương-thức-thanh-toán)
-- [Xác thực số điện thoại của bạn](#xác-thực-số-điện-thoại-của-bạn)
-- [Chọn Support Plan](#chọn-support-plan)
-- [Đợi account của bạn được kích hoạt](#đợi-account-của-bạn-được-kích-hoạt)
-
-#### Tạo tài khoản AWS
-
-1. Đi đến trang [Amazon Web Service homepage](https://aws.amazon.com/).
-2. Chọn **Create an AWS Account** ở góc trên bên phải.
-   - **\*Ghi Chú:** Nếu bạn không thấy **Create an AWS Account**, chọn **Sign In to the Console** sau đó chọn **Create a new AWS Account**.\*
-3. Nhập thông tin tài khoảng và chọn **Continue**.
-   - **\*Quan Trọng**: Hãy chắc chắn bạn nhập đúng thông tin, đặc biệt là email.\*
-4. Chọn loại account.
-   - **\*Ghi chú**: Personal và Professional đều có chung tính năng.\*
-5. Nhập thông tin công ty hoặc thông tin cá nhân của bạn.
-6. Đọc và đồng ý [AWS Customer Agreement](https://aws.amazon.com/agreement/).
-7. Chọn **Create Account** và **Continue**.
-
-#### Thêm phương thức thanh toán
-
-- Nhập thông tin thẻ tín dụng của bạn và chọn **Verify and Add**.
-  - **\*Ghi chú**: Bạn có thể chọn 1 địa chỉ khác cho tài khoản của bạn bằng cách chọn **Use a new address** trước khi **Verify and Add**.\*
-
-#### Xác thực số điện thoại của bạn
-
-1. Nhập số điện thoại.
-2. Nhập mã security check sau đó chọn **Send SMS**.
-3. Nhập mã code được gửi đến số điện thoại của bạn.
-
-#### Chọn Support Plan
-
-- Trong trang **Select a support plan**, chọn 1 plan có hiệu lực, để so sánh giữa cách plan, bạn hãy xem [Compare AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/).
-
-#### Đợi account của bạn được kích hoạt
-
-- Sau khi chọn **Support plan**, account thường được kích sau sau vài phút, nhưng quá trình có thể cần tốn đến 24 tiếng. Bạn vẫn có thể đăng nhập vào account AWS lúc này, Trang chủ AWS có thể sẽ hiển thị một nút “Complete Sign Up” trong thời gian này, cho dù bạn đã hoàn thành tất cả các bước ở phần đăng kí.
-- Sau khi nhận được email xác nhận account của bạn đã được kích hoạt, bạn có thể truy cập vào tất cả dịch vụ của AWS.
+- [Khởi tạo S3 Bucket](3-deployment-frontend/1-S3-Bucket)
+- [Cấu hình Cloudfront](3-deployment-frontend/2-Cloudfront)
+- [Cấu hình Route 53 và Certificate Manager](3-deployment-frontend/3-Route53-ACM)
+- [Khởi tạo WAF](3-deployment-frontend/4-WAF)
