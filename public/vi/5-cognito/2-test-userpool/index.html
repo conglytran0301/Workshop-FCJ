@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.131.0">
@@ -12,21 +12,21 @@
     <title>Kiểm tra Cognito User pool :: Thiết lập AWS Account</title>
 
     
-    <link href="/css/nucleus.css?1724684580" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1724684580" rel="stylesheet">
-    <link href="/css/hybrid.css?1724684580" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1724684580" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1724684580" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724684580" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1724684580" rel="stylesheet">
-    <link href="/css/theme.css?1724684580" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1724684580" rel="stylesheet">
+    <link href="/css/nucleus.css?1724748780" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1724748780" rel="stylesheet">
+    <link href="/css/hybrid.css?1724748780" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1724748780" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1724748780" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724748780" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1724748780" rel="stylesheet">
+    <link href="/css/theme.css?1724748780" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1724748780" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1724684580" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1724748780" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1724684580"></script>
+    <script src="/js/jquery-3.3.1.min.js?1724748780"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1724684580"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1724684580"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1724748780"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1724748780"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/\/vi";
+        var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1724684580"></script>
+<script type="text/javascript" src="/js/search.js?1724748780"></script>
 
     
   </div>
@@ -1069,7 +1069,7 @@
                   
                     
                     
-                      <option id="en" value="/5-cognito/2-test-userpool/">English</option>
+                      <option id="en" value="//localhost:1313/5-cognito/2-test-userpool/">English</option>
                     
                   
               
@@ -1083,7 +1083,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/5-cognito/2-test-userpool/" selected>Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/5-cognito/2-test-userpool/" selected>Tiếng Việt</option>
                     
                   
               
@@ -1253,16 +1253,26 @@
 <p><img alt="26-Cognito" src="/images/6/6-cognito-26.png?width=90pc"></p>
 <ul>
 <li>Mở <strong>code</strong> bạn đã clone</li>
-<li>Chọn file <strong>index.html</strong>. Tìm dòng 34 &lsquo;Change - Sign in Link&rsquo; và dán đường dẫn vào.</li>
+<li>Chọn file <strong>index.html</strong>. Tìm dòng &lsquo;Change - Sign in Link&rsquo; và dán đường dẫn vào.</li>
 </ul>
-<p><img alt="27-Cognito" src="/images/6/6-cognito-27.png?width=90pc"></p>
+<p><img alt="30-Cognito" src="/images/6/6-cognito-30.png?width=90pc"></p>
+<ul>
+<li>Tiếp theo chọn file <strong>contact-me.html</strong>. Tìm dòng &lsquo;Change - SignOut URL&rsquo; và dán đường dẫn cũ vào.</li>
+</ul>
+<p><img alt="29-Cognito" src="/images/6/6-cognito-29.png?width=90pc"></p>
+
+<div class="notices note" ><p><strong>Đường dẫn SignIn và SignOut có cấu trúc như sau:</strong></p>
+<p>MAKE URL OF SIGN IN /login?client_id=&amp;response_type=token&amp;scope=aws.cognito.signin.user.admin+email+openid+phone+profile&amp;redirect_uri=</p>
+<p>MAKE URL OF SIGN OUT /logout?client_id=&amp;response_type=token&amp;scope=aws.cognito.signin.user.admin+email+openid+phone+profile&amp;redirect_uri=</p>
+</div>
+
 <ul>
 <li>Sau đó vào file <strong>main.js</strong></li>
-<li>Dán tên miền có đuôi &lsquo;/index.html&rsquo; của bạn vào <strong>dòng 21</strong></li>
+<li>Tìm <strong>window.location.href</strong> và dán tên miền có đuôi <code>/index.html</code> của bạn.</li>
 </ul>
 <p><img alt="28-Cognito" src="/images/6/6-cognito-28.png?width=90pc"></p>
 <ul>
-<li>Sau đó update lại trên S3 của bạn.</li>
+<li>Cuối cùng update lại trên S3 của bạn.</li>
 </ul>
 <ol start="3">
 <li>Quay lại giao diện trang web</li>
@@ -1895,19 +1905,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1724684580"></script>
-    <script src="/js/perfect-scrollbar.min.js?1724684580"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1724684580"></script>
-    <script src="/js/jquery.sticky.js?1724684580"></script>
-    <script src="/js/featherlight.min.js?1724684580"></script>
-    <script src="/js/highlight.pack.js?1724684580"></script>
+    <script src="/js/clipboard.min.js?1724748780"></script>
+    <script src="/js/perfect-scrollbar.min.js?1724748780"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1724748780"></script>
+    <script src="/js/jquery.sticky.js?1724748780"></script>
+    <script src="/js/featherlight.min.js?1724748780"></script>
+    <script src="/js/highlight.pack.js?1724748780"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1724684580"></script>
-    <script src="/js/learn.js?1724684580"></script>
-    <script src="/js/hugo-learn.js?1724684580"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1724748780"></script>
+    <script src="/js/learn.js?1724748780"></script>
+    <script src="/js/hugo-learn.js?1724748780"></script>
 
-    <link href="/mermaid/mermaid.css?1724684580" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1724684580"></script>
+    <link href="/mermaid/mermaid.css?1724748780" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1724748780"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

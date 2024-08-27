@@ -1,244 +1,244 @@
 [
 {
-	"uri": "/vi/5-cognito/1-create-userpool/",
+	"uri": "//localhost:1313/vi/5-cognito/1-create-userpool/",
 	"title": "Khởi tạo Cognito User pool",
 	"tags": [],
 	"description": "",
 	"content": "Khởi tạo Cognito User pool Truy cập vào AWS Management Console Tìm Cognito Chọn Cognito Trong giao diện Cognito Chọn Create user pool Trong giao diện Create user pool Ở Step 1 Configure sign-in experience\nTìm Cognito user pool sign-in options, chọn User name và Email Chọn Next Ở Step 2 Configure security requirements\nPassword policy mode chọn Cognito defaults Multi-factor authentication chọn No MFA Self-service account recovery chọn Enable self-service account recovery - Recommended Delivery method for user account recovery messages chọn Email only Chọn Next Ở Step 3 Configure sign-up experience\nTất cả để mặc định Chọn Next Ở Step 4 Configure message delivery\nEmail chọn Send email with Cognito FROM email address chọn no-reply@verificationemail.com Chọn Next Ở Step 5 Integrate your app\nUser pool name nhập FCJUserPool Chọn Use the Cognito Hosted UI Domain type chọn Use a Cognito domain Cognito domain nhập tên miền đăng nhập Cognito mà bạn muốn App type chọn Public client App client name nhập FCJ-Client Allowed callback URLs nhập http://\u0026rsquo;tên miền đã gán cho web của bạn\u0026rsquo;/contact-me.html Giao diện web thứ 1 là /index.html và giao diện web thứ 2 là /contact-me.html. Khi điền Allowed callback URLs phải có /contact-me.html ở phía sau tên miền của bạn, để từ giao diện của /index.html có thể callback sang /contact-me.html.\nKéo xuống tìm Advanced app client settings OAuth 2.0 grant types, bỏ chọn Authorization code grant và chọn Implicit grant OpenID Connect scopes chọn OpenID, Phone, Email, aws.cognito.signin.user.admin, Profile Allowed sign-out URLs - optional nhập http://\u0026rsquo;tên miền đã gán cho web của bạn\u0026rsquo;/index.html Kéo xuống và chọn Next Ở Step 6 Review and create\nKiểm tra lại và chọn Create user pool "
 },
 {
-	"uri": "/vi/2-preparation/1-clone-code/",
+	"uri": "//localhost:1313/vi/2-preparation/1-clone-code/",
 	"title": "Clone repository từ Github",
 	"tags": [],
 	"description": "",
 	"content": "Clone repository từ Github Vào thư mục mà bạn muốn clone repository từ Github về.\nMở Command Prompt\nChạy lệnh sau để clone repository về máy tính của bạn: git clone https://github.com/conglytran0301/Serverless.git Bạn cần phải cài đặt Git trên máy tính của mình để có thể sử dụng lệnh git clone.\nSau khi lệnh git clone hoàn tất, bạn sẽ có một bản sao của repository trên máy tính của mình và có thể làm việc với mã nguồn đó. Code trong repository bao gồm: Front-end website, Python cho Lambda function và API Backend.\n"
 },
 {
-	"uri": "/vi/1-introduction/1-frontend/",
+	"uri": "//localhost:1313/vi/1-introduction/1-frontend/",
 	"title": "Định tuyến, Phân phối Nội dung và Bảo mật",
 	"tags": [],
 	"description": "",
 	"content": "Tổng quan 1. Route53: là dịch vụ DNS (Domain Name System) có khả năng mở rộng cao của AWS. Nó giúp chuyển đổi các tên miền dễ nhớ mà người dùng nhập vào trình duyệt thành địa chỉ IP của tài nguyên AWS.\nLợi ích: Route 53 đảm bảo việc định tuyến lưu lượng đến đúng tài nguyên AWS với độ tin cậy và tốc độ cao. Nó cũng cung cấp tính năng quản lý DNS, kiểm tra sức khỏe, và định tuyến dựa trên địa lý, giúp tối ưu hóa trải nghiệm người dùng toàn cầu.\n2. CloudFront: là mạng phân phối nội dung (CDN) của AWS, giúp phân phối các nội dung tĩnh như hình ảnh, video, và tài liệu từ các máy chủ gần người dùng nhất.\nLợi ích: CloudFront giảm thiểu độ trễ và tăng tốc độ tải trang web nhờ vào các edge location trên toàn cầu. Nó cũng tích hợp với các dịch vụ bảo mật của AWS như AWS WAF và AWS Shield để bảo vệ nội dung khỏi các mối đe dọa trực tuyến.\n3. S3 (Simple Storage Service): là dịch vụ lưu trữ đối tượng có khả năng mở rộng cao của AWS, được thiết kế để lưu trữ và truy xuất bất kỳ lượng dữ liệu nào từ bất kỳ đâu trên web.\nLợi ích: S3 cung cấp khả năng lưu trữ đáng tin cậy, bảo mật cao với chi phí hợp lý. Bạn chỉ trả tiền cho dung lượng và lượng dữ liệu được sử dụng, giúp tối ưu hóa chi phí vận hành.\n4. WAF (Web Application Firewall): là tường lửa ứng dụng web giúp bảo vệ các ứng dụng web khỏi các cuộc tấn công phổ biến như SQL injection và cross-site scripting (XSS).\nLợi ích: WAF cho phép bạn tạo ra các quy tắc bảo mật tùy chỉnh để bảo vệ ứng dụng của mình, đồng thời cung cấp khả năng giám sát lưu lượng và ngăn chặn các mối đe dọa trước khi chúng có thể gây ra thiệt hại.\n5. AWS Certificate Manager: giúp quản lý chứng chỉ SSL/TLS dễ dàng hơn, từ việc cấp phát, gia hạn cho đến triển khai chúng trên các dịch vụ AWS khác như CloudFront.\nLợi ích: Việc quản lý chứng chỉ SSL/TLS một cách tự động giúp bảo mật giao tiếp giữa người dùng và ứng dụng của bạn mà không cần phải lo lắng về việc gia hạn hoặc cấu hình thủ công các chứng chỉ.\nLiên kết tham khảo Amazon Route 53 Documentation Amazon CloudFront Documentation Amazon S3 Documentation AWS WAF Documentation AWS Certificate Manager Documentation "
 },
 {
-	"uri": "/vi/1-introduction/",
+	"uri": "//localhost:1313/vi/1-introduction/",
 	"title": "Giới thiệu",
 	"tags": [],
 	"description": "",
 	"content": "Hệ thống ứng dụng web này được thiết kế theo mô hình kiến trúc Serverless trên nền tảng AWS, tối ưu hóa hiệu suất, khả năng mở rộng và chi phí. Kiến trúc này tận dụng các dịch vụ mạnh mẽ của AWS để xây dựng một ứng dụng web phân tán, dễ dàng quản lý và vận hành mà không cần quản lý cơ sở hạ tầng vật lý.\nNội dung 1.1. Định tuyến, Phân phối Nội dung và Bảo mật 1.2. Xử lý Logic, Quản lý Người dùng và Tương tác Hệ thống "
 },
 {
-	"uri": "/vi/3-deployment-frontend/1-s3-bucket/",
+	"uri": "//localhost:1313/vi/3-deployment-frontend/1-s3-bucket/",
 	"title": "Khởi tạo S3 Bucket",
 	"tags": [],
 	"description": "",
 	"content": "Khởi tạo S3 bucket Trong phần lab này, chúng ta sẽ thực hiện tạo S3 bucket và sau đó upload dữ liệu lên để chuẩn bị cho việc host static website.\nNội dung Tạo S3 bucket Upload dữ liệu Bật Static website hosting "
 },
 {
-	"uri": "/vi/8-api-gateway/1-create-api/",
+	"uri": "//localhost:1313/vi/8-api-gateway/1-create-api/",
 	"title": "Tạo API",
 	"tags": [],
 	"description": "",
 	"content": "Tạo API Truy cập vào AWS Management Console Tìm API Chọn API Gateway Trong giao diện APIs Chọn Create API\nTrong giao diện Create API Tìm REST API chọn Build Trong giao diện Create REST API Chọn New API API name nhập FCJ-APIGateway API endpoint type chọn Regional Chọn Create API Sau khi tạo API Vào Resources Chọn Create resource Trong giao diện Create resource Resource name nhập serverless Chọn Create resource "
 },
 {
-	"uri": "/vi/3-deployment-frontend/2-cloudfront/1-create-cloudfront/",
+	"uri": "//localhost:1313/vi/3-deployment-frontend/2-cloudfront/1-create-cloudfront/",
 	"title": "Tạo Cloudfront",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Cloudfront Truy cập vào AWS Management Console Tìm Cloudfront Chọn Cloudfront Trong giao diện Cloudfront Chọn Distributions Chọn Create distribution Trong giao diện Create distribution Origin domain, chọn tên S3 bucket đã tạo Origin access, chọn Origin access control settings (recommended) Origin access control, chọn Create new OAC Trong giao diện Create new OAC, để mặc định. Sau đó chọn Create Sau khi Create new OAC, chọn OAC vừa tạo Kéo xuống phần Viewer protocol policy, chọn Redirect HTTP to HTTPS Ở phần Allowed HTTP methods, chọn GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE Ở phần Web Application Firewall (WAF), chọn Do not enable security protections Các phần còn lại để mặc định. Kéo xuống và chọn Create distribution Chúc mừng bạn đã tạo thành công Distribution Quá trình khởi tạo sẽ mất 4-5 phút để hoàn thành. "
 },
 {
-	"uri": "/vi/3-deployment-frontend/1-s3-bucket/1-create-s3/",
+	"uri": "//localhost:1313/vi/3-deployment-frontend/1-s3-bucket/1-create-s3/",
 	"title": "Tạo S3 bucket",
 	"tags": [],
 	"description": "",
 	"content": "Tạo S3 bucket Truy cập vào AWS Management Console Tìm S3 Chọn S3 Trong giao diện S3 Chọn Buckets Chọn Create bucket Trong giao diện Create bucket Bucket name, nhập s3-workshop-fcj Ở phần Object Ownership, chọn ACLs disabled Lưu ý: Vì Bucket name là duy nhất trên mức độ toàn cầu, nếu đặt trùng tên với nhau thì sẽ xuất hiện thông báo: “Bucket with the same name already exists”. Do đó, cần thêm vài số phía sau để Bucket name của bạn phù hợp với policy.\nỞ phần Block Public Access settings for this bucket, giữ nguyên mặc định Các phần còn lại giữ nguyên mặc định. Cuộn xuống và chọn Create bucket Hoàn thành tạo S3 bucket để lưu trữ source website "
 },
 {
-	"uri": "/vi/",
+	"uri": "//localhost:1313/vi/",
 	"title": "AWS Serverless web app",
 	"tags": [],
 	"description": "",
 	"content": "Serverless Web Application Building on AWS Tổng quan Trong bài này, chúng ta sẽ xây dựng một hệ thống ứng dụng Web sử dụng các dịch vụ Serverless trên nền tảng AWS. Hệ thống này tận dụng các dịch vụ như S3 để lưu trữ nội dung tĩnh, API Gateway để quản lý và định tuyến yêu cầu API, Lambda để xử lý logic nghiệp vụ, và DynamoDB để lưu trữ dữ liệu động. Các dịch vụ bổ sung như Route53, CloudFront, và WAF giúp bảo đảm hiệu suất cao và an ninh cho ứng dụng. Ngoài ra, Cognito được sử dụng để quản lý xác thực người dùng, và SNS giúp gửi thông báo tức thì. Tổng thể, kiến trúc này mang lại sự linh hoạt, khả năng mở rộng, và hiệu quả chi phí, đồng thời tối ưu hóa trải nghiệm người dùng và bảo mật hệ thống.\nNội dung Giới thiệu Các bước chuẩn bị Triển khai Web Front-end Khởi tạo SNS Khởi tạo Cognito Khởi tạo DynamoDB Triển khai Lambda function Thiết lập API Gateway Kiểm tra Web Application Dọn dẹp tài nguyên "
 },
 {
-	"uri": "/vi/5-cognito/2-test-userpool/",
+	"uri": "//localhost:1313/vi/5-cognito/2-test-userpool/",
 	"title": "Kiểm tra Cognito User pool",
 	"tags": [],
 	"description": "",
-	"content": "Kiểm tra Cognito User pool Trong giao diện User pool Chọn User pool mà bạn vừa tạo Chọn App integration Kéo xuống phần App clients and analytics Chọn App client name bạn đã tạo Kéo xuống phần Hosted UI Chọn View Hosted UI Bạn đã mở được trang đăng ký tài khoản của Cognito, nhưng vẫn chưa vào được giao diện thứ 1 (/index.html). Để vào được giao diện này, bạn cần thêm link URL của Cognito vào code website của bạn.\nTrong giao diện Login của Cognito Chọn copy đường dẫn trên trang đăng nhập của Cognito Mở code bạn đã clone Chọn file index.html. Tìm dòng 34 \u0026lsquo;Change - Sign in Link\u0026rsquo; và dán đường dẫn vào. Sau đó vào file main.js Dán tên miền có đuôi \u0026lsquo;/index.html\u0026rsquo; của bạn vào dòng 21 Sau đó update lại trên S3 của bạn. Quay lại giao diện trang web Sau khi đã update trên S3, bạn quay lại giao diện Hosted UI Chọn View Hosted UI Lúc này, bạn đã vào được trang web thứ 1 Chọn LOGIN Chọn Sign up để đăng kí tài khoản Username nhập \u0026lsquo;Username của bạn\u0026rsquo; Email nhập \u0026lsquo;Email của bạn\u0026rsquo; Password nhập \u0026lsquo;Password của bạn\u0026rsquo; Vào Email bạn vừa đăng ký để lấy code Code đã được gửi vào Email của bạn Copy code và dán vào ô của Verification code Sau đó chọn Confirm account Chúc mừng, bạn đã đăng ký tài khoản thành công và vào được giao diện thứ 2 "
+	"content": "Kiểm tra Cognito User pool Trong giao diện User pool Chọn User pool mà bạn vừa tạo Chọn App integration Kéo xuống phần App clients and analytics Chọn App client name bạn đã tạo Kéo xuống phần Hosted UI Chọn View Hosted UI Bạn đã mở được trang đăng ký tài khoản của Cognito, nhưng vẫn chưa vào được giao diện thứ 1 (/index.html). Để vào được giao diện này, bạn cần thêm link URL của Cognito vào code website của bạn.\nTrong giao diện Login của Cognito Chọn copy đường dẫn trên trang đăng nhập của Cognito Mở code bạn đã clone Chọn file index.html. Tìm dòng \u0026lsquo;Change - Sign in Link\u0026rsquo; và dán đường dẫn vào. Tiếp theo chọn file contact-me.html. Tìm dòng \u0026lsquo;Change - SignOut URL\u0026rsquo; và dán đường dẫn cũ vào. Sau đó vào file main.js Dán tên miền có đuôi \u0026lsquo;/index.html\u0026rsquo; của bạn vào dòng 21 Cuối cùng update lại trên S3 của bạn. Quay lại giao diện trang web Sau khi đã update trên S3, bạn quay lại giao diện Hosted UI Chọn View Hosted UI Lúc này, bạn đã vào được trang web thứ 1 Chọn LOGIN Chọn Sign up để đăng kí tài khoản Username nhập \u0026lsquo;Username của bạn\u0026rsquo; Email nhập \u0026lsquo;Email của bạn\u0026rsquo; Password nhập \u0026lsquo;Password của bạn\u0026rsquo; Vào Email bạn vừa đăng ký để lấy code Code đã được gửi vào Email của bạn Copy code và dán vào ô của Verification code Sau đó chọn Confirm account Chúc mừng, bạn đã đăng ký tài khoản thành công và vào được giao diện thứ 2 "
 },
 {
-	"uri": "/vi/2-preparation/",
+	"uri": "//localhost:1313/vi/2-preparation/",
 	"title": "Các bước chuẩn bị",
 	"tags": [],
 	"description": "",
 	"content": "Việc chuẩn bị kỹ lưỡng cho từng thành phần sẽ giúp bạn triển khai kiến trúc này một cách hiệu quả và đảm bảo ứng dụng hoạt động ổn định.\nNội dung Clone repository từ Github Đăng ký tên miền "
 },
 {
-	"uri": "/vi/3-deployment-frontend/2-cloudfront/",
+	"uri": "//localhost:1313/vi/3-deployment-frontend/2-cloudfront/",
 	"title": "Cấu hình Cloudfront",
 	"tags": [],
 	"description": "",
 	"content": "Cấu hình Cloudfront CloudFront là CDN của AWS, tăng tốc phân phối nội dung từ các nguồn gốc như S3. Cấu hình Origin Request Policy và Lambda@Edge giúp tối ưu và tùy chỉnh yêu cầu trước khi đến nguồn gốc.\nNội dung Tạo Cloudfront Cloudfront Origin request policy Cấu hình Lambda@Edge cho Origin Website "
 },
 {
-	"uri": "/vi/3-deployment-frontend/2-cloudfront/2-cloudfront-s3policy/",
+	"uri": "//localhost:1313/vi/3-deployment-frontend/2-cloudfront/2-cloudfront-s3policy/",
 	"title": "Cloudfront Origin request policy",
 	"tags": [],
 	"description": "",
 	"content": "Cloudfront Origin request policy Ở giao diện Distributions Chọn Distributions bạn vừa tạo Chọn Origins Chọn Origin name bạn vừa tạo Chọn Edit Ở giao diện Edit origin Chọn OAC vừa tạo. Chọn Copy policy Chuyển hướng đến S3 bucket bạn đã tạo Sau khi vào Bucket của bạn, chọn Permissions Kéo xuống tìm Bucket policy, chọn Edit Dán mã vào Bucket policy của S3 Chọn Save changes Bạn đã tạo thành công Origin request policy "
 },
 {
-	"uri": "/vi/2-preparation/2-domain-name/",
+	"uri": "//localhost:1313/vi/2-preparation/2-domain-name/",
 	"title": "Đăng ký tên miền",
 	"tags": [],
 	"description": "",
 	"content": "Đăng kí tên miền với Amazon Route 53 Truy cập vào AWS Management Console Tìm Route 53 Chọn Route 53 Trong giao diện Route 53 Chọn Registered domains Trong giao diện Registered domains Nhập tên miển muốn đăng ký Chọn Search Ấn Select tên miền muốn đăng ký Chọn Proceed to checkout Trong phần Pricing Lựa chọn thời gian đăng kí và gia hạn Chọn Next Trong phần Contact information Điền thông tin liên hệ Chọn Next Trong phần Review and submit Kiểm tra lại thông tin Chọn Submit Kiểm tra tên miền Vào Registered domains để kiểm tra thông tin tên miền đã đăng ký. Nếu bạn đăng kí tên miền thất bại, vui lòng liên hệ với AWS Support để được hỗ trợ.\nĐăng kí tên miền với domain provider khác Vào Console của domain provider bạn đã mua Chọn Quản lí tên miền Chọn tên miền mà bạn đã đăng ký Chọn Name Server Nhập Name Server được cung cấp trong Hosted zones củaRoute53 Để có thể tạo DNS từ domain provider khác sang AWS, bạn cần tạo Hosted zones trong Route 53. Sau đó nhập Name Server được Route 53 cung cấp vào phần nhập Name Server của domain provider khác. Các bước đăng ký Hosted zones bạn xem hướng dẫn ở đây: \u0026ldquo;Cấu hình Route 53 và Certificate Manager\u0026rdquo;. Lưu ý: Quá trình thay đổi có thể cần đến 24 giờ để có hiệu lực.\n"
 },
 {
-	"uri": "/vi/8-api-gateway/2-create-method/",
+	"uri": "//localhost:1313/vi/8-api-gateway/2-create-method/",
 	"title": "Tạo Method",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Method Trong giao diện Resources Chọn Create method Trong giao diện Create method Method type chọn GET Integration type chọn Lambda function Lambda function chọn Lambda có tên FCJ-LambdaFunction bạn đã tạo Kéo xuống và chọn Create method "
 },
 {
-	"uri": "/vi/3-deployment-frontend/1-s3-bucket/2-upload-s3/",
+	"uri": "//localhost:1313/vi/3-deployment-frontend/1-s3-bucket/2-upload-s3/",
 	"title": "Upload dữ liệu",
 	"tags": [],
 	"description": "",
 	"content": "Upload dữ liệu Chúng ta sẽ upload source code lên S3 bucket để lưu trữ. Nếu bạn chưa tải source code về máy, quay lại phần 2.1.Clone repository từ Github để clone repo.\nTrong giao diện S3 bucket vừa tạo Hiện tại vẫn chưa có Object trong Bucket Chọn Upload để tải dữ liệu lên Trong giao diện Upload Vào Folder có tên FCJ-Serverless đã được clone từ Github ở bước trên Nhấn tổ hợp phím CRLT + A để chọn tất cả thư mục Sau đó kéo toàn bộ Folder và File và thả vào giao diện Upload của S3 bucket. Sau khi đã chọn tất cả thư mục thả vào Bucket Cuộn xuống cuối trang và Chọn Upload Sau khi Upload hoàn thành, bạn sẽ thấy các tệp đã được thêm vào S3 Bucket "
 },
 {
-	"uri": "/vi/1-introduction/2-system/",
+	"uri": "//localhost:1313/vi/1-introduction/2-system/",
 	"title": "Xử lý Logic, Quản lý Người dùng và Tương tác Hệ thống",
 	"tags": [],
 	"description": "",
 	"content": "Tổng quan 1. API Gateway: là dịch vụ quản lý API mạnh mẽ của AWS, giúp bạn tạo, triển khai và quản lý các API RESTful một cách dễ dàng.\nLợi ích: API Gateway cung cấp khả năng quản lý lưu lượng, giám sát hiệu suất, và bảo mật API, giúp đảm bảo rằng ứng dụng của bạn có thể xử lý hàng triệu yêu cầu với độ tin cậy và hiệu suất cao.\n2. Lambda: là dịch vụ điện toán không máy chủ (serverless), cho phép bạn chạy mã mà không cần quản lý máy chủ. Bạn chỉ cần cung cấp mã và Lambda sẽ tự động xử lý mọi thứ cần thiết để chạy và mở rộng mã.\nLợi ích: Với Lambda, bạn chỉ trả tiền cho thời gian thực thi của mã, giúp tối ưu hóa chi phí và loại bỏ nhu cầu quản lý cơ sở hạ tầng. Lambda cũng tự động mở rộng quy mô để đáp ứng nhu cầu của ứng dụng.\n3. DynamoDB: là cơ sở dữ liệu NoSQL có khả năng mở rộng cao, được thiết kế để xử lý mọi khối lượng công việc với độ trễ thấp.\nLợi ích: DynamoDB cung cấp hiệu suất đáng tin cậy, với khả năng tự động mở rộng quy mô, giúp bạn xây dựng các ứng dụng có thể xử lý hàng triệu yêu cầu mỗi giây mà không gặp khó khăn về hiệu suất.\n4. Cognito: cung cấp các dịch vụ quản lý người dùng và xác thực, cho phép người dùng đăng ký, đăng nhập, và truy cập các tài nguyên một cách an toàn.\nLợi ích: Cognito giúp đơn giản hóa việc quản lý người dùng, đồng thời tích hợp với các dịch vụ AWS khác để cung cấp bảo mật toàn diện và quản lý quyền truy cập dễ dàng.\n5. SNS (Simple Notification Service): là dịch vụ nhắn tin toàn cầu của AWS, cho phép bạn gửi thông báo từ hệ thống đến người dùng qua email, SMS hoặc đến các hệ thống khác.\nLợi ích: SNS giúp đảm bảo rằng thông báo và thông tin quan trọng được gửi đi nhanh chóng và hiệu quả, hỗ trợ việc theo dõi và quản lý hoạt động của ứng dụng.\nLiên kết tham khảo Amazon API Gateway Documentation AWS Lambda Documentation Amazon DynamoDB Documentation Amazon Cognito Documentation Amazon SNS Documentation "
 },
 {
-	"uri": "/vi/3-deployment-frontend/1-s3-bucket/3-web-hosting/",
+	"uri": "//localhost:1313/vi/3-deployment-frontend/1-s3-bucket/3-web-hosting/",
 	"title": "Bật Static website hosting",
 	"tags": [],
 	"description": "",
 	"content": "Bật Static website hosting Vào S3 bucket đã tạo Chọn Properties Trong giao diện Properties Kéo xuống tìm Static website hosting và chọn Edit Trong giao diện Edit static website hosting Ở mục Static website hosting, chọn Enable Ở mục Hosting type, chọn Host a static website Ở mục Index document, nhập index.html Ở mục Error document, nhập error.html Kéo xuống và chọn Save changes "
 },
 {
-	"uri": "/vi/3-deployment-frontend/2-cloudfront/3-lambda-edge/",
+	"uri": "//localhost:1313/vi/3-deployment-frontend/2-cloudfront/3-lambda-edge/",
 	"title": "Cấu hình Lambda@Edge cho Origin Website",
 	"tags": [],
 	"description": "",
 	"content": "Cấu hình Lambda@Edge cho Origin Website Ở giao diện Cloudfront Chọn Functions Chọn Create function Ở giao diện Create function Nhập Name: fcj-lambda-edge Ở phần Runtime chọn cloudfront-js-2.0 Chọn Create function Ở giao diện Functions Chọn Functions mà bạn vừa tao Kéo xuống mục Build Ở phần Function code chọn Development Copy dòng code này vào: function handler(event) {\rvar request = event.request;\rvar uri = request.uri;\r// Check whether the URI is missing a file name.\rif (uri.endsWith(\u0026#39;/\u0026#39;)) {\rrequest.uri += \u0026#39;index.html\u0026#39;;\r}\r// Check whether the URI is missing a file extension.\relse if (!uri.includes(\u0026#39;.\u0026#39;)) {\rrequest.uri += \u0026#39;/index.html\u0026#39;;\r}\rreturn request;\r} Sau đó chọn Save changes Chuyển qua mục Publish Chọn Publish function Quay lại giao diện Distributions Chọn Distributions bạn đã tạo Chọn Behaviors Chọn Behavior có origin forward sang S3 của bạn Sau đó chọn Edit Ở giao diện Edit Kéo xuống tìm Function associations - optional Cấu hình với Viewer request Function type chọn CloudFront Functions Function ARN / Name chọn fcj-lambda-edge bạn vừa tạo ở trên Chọn Save changes "
 },
 {
-	"uri": "/vi/3-deployment-frontend/3-route53-acm/",
+	"uri": "//localhost:1313/vi/3-deployment-frontend/3-route53-acm/",
 	"title": "Cấu hình Route 53 và Certificate Manager",
 	"tags": [],
 	"description": "",
 	"content": "Cấu hình Route 53 Truy cập vào AWS Management Console Tìm Route 53 Chọn Route 53 Trong giao diện Route 53 Chọn Hosted zones Chọn Create hosted zone Trong giao diện Create hosted zone Viết Domain name đã đăng ký ở bài trước Ở phần Type, chọn Public hosted zone Chọn Create hosted zone Quay lại giao diện Hosted zones Vào Hosted zone name vừa tạo Chọn Create record Trong giao diện Create record Record type chọn CNAME Record name nhập workshop Value nhập Distribution domain name của Cloudfront (Ví dụ: https://d23akwur3rh4c.cloudfront.net) Chọn Create records Cấu hình Certificate Manager Truy cập vào AWS Management Console Tìm Certificate Manager Chọn Certificate Manager Trong giao diện Certificate Manager Chuyển Region sang N.Virginia Chọn Request certificate Certificate type chọn Request a public certificate Chọn Next Trong phần Request public certificate Domain names nhập workshop.conglyblog.id.vn Các phần còn lại giữ mặc định Kéo xuống và chọn Request Sau khi Request thành công Tìm mục Domains Chọn Create records in Route 53 Lúc này records đã được tạo Vào Route 53 kiểm tra lại Chúc mừng, bạn đã tạo Certificate cho tên miền thành công. "
 },
 {
-	"uri": "/vi/8-api-gateway/3-create-authorizers/",
+	"uri": "//localhost:1313/vi/8-api-gateway/3-create-authorizers/",
 	"title": "Tạo Authorizer",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Authorizer Trong gia diện API Chọn Authorizers Chọn Create authorizer Trong giao diện Create authorizer Authorizer name nhập FCJ-Auth Authorizer type chọn Cognito Cognito user pool chọn FCJ-UserPool Token source nhập Authorization Chọn Create authorizer Vào giao diện Resources Chọn GET Chọn Method request Chọn Edit Trong giao diện Edit method request Authorization chọn FCJ-Auth Authorization scopes nhập email, sau đó chọn add Kéo xuống và chọn Save "
 },
 {
-	"uri": "/vi/3-deployment-frontend/",
+	"uri": "//localhost:1313/vi/3-deployment-frontend/",
 	"title": "Triển khai Web Front-end",
 	"tags": [],
 	"description": "",
 	"content": "Web frontend trong kiến trúc này là phần giao diện người dùng của ứng dụng, được triển khai và quản lý trên các dịch vụ của AWS để đảm bảo tính hiệu quả và an toàn. Nội dung tĩnh của frontend, bao gồm HTML, CSS, và JavaScript, được lưu trữ trên dịch vụ lưu trữ đối tượng, sau đó được phân phối đến người dùng thông qua mạng phân phối nội dung (CDN). Điều này giúp đảm bảo trang web tải nhanh và hoạt động ổn định trên toàn cầu. Để bảo mật, frontend được bảo vệ bởi tường lửa ứng dụng web (WAF) và sử dụng chứng chỉ SSL/TLS, được quản lý thông qua các dịch vụ của AWS, đảm bảo dữ liệu người dùng được mã hóa và an toàn. Ngoài ra, hệ thống DNS của AWS được cấu hình để điều hướng tên miền đến các tài nguyên cần thiết, tạo nên một kiến trúc web frontend mạnh mẽ và an toàn.\nNội dung:\nKhởi tạo S3 Bucket Cấu hình Cloudfront Cấu hình Route 53 và Certificate Manager Khởi tạo WAF "
 },
 {
-	"uri": "/vi/4-sns/",
+	"uri": "//localhost:1313/vi/4-sns/",
 	"title": "Khởi tạo SNS",
 	"tags": [],
 	"description": "",
 	"content": "Khởi tạo SNS Truy cập vào AWS Management Console Tìm SNS Chọn Simple Notification Servicet Trong giao diện của SNS Ở phần Create topic, nhập Topic name: FCJ-SNSTopic Chọn Next step Trong giao diện của Create topic Ở phần Type chọn Standard Các phần còn lại giữ mặc định Kéo xuống cuối trang và chọn Create topic Sau khi tạo Topic, chọn Subscriptions ở thanh bên trái Chọn Create subscription Trong giao diện Create subscription Ở phần Topic ARN, chọn Topic bạn vừa tạo Protocol chọn Email Endpoint nhập email cá nhân của bạn Sau đó chọn Create subscription Sau khi Create subscription Vào email bạn đã nhập khi tạo subscription Chọn Confirm subscription để xác nhận đăng ký Bạn đã hoàn thành Confirm subscription Sau khi chọn Confirm subscription bạn chỉ cần thoát ra là hoàn thành. (Nếu chọn click here to unsubcribe bạn sẽ hủy đăng ký và không thể nhận thông tin về email).\n"
 },
 {
-	"uri": "/vi/3-deployment-frontend/4-waf/",
+	"uri": "//localhost:1313/vi/3-deployment-frontend/4-waf/",
 	"title": "Khởi tạo WAF",
 	"tags": [],
 	"description": "",
 	"content": "Khởi tạo WAF Khi tạo 1 Web ACL thì các bạn sẽ mất 5$ cho 1 tháng sử dụng.\nTruy cập vào AWS Management Console Tìm WAF Chọn WAF Trong giao diện WAF Chọn Create web ACL Trong giao diện Create web ACL Step 1 Describe web ACL and associate it to AWS resources\nResource type chọn Amazon CloudFront distributions Name nhập WAF-Demo Associated AWS resources chọn Add AWS resources Chọn tên miền bạn đã đăng kí cho Cloudfront Sau đó chọn Add CloudFront distributions chọn Default Chọn Next Step 2 Add rules and rule groups\nRules chọn Add rules Chọn Add managed rule groups Chọn AWS managed rule groups Tìm phần Free rule groups Amazon IP reputation list chọn Add to web ACL Kéo xuống và chọn Add rules Default action chọn Allow Chọn Next Step 3 Set rule priority\nChọn Next Step 4 Configure metrics\nChọn Next Kiểm tra lại và chọn Create web ACL "
 },
 {
-	"uri": "/vi/8-api-gateway/4-create-stages/",
+	"uri": "//localhost:1313/vi/8-api-gateway/4-create-stages/",
 	"title": "Tạo Stages",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Stages Trong giao diện API bạn đã tạo Chọn Resources Chọn Deploy API Trong giao diện Deploy API Stage Chọn New stage Stage name nhập Dev Chọn Deploy "
 },
 {
-	"uri": "/vi/5-cognito/",
+	"uri": "//localhost:1313/vi/5-cognito/",
 	"title": "Khởi tạo Cognito",
 	"tags": [],
 	"description": "",
 	"content": "Nội dung Khởi tạo Cognito User pool Kiểm tra Cognito User pool "
 },
 {
-	"uri": "/vi/8-api-gateway/5-enable-cors/",
+	"uri": "//localhost:1313/vi/8-api-gateway/5-enable-cors/",
 	"title": "Thiết lập cấu hình CORS",
 	"tags": [],
 	"description": "",
 	"content": "Thiết lập cấu hình CORS Trong giao diện API Chọn Resources Chọn /serverless Chọn Enable CORS Trong giao diện Enable CORS Gateway responses chọn Default 4XX và Default 5XX Access-Control-Allow-Methods chọn GET Access-Control-Allow-Headers nhập thêm Authorization vào cuối dòng Chọn Save "
 },
 {
-	"uri": "/vi/8-api-gateway/6-config-api/",
+	"uri": "//localhost:1313/vi/8-api-gateway/6-config-api/",
 	"title": "Cấu hình API",
 	"tags": [],
 	"description": "",
 	"content": "Cấu hình API Trong giao diện API Chọn Stages Chọn Dev Copy Invoke URL https://7s5pb02ska.execute-api.ap-southeast-1.amazonaws.com/Dev Trong giao diện code web Tìm file api.js Dán Invoke URL vào dòng số 8 và thêm /serverless phía sau. Lưu lại và upload lên S3 "
 },
 {
-	"uri": "/vi/6-dynamodb/",
+	"uri": "//localhost:1313/vi/6-dynamodb/",
 	"title": "Khởi tạo DynamoDB",
 	"tags": [],
 	"description": "",
 	"content": "Khởi tạo DynamoDB Truy cập vào AWS Management Console Tìm DynamoDB Chọn DynamoDB Ở giao diện Dashboard của DynamoDB Chọn Create table Ở giao diện Create table Table name nhập FCJ-DynamoDB Partition key nhập id chọn string Sort key nhập name chọn string Table settings để mặc định Kéo xuống và chọn Create table "
 },
 {
-	"uri": "/vi/7-lambda-function/",
+	"uri": "//localhost:1313/vi/7-lambda-function/",
 	"title": "Triển khai Lambda function",
 	"tags": [],
 	"description": "",
 	"content": "Triển khai Lambda function Truy cập vào AWS Management Console Tìm Lambda Chọn Lambda Trong giao diện Lambda Chọn Create a function Trong giao diện Create function Chọn Author from scratch Function name nhập FCJ-LambdaFunction Runtime chọn Python 3.9 Architecture chọn x86_64 Kéo xuống và chọn Create function Sau khi tạo bạn sẽ thấy giao diện sau đây Nhập Source code cho Lambda Function Chọn Code Dán code vào import boto3\rimport uuid\r# Tạo tài nguyên DynamoDB\rdynamodb = boto3.resource(\u0026#39;dynamodb\u0026#39;)\r# Đặt tên bảng DynamoDB\rtable = dynamodb.Table(\u0026#39;FCJ-DynamoDB\u0026#39;)\r# Tạo một SNS Client\rclient_sns = boto3.client(\u0026#39;sns\u0026#39;)\r# Hàm này sẽ được kích hoạt bởi API Gateway\rdef lambda_handler(event, context):\rtry:\r# Kiểm tra sự tồn tại của các key bắt buộc\rrequired_keys = [\u0026#39;name\u0026#39;, \u0026#39;email\u0026#39;, \u0026#39;subject\u0026#39;, \u0026#39;description\u0026#39;]\rfor key in required_keys:\rif key not in event:\rraise KeyError(f\u0026#34;Missing required key: {key}\u0026#34;)\r# Tạo một ID người dùng\rid = str(uuid.uuid4())\r# Gửi tin nhắn đến SNS\rhandle_sns(id, event)\r# Lưu trữ dữ liệu vào DynamoDB\rstatusCode = handle_dynamo_db(id, event)\rreturn {\r\u0026#39;statusCode\u0026#39;: statusCode,\r}\rexcept KeyError as ke:\rreturn {\r\u0026#39;statusCode\u0026#39;: 400,\r\u0026#39;body\u0026#39;: json.dumps(f\u0026#34;Missing required key: {str(ke)}\u0026#34;)\r}\rexcept Exception as e:\rreturn {\r\u0026#39;statusCode\u0026#39;: 500,\r\u0026#39;body\u0026#39;: json.dumps(\u0026#39;Error occurred: \u0026#39; + str(e))\r}\r# Gửi một tin nhắn đến SNS\rdef handle_sns(id, event):\rtry:\rsns_message = f\u0026#34;\u0026#34;\u0026#34;\rYou got a new Message from https://workshop.conglyblog.id.vn\rThe message is as follows\rid : {id}\rName : {event[\u0026#39;name\u0026#39;]}\remail : {event[\u0026#39;email\u0026#39;]}\rMessage : {event[\u0026#39;description\u0026#39;]}\rSubject : {event[\u0026#39;subject\u0026#39;]}\r\u0026#34;\u0026#34;\u0026#34;\rclient_sns.publish(\r# Thay đổi ARN với ARN của SNS của bạn\rTopicArn=\u0026#39;arn:aws:sns:ap-southeast-1:336760284039:FCJ-SNSTopic\u0026#39;,\rMessage=sns_message,\rSubject=event[\u0026#39;subject\u0026#39;]\r)\rexcept KeyError as ke:\rprint(f\u0026#34;Key error: {ke}\u0026#34;)\rraise\rexcept Exception as e:\rprint(f\u0026#34;An error occurred when sending SNS: {e}\u0026#34;)\rraise\r# Thêm một mục vào bảng DynamoDB\rdef handle_dynamo_db(id, event):\rtry:\rresponse = table.put_item(\rItem={\r\u0026#39;id\u0026#39;: id,\r\u0026#39;name\u0026#39;: event[\u0026#39;name\u0026#39;],\r\u0026#39;email\u0026#39;: event[\u0026#39;email\u0026#39;],\r\u0026#39;subject\u0026#39;: event[\u0026#39;subject\u0026#39;],\r\u0026#39;description\u0026#39;: event[\u0026#39;description\u0026#39;],\r}\r)\rreturn response[\u0026#39;ResponseMetadata\u0026#39;][\u0026#39;HTTPStatusCode\u0026#39;]\rexcept Exception as e:\rprint(f\u0026#34;An error occurred when writing to DynamoDB: {e}\u0026#34;)\rraise Thay đổi tên miền này của đoạn code trên: \u0026ldquo;You got a new Message from https://workshop.conglyblog.id.vn\u0026rdquo; thành tên miền của bạn.\nChọn Deploy Cấu hình IAM Roles cho Lambda Chọn Configuration Chọn Permissions Chuyển hướng đến IAM Roles Trong giao diện Permissions Chọn Add permissions Chọn Attach policies Tìm SNS Chọn AmazonSNSFullAccess Tiếp tục, tìm DynamoDB Chọn AmazonDynamoDBFullAccess Chọn Add permissions "
 },
 {
-	"uri": "/vi/8-api-gateway/",
+	"uri": "//localhost:1313/vi/8-api-gateway/",
 	"title": "Thiết lập API Gateway",
 	"tags": [],
 	"description": "",
 	"content": "Nội dung:\nTạo API Tạo Method Tạo Authorizers Tạo Stages Thiết lập cấu hình CORS Cấu hình API "
 },
 {
-	"uri": "/vi/9-test-webapp/",
+	"uri": "//localhost:1313/vi/9-test-webapp/",
 	"title": "Kiểm tra Web Application",
 	"tags": [],
 	"description": "",
 	"content": "Kiểm tra Web Application Vào giao diện trình duyệt Nhập tên miền bạn đã tạo cho website (Ví dụ: https://workshop.conglyblog.id.vn/index.html) Chọn LOGIN Trong giao diện Login Nhập Username Nhập Password Chọn Sign in Trong giao diện Contact Nhập thông tin của bạn Chọn Send Message Nếu thông báo là Successfully Sent the Message nghĩa là bạn đã gửi được tin nhắn. Vào Email kiểm tra Vào Email bạn đã đăng ký trên SNS Bạn có thể thấy, tin nhắn đã được gửi đến Email của bạn. Vào DynamoDB kiểm tra Vào DynamoDB Chọn Explore items Chọn Items returned bạn nhận được Khi vào, bạn sẽ thấy các thông tin của người gửi "
 },
 {
-	"uri": "/vi/10-clean-resource/",
+	"uri": "//localhost:1313/vi/10-clean-resource/",
 	"title": "Dọn dẹp tài nguyên",
 	"tags": [],
 	"description": "",
 	"content": "Chúng ta sẽ tiến hành các bước sau để xóa các tài nguyên chúng ta đã tạo trong bài thực hành này.\nXóa S3 Truy cập vào giao diện của S3 Chọn Buckets Chọn Bucket name bạn đã tạo Chọn Delete Xóa Cloudfront Truy cập vào giao diện của Cloudfront Chọn Distributions Chọn Distribution ID bạn đã tạo Chọn Disable Đợi khoảng vài phút, sau đó chọn Delete Xóa Route 53 Truy cập vào giao diện của Route 53 Chọn Hosted zones Chọn Hosted zone name bạn đã tạo Chọn Delete Xóa SNS Truy cập vào giao diện của SNS Chọn Topics Chọn Topic name bạn đã tạo Chọn Delete Xóa Cognito Truy cập vào giao diện của Cognito Chọn User pools Chọn User pool name bạn đã tạo Chọn Delete Xóa DynamoDB Truy cập vào giao diện của DynamoDB Chọn Tables Chọn Table name bạn đã tạo Chọn Delete Xóa Lambda Truy cập vào giao diện của Lambda Chọn Functions Chọn Function name bạn đã tạo Chọn Actions Chọn Delete Xóa API Gateway Truy cập vào giao diện của API Gateway Chọn APIs Chọn API name bạn đã tạo Chọn Delete Xóa WAF Truy cập vào giao diện của WAF Chọn Web ACLs Chọn Web ACL name bạn đã tạo Chọn Delete "
 },
 {
-	"uri": "/vi/categories/",
+	"uri": "//localhost:1313/vi/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/vi/tags/",
+	"uri": "//localhost:1313/vi/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

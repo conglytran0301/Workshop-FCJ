@@ -38,12 +38,24 @@ You have opened the account registration page of **Cognito**, but you have not y
 ![26-Cognito](/images/6/6-cognito-26.png?width=90pc)
 
 - Open the **code** you cloned
-- Select the file **index.html**. Find line 34 "Change - Sign in Link" and paste the link in.
+- Select the file **index.html**. Find line "Change - Sign in Link" and paste the link.
 
-![27-Cognito](/images/6/6-cognito-27.png?width=90pc)
+![30-Cognito](/images/6/6-cognito-30.png?width=90pc)
+
+- Next, select the file **contact-me.html**. Find line "Change - SignOut URL" and paste the link.
+
+![29-Cognito](/images/6/6-cognito-29.png?width=90pc)
+
+{{% notice note %}}
+**The SignIn and SignOut paths have the following structure:**
+
+MAKE URL OF SIGN IN /login?client_id=&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=
+
+MAKE URL OF SIGN OUT /logout?client_id=&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=
+{{% /notice %}}
 
 - Then go to the **main.js** file
-- Paste your domain name with the `/index.html` end in **line 21**
+- Find **window.location.href** and paste your domain name with the `/index.html`.
 
 ![28-Cognito](/images/6/6-cognito-28.png?width=90pc)
 

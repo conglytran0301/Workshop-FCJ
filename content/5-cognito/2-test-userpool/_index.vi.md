@@ -39,16 +39,28 @@ Bạn đã mở được trang đăng ký tài khoản của **Cognito**, nhưng
 ![26-Cognito](/images/6/6-cognito-26.png?width=90pc)
 
 - Mở **code** bạn đã clone
-- Chọn file **index.html**. Tìm dòng 34 'Change - Sign in Link' và dán đường dẫn vào.
+- Chọn file **index.html**. Tìm dòng 'Change - Sign in Link' và dán đường dẫn vào.
 
-![27-Cognito](/images/6/6-cognito-27.png?width=90pc)
+![30-Cognito](/images/6/6-cognito-30.png?width=90pc)
+
+- Tiếp theo chọn file **contact-me.html**. Tìm dòng 'Change - SignOut URL' và dán đường dẫn cũ vào.
+
+![29-Cognito](/images/6/6-cognito-29.png?width=90pc)
+
+{{% notice note %}}
+**Đường dẫn SignIn và SignOut có cấu trúc như sau:**
+
+MAKE URL OF SIGN IN /login?client_id=&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=
+
+MAKE URL OF SIGN OUT /logout?client_id=&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=
+{{% /notice %}}
 
 - Sau đó vào file **main.js**
-- Dán tên miền có đuôi '/index.html' của bạn vào **dòng 21**
+- Tìm **window.location.href** và dán tên miền có đuôi `/index.html` của bạn.
 
 ![28-Cognito](/images/6/6-cognito-28.png?width=90pc)
 
-- Sau đó update lại trên S3 của bạn.
+- Cuối cùng update lại trên S3 của bạn.
 
 3. Quay lại giao diện trang web
 
