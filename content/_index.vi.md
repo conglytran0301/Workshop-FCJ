@@ -1,5 +1,5 @@
 +++
-title = "AWS Serverless web app"
+title = "Serverless Web Application Building on AWS"
 date = 2024
 weight = 1
 chapter = false
