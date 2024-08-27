@@ -10,5 +10,5 @@ This web application system is designed according to the serverless architecture
 
 #### Content
 
-- 1.1. [Routing, Content Distribution, and Security](1-introduction/1-frontend)
-- 1.2. [Logic Processing, User Management, and System Interaction](1-introduction/2-system)
+- 1.1. [Routing, Content Distribution, and Security](1-frontend)
+- 1.2. [Logic Processing, User Management, and System Interaction](2-system)
