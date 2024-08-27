@@ -15,13 +15,13 @@ Trong bài này, chúng ta sẽ xây dựng một hệ thống ứng dụng Web 
 
 #### Nội dung
 
-1. [Giới thiệu](1-introduction/)
-2. [Các bước chuẩn bị](2-preparation>)
-3. [Triển khai Web Front-end](3-deployment-frontend/)
-4. [Khởi tạo SNS](4-sns/)
-5. [Khởi tạo Cognito](5-cognito/)
-6. [Khởi tạo DynamoDB](6-dynamodb/)
-7. [Triển khai Lambda function](7-lambda-function/)
-8. [Thiết lập API Gateway](8-api-gateway/)
-9. [Kiểm tra Web Application](9-test-webapp/)
-10. [Dọn dẹp tài nguyên](10-clean-resource/)
+1. [Giới thiệu](1-introduction)
+2. [Các bước chuẩn bị](2-preparation)
+3. [Triển khai Web Front-end](3-deployment-frontend)
+4. [Khởi tạo SNS](4-sns)
+5. [Khởi tạo Cognito](5-cognito)
+6. [Khởi tạo DynamoDB](6-dynamodb)
+7. [Triển khai Lambda function](7-lambda-function)
+8. [Thiết lập API Gateway](8-api-gateway)
+9. [Kiểm tra Web Application](9-test-webapp)
+10. [Dọn dẹp tài nguyên](10-clean-resource)

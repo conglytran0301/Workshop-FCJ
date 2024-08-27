@@ -15,13 +15,13 @@ In this article, we will build a Web application system that uses serverless ser
 
 #### Content
 
-1. [Introduction](1-introduction/)
-2. [Preparation Steps](2-preparation>)
-3. [Front-end deployment](3-deployment-frontend/)
-4. [Initialize SNS](4-sns/)
-5. [Initialize Cognito](5-cognito/)
-6. [Initialize DynamoDB](6-dynamodb/)
-7. [Deploy Lambda function](7-lambda-function/)
-8. [Setting up API Gateway](8-api-gateway/)
-9. [Check Web Application](9-test-webapp/)
-10. [Clean up resources](10-clean-resource/)
+1. [Introduction](1-introduction)
+2. [Preparation Steps](2-preparation)
+3. [Front-end deployment](3-deployment-frontend)
+4. [Initialize SNS](4-sns)
+5. [Initialize Cognito](5-cognito)
+6. [Initialize DynamoDB](6-dynamodb)
+7. [Deploy Lambda function](7-lambda-function)
+8. [Setting up API Gateway](8-api-gateway)
+9. [Check Web Application](9-test-webapp)
+10. [Clean up resources](10-clean-resource)

@@ -17,7 +17,9 @@ pre = "<b>2.1 </b>"
 3. Run the following command to clone the repository to your computer:
    `git clone https://github.com/conglytran0301/Serverless.git`
 
-{{% notice info %}} You need to install **[Git](https://git-scm.com/)** on your computer to be able to use the **git clone** command. {{% /notice %}}
+{{% notice info %}}
+You need to install **[Git](https://git-scm.com/)** on your computer to be able to use the **git clone** command.
+{{% /notice %}}
 
 ![01-cmd](/images/2/2-01-cmd.png?width=90pc)
 
@@ -25,4 +27,6 @@ pre = "<b>2.1 </b>"
 
 ![02-vs-code](/images/2/2-02-vs-code.png?width=90pc)
 
-{{% notice note %}} The code in the repository includes: Front-end website, Python for Lambda function and Backend API. {{% /notice %}}
+{{% notice note %}}
+The code in the repository includes: Front-end website, Python for Lambda function and Backend API.
+{{% /notice %}}
