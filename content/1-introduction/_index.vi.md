@@ -10,5 +10,5 @@ Hệ thống ứng dụng web này được thiết kế theo mô hình kiến t
 
 ### Nội dung
 
-- 1.1. [Định tuyến, Phân phối Nội dung và Bảo mật](1-introduction/1-frontend)
-- 1.2. [Xử lý Logic, Quản lý Người dùng và Tương tác Hệ thống](1-introduction/2-system)
+- 1.1. [Định tuyến, Phân phối Nội dung và Bảo mật](1-frontend)
+- 1.2. [Xử lý Logic, Quản lý Người dùng và Tương tác Hệ thống](2-system)

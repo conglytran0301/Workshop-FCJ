@@ -10,5 +10,5 @@ Việc chuẩn bị kỹ lưỡng cho từng thành phần sẽ giúp bạn tri�
 
 #### Nội dung
 
-- [Clone repository từ Github](2-preparation/1-clone-code)
-- [Đăng ký tên miền](2-preparation/2-domain-name)
+- [Clone repository từ Github](1-clone-code)
+- [Đăng ký tên miền](2-domain-name)

@@ -10,7 +10,7 @@ The web frontend in this architecture is the user interface part of the applicat
 
 **Content**
 
-- [Initialize an S3 Bucket](3-deployment-frontend/1-S3-Bucket)
-- [Configure Cloudfront](3-deployment-frontend/2-Cloudfront)
-- [Configure Route 53 and Certificate Manager](3-deployment-frontend/3-Route53-ACM)
-- [WAF Initialization](3-deployment-frontend/4-WAF)
+- [Initialize an S3 Bucket](1-S3-Bucket)
+- [Configure Cloudfront](2-Cloudfront)
+- [Configure Route 53 and Certificate Manager](3-Route53-ACM)
+- [WAF Initialization](4-WAF)
