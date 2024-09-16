@@ -21,8 +21,7 @@ You need to install **[Git](https://git-scm.com/)** on your computer to be able 
 {{% /notice %}} ![01-cmd](/images/2/2-01-cmd.png?width=50pc)
 
 4. After the _**git clone**_ command is complete, you will have a copy of the repository on your computer and be able to work with that source code.
-
-![02-vs-code](/images/2/2-02-vs-code.png?width=50pc)
+   ![02-vs-code](/images/2/2-02-vs-code.png?width=50pc)
 
 {{% notice note %}}
 The code in the repository includes: Front-end website, Python for Lambda function and Backend API.
