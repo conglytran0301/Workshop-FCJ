@@ -12,10 +12,9 @@ pre = "<b>2.1 </b>"
 
 2. Open **Command Prompt**
    ![00-cmd](/images/2/2-00-cmd.png?width=50pc)
-
-{{% notice info %}}
-You need to install **[Git](https://git-scm.com/)** on your computer to be able to use the **git clone** command.
-{{% /notice %}}
+   {{% notice info %}}
+   You need to install **[Git](https://git-scm.com/)** on your computer to be able to use the **git clone** command.
+   {{% /notice %}}
 
 3. Run the following command to clone the repository to your computer:
    `git clone https://github.com/conglytran0301/Serverless.git`
