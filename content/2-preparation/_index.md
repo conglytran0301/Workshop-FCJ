@@ -10,5 +10,5 @@ Thorough preparation of each component will help you implement this architecture
 
 #### Content
 
-1. [Clone repository from Github](2-preparation/1-clone-code)
-2. [Domain name registration](2-preparation/2-domain-name)
+1. [Clone repository from Github](1-clone-code)
+2. [Domain name registration](2-domain-name)

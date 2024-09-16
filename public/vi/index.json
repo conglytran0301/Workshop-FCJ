@@ -11,7 +11,7 @@
 	"title": "Clone repository từ Github",
 	"tags": [],
 	"description": "",
-	"content": "Clone repository từ Github Vào thư mục mà bạn muốn clone repository từ Github về.\nMở Command Prompt\nChạy lệnh sau để clone repository về máy tính của bạn: git clone https://github.com/conglytran0301/Serverless.git Bạn cần phải cài đặt Git trên máy tính của mình để có thể sử dụng lệnh git clone.\nSau khi lệnh git clone hoàn tất, bạn sẽ có một bản sao của repository trên máy tính của mình và có thể làm việc với mã nguồn đó. Code trong repository bao gồm: Front-end website, Python cho Lambda function và API Backend.\n"
+	"content": "Clone repository từ Github Vào thư mục mà bạn muốn clone repository từ Github về.\nMở Command Prompt Chạy lệnh sau để clone repository về máy tính của bạn: git clone https://github.com/conglytran0301/Serverless.git Bạn cần phải cài đặt Git trên máy tính của mình để có thể sử dụng lệnh git clone.\nSau khi lệnh git clone hoàn tất, bạn sẽ có một bản sao của repository trên máy tính của mình và có thể làm việc với mã nguồn đó. Code trong repository bao gồm: Front-end website, Python cho Lambda function và API Backend.\n"
 },
 {
 	"uri": "//localhost:1313/vi/1-introduction/1-frontend/",

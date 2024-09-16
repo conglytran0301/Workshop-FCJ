@@ -12,14 +12,12 @@ pre = "<b>2.2 </b>"
 
 - Find **Route 53**
 - Select **Route 53**
-
-![01-Route53](/images/2/2-03-domain.png?width=90pc)
+  ![01-Route53](/images/2/2-03-domain.png?width=90pc)
 
 . In the **Route 53** interface
 
 - Select **Registered domains**
-
-![02-Route53](/images/2/2-04-domain.png?width=90pc)
+  ![02-Route53](/images/2/2-04-domain.png?width=90pc)
 
 3. In the **Registered domains** interface
 
@@ -30,41 +28,35 @@ pre = "<b>2.2 </b>"
 - Click **Select** the domain name you want to register
 
 - Select **Proceed to checkout**
-
-![02-Route53](/images/2/2-05-domain.png?width=90pc)
+  ![02-Route53](/images/2/2-05-domain.png?width=90pc)
 
 4. In the **Pricing** section
 
 - Choice of subscription and renewal time
 
 - Select **Next**
-
-![03-Route53](/images/2/2-06-domain.png?width=90pc)
+  ![03-Route53](/images/2/2-06-domain.png?width=90pc)
 
 5. In the **Contact information** section
 
 - Fill in contact information
 
 - Select **Next**
-
-![04-Route53](/images/2/2-07-domain.png?width=90pc)
+  ![04-Route53](/images/2/2-07-domain.png?width=90pc)
 
 6. In the **Review and submit** section
 
 - Double-check information
 - Select **Submit**
-
-![05-Route53](/images/2/2-08-domain.png?width=90pc)
+  ![05-Route53](/images/2/2-08-domain.png?width=90pc)
 
 7. Check the domain name
 
 - Go to **Registered domains** to check the registered domain name information.
-
-![06-Route53](/images/2/2-09-domain.png?width=90pc)
-
-{{% notice info %}}
-If your domain name registration fails, please contact [**AWS Support**](https://support.console.aws.amazon.com/) for assistance.
-{{% /notice %}}
+  ![06-Route53](/images/2/2-09-domain.png?width=90pc)
+  {{% notice info %}}
+  If your domain name registration fails, please contact [**AWS Support**](https://support.console.aws.amazon.com/) for assistance.
+  {{% /notice %}}
 
 #### Register a domain name with another domain provider
 
@@ -73,15 +65,12 @@ If your domain name registration fails, please contact [**AWS Support**](https:/
 - Select **Manage Domain Name**
 
 - Select the **domain name** that you **registered**
-
-![10-Route53](/images/2/2-10-domain.png?width=90pc)
+  ![10-Route53](/images/2/2-10-domain.png?width=90pc)
 
 - Select **Name Server**
 
 - Enter the Name Server provided in Route53's Hosted zones
-
-![11-Route53](/images/2/2-11-domain.png?width=90pc)
-
-{{% notice note %}}
-To be able to create DNS from another domain provider to AWS, you need to create Hosted zones in Route 53. Then enter the Name Server provided by Route 53 into the Name Server import of another domain provider. _steps to register for **Hosted zones** you see the instructions at here_: "[Configure Route 53 and Certificate Manager](3-deployment-frontend/3-Route53-ACM)". **Note: Changes may take up to 24 hours to take effect.**
-{{% /notice %}}
+  ![11-Route53](/images/2/2-11-domain.png?width=90pc)
+  {{% notice note %}}
+  To be able to create DNS from another domain provider to AWS, you need to create Hosted zones in Route 53. Then enter the Name Server provided by Route 53 into the Name Server import of another domain provider. _steps to register for **Hosted zones** you see the instructions at here_: "[Configure Route 53 and Certificate Manager](3-deployment-frontend/3-Route53-ACM)". **Note: Changes may take up to 24 hours to take effect.**
+  {{% /notice %}}
