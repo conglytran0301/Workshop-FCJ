@@ -116,7 +116,7 @@
 	"title": "Upload Data",
 	"tags": [],
 	"description": "",
-	"content": "Upload Data we\u0026rsquo;ll upload source code to the S3 bucket for storage. If you haven\u0026rsquo;t downloaded the source code yet, go back to 2.1.Clone repository from Github to clone the repo.\nIn the S3 bucket you just created There is currently no Object in Bucket Select Upload to upload your data In the Upload interface Go to the Folder named FCJ-Serverless that was cloned from Github in the above step Press CRLT + A key combination to select all folders Then drag the entire Folder and File and drop it into the Upload interface of the S3 bucket. Once all folders have been selected, drop them into Bucket Scroll down to the bottom of the page and select Upload Once the Upload is complete, you will see the files that have been added to the S3 Bucket "
+	"content": "Upload Data we\u0026rsquo;ll upload source code to the S3 bucket for storage. If you haven\u0026rsquo;t downloaded the source code yet, go back to 2.1.Clone repository from Github to clone the repo.\nIn the S3 bucket you just created\nThere is currently no Object in Bucket Select Upload to upload your data In the Upload interface\nGo to the Folder named FCJ-Serverless that was cloned from Github in the above step\nPress CRLT + A key combination to select all folders\nThen drag the entire Folder and File and drop it into the Upload interface of the S3 bucket. Once all folders have been selected, drop them into Bucket Scroll down to the bottom of the page and select Upload Once the Upload is complete, you will see the files that have been added to the S3 Bucket "
 },
 {
 	"uri": "//localhost:1313/3-deployment-frontend/3-route53-acm/",
