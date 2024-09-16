@@ -30,7 +30,7 @@ Lợi ích: Việc quản lý chứng chỉ SSL/TLS một cách tự động gi�
 
 ### Liên kết tham khảo
 
-- [Amazon Route 53 Documentation](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html)
+- [Amazon Route 53 Documentation](https://docs.aws.amazon.com/Route53/latest/)
 - [Amazon CloudFront Documentation](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
 - [Amazon S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
 - [AWS WAF Documentation](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html)
