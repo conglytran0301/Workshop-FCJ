@@ -8,9 +8,9 @@ pre = "<b>8. </b>"
 
 **Nội dung:**
 
-- [Create API](8-api-gateway/1-create-api)
-- [Create Method](8-api-gateway/2-create-method)
-- [Create Authorizer](8-api-gateway/3-create-authorizers)
-- [Create Stage](8-api-gateway/4-create-stages)
-- [CORS Configuration Setup](8-api-gateway/5-enable-cors)
-- [API Configuration](8-api-gateway/6-config-api)
+1. [Create API](1-create-api)
+2. [Create Method](2-create-method)
+3. [Create Authorizer](3-create-authorizers)
+4. [Create Stage](4-create-stages)
+5. [CORS Configuration Setup](5-enable-cors)
+6. [API Configuration](6-config-api)

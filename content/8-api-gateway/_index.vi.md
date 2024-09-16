@@ -8,9 +8,9 @@ pre = "<b>8. </b>"
 
 **Nội dung:**
 
-- [Tạo API](8-api-gateway/1-create-api)
-- [Tạo Method](8-api-gateway/2-create-method)
-- [Tạo Authorizers](8-api-gateway/3-create-authorizers)
-- [Tạo Stages](8-api-gateway/4-create-stages)
-- [Thiết lập cấu hình CORS](8-api-gateway/5-enable-cors)
-- [Cấu hình API](8-api-gateway/6-config-api)
+1. [Tạo API](1-create-api)
+2. [Tạo Method](2-create-method)
+3. [Tạo Authorizers](3-create-authorizers)
+4. [Tạo Stages](4-create-stages)
+5. [Thiết lập cấu hình CORS](5-enable-cors)
+6. [Cấu hình API](6-config-api)

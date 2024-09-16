@@ -12,6 +12,6 @@ In this lab, we'll create an S3 bucket and then upload the data to prepare for h
 
 #### Content
 
-1. [Create an S3 bucket](3-deployment-frontend/1-S3-Bucket/1-create-s3)
-2. [Upload Data](3-deployment-frontend/1-S3-Bucket/2-upload-s3)
-3. [Enable Static website hosting](3-deployment-frontend/1-S3-Bucket/3-web-hosting)
+1. [Create an S3 bucket](1-create-s3)
+2. [Upload Data](2-upload-s3)
+3. [Enable Static website hosting](3-web-hosting)

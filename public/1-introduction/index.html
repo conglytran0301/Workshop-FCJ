@@ -12,21 +12,21 @@
     <title>Introduction :: AWS Account Setup</title>
 
     
-    <link href="/css/nucleus.css?1724801011" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1724801011" rel="stylesheet">
-    <link href="/css/hybrid.css?1724801011" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1724801011" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1724801011" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724801011" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1724801011" rel="stylesheet">
-    <link href="/css/theme.css?1724801011" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1724801011" rel="stylesheet">
+    <link href="/css/nucleus.css?1726501738" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726501738" rel="stylesheet">
+    <link href="/css/hybrid.css?1726501738" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726501738" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726501738" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726501738" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726501738" rel="stylesheet">
+    <link href="/css/theme.css?1726501738" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726501738" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1724801011" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1726501738" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1724801011"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726501738"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1724801011"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1724801011"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1726501738"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1726501738"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1724801011"></script>
+<script type="text/javascript" src="/js/search.js?1726501738"></script>
 
     
   </div>
@@ -1184,7 +1184,9 @@
   <ul>
     <li>
       <ul>
-        <li></li>
+        <li><a href="#workflow">Workflow</a></li>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#content">Content</a></li>
       </ul>
     </li>
   </ul>
@@ -1212,12 +1214,122 @@
 
 
 
-	<p>This web application system is designed according to the serverless architecture model on the AWS platform, optimizing performance, scalability, and cost. This architecture leverages the powerful services of AWS to build a distributed web application that is easy to manage and operate without the need to manage physical infrastructure.</p>
-<h4 id="content">Content</h4>
+	<h3 id="workflow">Workflow</h3>
+<p><strong>1. User Accesses the Application via Web Browser</strong></p>
 <ul>
-<li>1.1. <a href="/1-introduction/1-frontend/">Routing, Content Distribution, and Security</a></li>
-<li>1.2. <a href="/1-introduction/2-system/">Logic Processing, User Management, and System Interaction</a></li>
+<li>When a user wants to access the application, they enter the website URL in the browser. This can be a website providing static content (HTML, CSS, JavaScript) or interactive features like login, registration, or data manipulation. The access request is sent from the browser over the Internet to the AWS system for processing.</li>
 </ul>
+<p><strong>2. Route 53 Resolves Domain Name and Directs Request</strong></p>
+<ul>
+<li>
+<p>First, the request from the browser is sent to Amazon Route 53, AWS’s DNS (Domain Name System) service. Route 53&rsquo;s job is to resolve the domain name of the application into a specific IP address, helping to route traffic to the correct resources in the AWS system. Route 53 can be configured to support load balancing between multiple servers or geographical regions to optimize access speed and ensure high availability.</p>
+</li>
+<li>
+<p>Once the domain is resolved, the user&rsquo;s request is forwarded to CloudFront, AWS’s content delivery network (CDN).</p>
+</li>
+</ul>
+<p><strong>3. CloudFront Receives Request and Checks Cache</strong></p>
+<ul>
+<li>
+<p>Amazon CloudFront acts as a Content Delivery Network (CDN), distributing content from edge locations (network points closest to the user) to reduce latency and improve website performance.</p>
+</li>
+<li>
+<p>When CloudFront receives the request from the user, it checks if static resources (like HTML, CSS, JavaScript files, images) are available in the cache of the closest edge location. If the resource is cached, CloudFront returns it immediately without needing to access the backend, reducing response time.</p>
+</li>
+<li>
+<p>If the resource is not cached, CloudFront fetches the static files from Amazon S3, the main storage for the application’s static content, and delivers it to the user.</p>
+</li>
+</ul>
+<p><strong>4. Amazon S3 Supplies Static Content to CloudFront</strong></p>
+<ul>
+<li>Amazon S3 (Simple Storage Service) is used to store static files for the application such as images, videos, CSS, and JavaScript. It’s a highly durable and scalable storage service. When CloudFront doesn’t find the resource in its cache, it requests the static content from S3 and caches it temporarily for future requests.</li>
+</ul>
+<p><strong>5. Web Application Firewall (WAF) Protects the System</strong></p>
+<ul>
+<li>
+<p>AWS WAF (Web Application Firewall) is integrated with CloudFront to protect the system from common attacks, such as SQL Injection, Cross-Site Scripting (XSS), and DDoS (Distributed Denial of Service) attacks.</p>
+</li>
+<li>
+<p>WAF can be configured with specific security rules to inspect and block malicious requests before they reach the application, thus safeguarding the system from common vulnerabilities.</p>
+</li>
+</ul>
+<p><strong>6. Certificate Manager Handles SSL Certificates for Data Encryption</strong></p>
+<ul>
+<li>
+<p>Amazon Certificate Manager (ACM) manages SSL/TLS certificates for the system, ensuring that all communications between the user and the system are encrypted, protecting information from man-in-the-middle attacks.</p>
+</li>
+<li>
+<p>Certificate Manager automatically handles SSL certificate management and renewal to ensure secure connections are always functional. This is especially crucial in environments where high data security is required.</p>
+</li>
+</ul>
+<p><strong>7. User Authentication via Cognito User Pool</strong></p>
+<ul>
+<li>
+<p>For requests requiring authentication (e.g., login, registration), the user interacts with Amazon Cognito User Pool, a user identity management service.</p>
+</li>
+<li>
+<p>Cognito allows users to log in or sign up for accounts on the application. When the user provides login credentials (email, password), Cognito authenticates the credentials and issues JWT tokens to authorize subsequent requests from the user.</p>
+</li>
+<li>
+<p>Additionally, Cognito supports multi-factor authentication (MFA) and integrates with external services like Facebook, Google for convenient user login.</p>
+</li>
+</ul>
+<p><strong>8. API Gateway Handles Dynamic Requests from Users</strong></p>
+<ul>
+<li>
+<p>For complex requests such as retrieving data from a database or processing backend tasks, the user’s request is sent from the browser via API Gateway.</p>
+</li>
+<li>
+<p>Amazon API Gateway acts as a gateway between the user and backend services. It receives HTTP(S) requests and forwards them to AWS Lambda for processing. API Gateway can integrate with Cognito to verify user tokens before granting access to sensitive resources.</p>
+</li>
+<li>
+<p>Additionally, API Gateway supports version control for APIs, throttling, and request monitoring to ensure performance and security.</p>
+</li>
+</ul>
+<p><strong>9. Lambda Executes Business Logic</strong></p>
+<ul>
+<li>
+<p>AWS Lambda is a serverless compute service that only runs when triggered by events. When API Gateway forwards a request from the user, Lambda executes the business logic of the application without the need to manage servers.</p>
+</li>
+<li>
+<p>Lambda can perform various tasks such as handling login information, retrieving data from the database, or invoking other services for complex processing. Lambda automatically scales to meet the demand and charges only for the execution time, making it cost-effective for the system.</p>
+</li>
+</ul>
+<p><strong>10. DynamoDB Stores and Retrieves Dynamic Data</strong></p>
+<ul>
+<li>
+<p>Amazon DynamoDB is a NoSQL database that offers flexible scaling. When Lambda needs to retrieve or write data, it interacts with DynamoDB.</p>
+</li>
+<li>
+<p>DynamoDB stores the dynamic data of the application, such as user information, transaction states, or application-related data. DynamoDB supports very fast read/write speeds and handles large data volumes, ensuring smooth operation even when many users access the application simultaneously.</p>
+</li>
+</ul>
+<p><strong>11. SNS Sends Notifications</strong></p>
+<ul>
+<li>
+<p>When important events or state changes occur in the application (e.g., a new user registration or a new order), Lambda can trigger Amazon SNS (Simple Notification Service) to send notifications.</p>
+</li>
+<li>
+<p>SNS can send notifications through various channels such as email, SMS, or to other systems using a pub/sub mechanism. This allows the application to provide real-time information to users or administrators.</p>
+</li>
+</ul>
+<p><strong>12. User Receives Response</strong></p>
+<ul>
+<li>
+<p>After the requests have been processed by Lambda and data has been retrieved from DynamoDB or other sources, API Gateway receives the response from Lambda and forwards the results back to the user’s browser.</p>
+</li>
+<li>
+<p>Finally, the user receives the data they requested, or relevant notifications (such as account registration confirmation, order updates, etc.).</p>
+</li>
+</ul>
+<p><img alt="Serverless-FCJ" src="/images/1/Serverles.png?width=90pc"></p>
+<h3 id="summary">Summary</h3>
+<p>Each step in the system plays a crucial role in handling user requests from accessing the website, sending requests, to receiving responses. The serverless system leverages services like CloudFront, Lambda, and API Gateway to reduce infrastructure management while ensuring the application’s performance and security. Components such as Cognito, DynamoDB, and SNS provide easy user management, data storage, and notification capabilities, allowing for the development of a highly scalable and robust distributed application.</p>
+<h3 id="content">Content</h3>
+<ol>
+<li><a href="/1-introduction/1-frontend/">Routing, Content Distribution, and Security</a></li>
+<li><a href="/1-introduction/2-system/">Logic Processing, User Management, and System Interaction</a></li>
+</ol>
 
 
 
@@ -1805,19 +1917,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1724801011"></script>
-    <script src="/js/perfect-scrollbar.min.js?1724801011"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1724801011"></script>
-    <script src="/js/jquery.sticky.js?1724801011"></script>
-    <script src="/js/featherlight.min.js?1724801011"></script>
-    <script src="/js/highlight.pack.js?1724801011"></script>
+    <script src="/js/clipboard.min.js?1726501738"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726501738"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726501738"></script>
+    <script src="/js/jquery.sticky.js?1726501738"></script>
+    <script src="/js/featherlight.min.js?1726501738"></script>
+    <script src="/js/highlight.pack.js?1726501738"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1724801011"></script>
-    <script src="/js/learn.js?1724801011"></script>
-    <script src="/js/hugo-learn.js?1724801011"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726501738"></script>
+    <script src="/js/learn.js?1726501738"></script>
+    <script src="/js/hugo-learn.js?1726501738"></script>
 
-    <link href="/mermaid/mermaid.css?1724801011" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1724801011"></script>
+    <link href="/mermaid/mermaid.css?1726501738" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1726501738"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

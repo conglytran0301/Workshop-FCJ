@@ -9,7 +9,7 @@ chapter = false
 
 #### Tổng quan
 
-Trong bài này, chúng ta sẽ xây dựng một hệ thống ứng dụng Web sử dụng các dịch vụ **Serverless** trên nền tảng AWS. Hệ thống này tận dụng các dịch vụ như **S3** để lưu trữ nội dung tĩnh, **API Gateway** để quản lý và định tuyến yêu cầu API, **Lambda** để xử lý logic nghiệp vụ, và **DynamoDB** để lưu trữ dữ liệu động. Các dịch vụ bổ sung như **Route53**, **CloudFront**, và **WAF** giúp bảo đảm hiệu suất cao và an ninh cho ứng dụng. Ngoài ra, **Cognito** được sử dụng để quản lý xác thực người dùng, và **SNS** giúp gửi thông báo tức thì. Tổng thể, kiến trúc này mang lại sự linh hoạt, khả năng mở rộng, và hiệu quả chi phí, đồng thời tối ưu hóa trải nghiệm người dùng và bảo mật hệ thống.
+Trong bài này, chúng ta sẽ xây dựng một hệ thống ứng dụng Web sử dụng các dịch vụ **Serverless** trên nền tảng **AWS**. Hệ thống này tận dụng các dịch vụ như **S3** để lưu trữ nội dung tĩnh, **API Gateway** để quản lý và định tuyến yêu cầu **API**, **Lambda** để xử lý logic nghiệp vụ, và **DynamoDB** để lưu trữ dữ liệu động. Các dịch vụ bổ sung như **Route53**, **CloudFront**, và **WAF** giúp bảo đảm hiệu suất cao và an ninh cho ứng dụng. Ngoài ra, **Cognito** được sử dụng để quản lý xác thực người dùng, và **SNS** giúp gửi thông báo tức thì. Tổng thể, kiến trúc này mang lại sự linh hoạt, khả năng mở rộng, và hiệu quả chi phí, đồng thời tối ưu hóa trải nghiệm người dùng và bảo mật hệ thống.
 
 ![Serverless-FCJ](/images/1/Serverles.png?width=90pc)
 

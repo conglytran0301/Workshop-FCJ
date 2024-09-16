@@ -12,6 +12,6 @@ CloudFront is AWS's CDN, accelerating content delivery from origins like S3. Con
 
 #### Content
 
-1. [Create Cloudfront](3-deployment-frontend/3-Cloudfront/1-create-cloudfront)
-2. [Cloudfront Origin request policy](3-deployment-frontend/3-Cloudfront/2-cloudfront-s3policy)
-3. [Lambda@Edge Configuration for Origin Website](3-deployment-frontend/3-Cloudfront/3-lambda-edge)
+1. [Create Cloudfront](1-create-cloudfront)
+2. [Cloudfront Origin request policy](2-cloudfront-s3policy)
+3. [Lambda@Edge Configuration for Origin Website](3-lambda-edge)

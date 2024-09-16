@@ -8,5 +8,5 @@ pre = "<b>5. </b>"
 
 **Content:**
 
-- [Initialize Cognito User pool](5-cognito/1-create-userpool)
-- [Check out Cognito User pool](5-cognito/2-test-userpool)
+1. [Initialize Cognito User pool](1-create-userpool)
+2. [Check out Cognito User pool](2-test-userpool)

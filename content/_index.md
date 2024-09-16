@@ -9,7 +9,7 @@ chapter = false
 
 #### Overview
 
-In this article, we will build a Web application system that uses serverless services on the AWS platform. It leverages services such as S3 for static content storage, API Gateway for managing and routing API requests, Lambda for business logic processing, and DynamoDB for dynamic data storage. Additional services such as Route53, CloudFront, and WAF help ensure high performance and security for applications. In addition, Cognito is used to manage user authentication, and SNS helps send instant notifications. Overall, this architecture provides flexibility, scalability, and cost-effectiveness, while optimizing user experience and system security.
+In this article, we will build a Web application system that uses **Serverless** services on the **AWS** platform. It leverages services such as **S3** for static content storage, **API Gateway** for managing and routing **API** requests, **Lambda** for business logic processing, and **DynamoDB** for dynamic data storage. Additional services such as **Route53**, **CloudFront**, and **WAF** help ensure high performance and security for applications. In addition, **Cognito** is used to manage user authentication, and **SNS** helps send instant notifications. Overall, this architecture provides flexibility, scalability, and cost-effectiveness, while optimizing user experience and system security.
 
 ![Serverless-FCJ](/images/1/Serverles.png?width=90pc)
 

@@ -12,6 +12,6 @@ CloudFront là CDN của AWS, tăng tốc phân phối nội dung từ các ngu�
 
 #### Nội dung
 
-1. [Tạo Cloudfront](3-deployment-frontend/3-Cloudfront/1-create-cloudfront)
-2. [Cloudfront Origin request policy](3-deployment-frontend/3-Cloudfront/2-cloudfront-s3policy)
-3. [Cấu hình Lambda@Edge cho Origin Website](3-deployment-frontend/3-Cloudfront/3-lambda-edge)
+1. [Tạo Cloudfront](1-create-cloudfront)
+2. [Cloudfront Origin request policy](2-cloudfront-s3policy)
+3. [Cấu hình Lambda@Edge cho Origin Website](3-lambda-edge)
