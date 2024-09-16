@@ -50,9 +50,9 @@ pre = "<b>2.2 </b>"
    - Vào **Registered domains** để kiểm tra thông tin tên miền đã đăng ký.
      ![06-Route53](/images/2/2-09-domain.png?width=90pc)
 
-     {{% notice info %}}
-     Nếu bạn đăng kí tên miền thất bại, vui lòng liên hệ với [**AWS Support**](https://support.console.aws.amazon.com/) để được hỗ trợ.
-     {{% /notice %}}
+   {{% notice info %}}
+   Nếu bạn đăng kí tên miền thất bại, vui lòng liên hệ với [**AWS Support**](https://support.console.aws.amazon.com/) để được hỗ trợ.
+   {{% /notice %}}
 
 #### Đăng kí tên miền với domain provider khác
 
@@ -66,6 +66,6 @@ pre = "<b>2.2 </b>"
    - Nhập **Name Server** được cung cấp trong **Hosted zones** của**Route53**
      ![11-Route53](/images/2/2-11-domain.png?width=90pc)
 
-     {{% notice note %}}
-     Để có thể tạo DNS từ **domain provider khác** sang **AWS**, bạn cần tạo **Hosted zones** trong **Route 53**. Sau đó nhập **Name Server** được **Route 53** cung cấp vào phần nhập **Name Server** của **domain provider khác**. _Các bước đăng ký **Hosted zones** bạn xem hướng dẫn ở đây_: "[Cấu hình Route 53 và Certificate Manager](3-deployment-frontend/3-Route53-ACM)". **Lưu ý: Quá trình thay đổi có thể cần đến 24 giờ để có hiệu lực**.
-     {{% /notice %}}
+   {{% notice note %}}
+   Để có thể tạo DNS từ **domain provider khác** sang **AWS**, bạn cần tạo **Hosted zones** trong **Route 53**. Sau đó nhập **Name Server** được **Route 53** cung cấp vào phần nhập **Name Server** của **domain provider khác**. _Các bước đăng ký **Hosted zones** bạn xem hướng dẫn ở đây_: "[Cấu hình Route 53 và Certificate Manager](3-deployment-frontend/3-Route53-ACM)". **Lưu ý: Quá trình thay đổi có thể cần đến 24 giờ để có hiệu lực**.
+   {{% /notice %}}
