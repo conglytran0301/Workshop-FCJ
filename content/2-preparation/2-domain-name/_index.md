@@ -54,6 +54,7 @@ pre = "<b>2.2 </b>"
 
    - Go to **Registered domains** to check the registered domain name information.
      ![06-Route53](/images/2/2-09-domain.png?width=90pc)
+
      {{% notice info %}}
      If your domain name registration fails, please contact [**AWS Support**](https://support.console.aws.amazon.com/) for assistance.
      {{% /notice %}}
@@ -71,6 +72,7 @@ pre = "<b>2.2 </b>"
 
    - Enter the Name Server provided in Route53's Hosted zones
      ![11-Route53](/images/2/2-11-domain.png?width=90pc)
+
      {{% notice note %}}
      To be able to create DNS from another domain provider to AWS, you need to create Hosted zones in Route 53. Then enter the Name Server provided by Route 53 into the Name Server import of another domain provider. _steps to register for **Hosted zones** you see the instructions at here_: "[Configure Route 53 and Certificate Manager](3-deployment-frontend/3-Route53-ACM)". **Note: Changes may take up to 24 hours to take effect.**
      {{% /notice %}}

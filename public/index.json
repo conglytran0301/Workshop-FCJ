@@ -11,7 +11,7 @@
 	"title": "Clone a Repository from Github",
 	"tags": [],
 	"description": "",
-	"content": "Clone a Repository from Github Go to the directory where you want to clone the repository from Github.\nOpen Command Prompt Run the following command to clone the repository to your computer: git clone https://github.com/conglytran0301/Serverless.git You need to install Git on your computer to be able to use the git clone command.\nAfter the git clone command is complete, you will have a copy of the repository on your computer and be able to work with that source code. The code in the repository includes: Front-end website, Python for Lambda function and Backend API.\n"
+	"content": "Clone a Repository from Github Go to the directory where you want to clone the repository from Github.\nOpen Command Prompt Run the following command to clone the repository to your computer: git clone https://github.com/conglytran0301/Serverless.git\nYou need to install Git on your computer to be able to use the git clone command.\nAfter the git clone command is complete, you will have a copy of the repository on your computer and be able to work with that source code. The code in the repository includes: Front-end website, Python for Lambda function and Backend API.\n"
 },
 {
 	"uri": "//localhost:1313/3-deployment-frontend/1-s3-bucket/1-create-s3/",
