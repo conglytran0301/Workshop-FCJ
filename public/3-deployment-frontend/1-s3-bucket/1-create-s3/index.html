@@ -12,21 +12,21 @@
     <title>Create an S3 bucket :: AWS Account Setup</title>
 
     
-    <link href="/css/nucleus.css?1726529533" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726529533" rel="stylesheet">
-    <link href="/css/hybrid.css?1726529533" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726529533" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726529533" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726529533" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726529533" rel="stylesheet">
-    <link href="/css/theme.css?1726529533" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726529533" rel="stylesheet">
+    <link href="/css/nucleus.css?1726529806" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726529806" rel="stylesheet">
+    <link href="/css/hybrid.css?1726529806" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726529806" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726529806" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726529806" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726529806" rel="stylesheet">
+    <link href="/css/theme.css?1726529806" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726529806" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1726529533" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1726529806" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1726529533"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726529806"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1726529533"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1726529533"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1726529806"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1726529806"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1726529533"></script>
+<script type="text/javascript" src="/js/search.js?1726529806"></script>
 
     
   </div>
@@ -1233,43 +1233,47 @@
 <p>Find <strong>S3</strong></p>
 </li>
 <li>
-<p>Select <strong>S3</strong></p>
+<p>Select <strong>S3</strong>
+<img alt="01-S3" src="/images/3/3-s3-01.png?width=90pc"></p>
 </li>
 </ul>
-<p><img alt="01-S3" src="/images/3/3-s3-01.png?width=90pc"></p>
 </li>
 <li>
 <p>In the <strong>S3</strong> interface</p>
 <ul>
 <li>Select <strong>Buckets</strong></li>
-<li>Select <strong>Create bucket</strong></li>
+<li>Select <strong>Create bucket</strong>
+<img alt="02-S3" src="/images/3/3-s3-02.png?width=90pc"></li>
 </ul>
-<p><img alt="02-S3" src="/images/3/3-s3-02.png?width=90pc"></p>
 </li>
 <li>
 <p>In the <strong>Create bucket</strong> interface</p>
 <ul>
 <li><strong>Bucket name</strong>, enter <code>s3-workshop-fcj</code></li>
-<li>In the Object Ownership section, select <strong>ACLs disabled</strong></li>
+<li>In the Object Ownership section, select <strong>ACLs disabled</strong>
+<img alt="03-S3" src="/images/3/3-s3-03.png?width=90pc"></li>
 </ul>
-<p><img alt="03-S3" src="/images/3/3-s3-03.png?width=90pc"></p>
 
-<div class="notices info" ><p>Note: Because the bucket name is unique on a global scale, if the names are the same, the message &ldquo;Bucket with the same name already exists&rdquo; will appear. Therefore, it is necessary to add a few numbers after it to make your bucket name suitable for the policy.</p>
+<div class="notices info" ><pre><code>Note: Because the bucket name is unique on a global scale, if the names are the same, the message &quot;Bucket with the same name already exists&quot; will appear. Therefore, it is necessary to add a few numbers after it to make your bucket name suitable for the policy.
+</code></pre>
 </div>
 
-<p><img alt="04-S3" src="/images/3/3-s3-04.png?width=90pc"></p>
+<pre><code>![04-S3](/images/3/3-s3-04.png?width=90pc)
+</code></pre>
 <ul>
-<li>In the Block Public Access settings for this bucket section, leave the default</li>
-</ul>
-<p><img alt="05-S3" src="/images/3/3-s3-05.png?width=90pc"></p>
-<ul>
-<li>The rest remains the default. Scroll down and select <strong>Create bucket</strong></li>
-</ul>
-<p><img alt="06-S3" src="/images/3/3-s3-06.png?width=90pc"></p>
+<li>
+<p>In the Block Public Access settings for this bucket section, leave the default
+<img alt="05-S3" src="/images/3/3-s3-05.png?width=90pc"></p>
 </li>
 <li>
-<p>Finish creating an <strong>S3 bucket</strong> to store <em>source website</em></p>
-<p><img alt="07-S3" src="/images/3/3-s3-07.png?width=90pc"></p>
+<p>The rest remains the default. Scroll down and select <strong>Create bucket</strong>
+<img alt="06-S3" src="/images/3/3-s3-06.png?width=90pc"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Finish creating an <strong>S3 bucket</strong> to store <em>source website</em>
+<img alt="07-S3" src="/images/3/3-s3-07.png?width=90pc"></p>
 </li>
 </ol>
 
@@ -1864,19 +1868,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1726529533"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726529533"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726529533"></script>
-    <script src="/js/jquery.sticky.js?1726529533"></script>
-    <script src="/js/featherlight.min.js?1726529533"></script>
-    <script src="/js/highlight.pack.js?1726529533"></script>
+    <script src="/js/clipboard.min.js?1726529806"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726529806"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726529806"></script>
+    <script src="/js/jquery.sticky.js?1726529806"></script>
+    <script src="/js/featherlight.min.js?1726529806"></script>
+    <script src="/js/highlight.pack.js?1726529806"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726529533"></script>
-    <script src="/js/learn.js?1726529533"></script>
-    <script src="/js/hugo-learn.js?1726529533"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726529806"></script>
+    <script src="/js/learn.js?1726529806"></script>
+    <script src="/js/hugo-learn.js?1726529806"></script>
 
-    <link href="/mermaid/mermaid.css?1726529533" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1726529533"></script>
+    <link href="/mermaid/mermaid.css?1726529806" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1726529806"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
