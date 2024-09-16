@@ -90,5 +90,5 @@ Each step in the system plays a crucial role in handling user requests from acce
 
 ### Content
 
-1. [Routing, Content Distribution, and Security](1-frontend)
-2. [Logic Processing, User Management, and System Interaction](2-system)
+1. [Routing, Content Distribution, and Security](1-introduction/1-frontend)
+2. [Logic Processing, User Management, and System Interaction](1-introduction/2-system)

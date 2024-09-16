@@ -10,7 +10,7 @@ Web frontend trong kiến trúc này là phần giao diện người dùng của
 
 ### Nội dung
 
-1. [Khởi tạo S3 Bucket](1-S3-Bucket)
-2. [Cấu hình Cloudfront](2-Cloudfront)
-3. [Cấu hình Route 53 và Certificate Manager](3-Route53-ACM)
-4. [Khởi tạo WAF](4-WAF)
+1. [Khởi tạo S3 Bucket](3-deployment-frontend/1-S3-Bucket)
+2. [Cấu hình Cloudfront](3-deployment-frontend/2-Cloudfront)
+3. [Cấu hình Route 53 và Certificate Manager](3-deployment-frontend/3-Route53-ACM)
+4. [Khởi tạo WAF](3-deployment-frontend/4-WAF)

@@ -90,5 +90,5 @@ Mỗi bước trong hệ thống đều đảm nhận một phần quan trọng 
 
 ### Nội dung
 
-1. [Định tuyến, Phân phối Nội dung và Bảo mật](1-frontend)
-2. [Xử lý Logic, Quản lý Người dùng và Tương tác Hệ thống](2-system)
+1. [Định tuyến, Phân phối Nội dung và Bảo mật](1-introduction/1-frontend)
+2. [Xử lý Logic, Quản lý Người dùng và Tương tác Hệ thống](1-introduction/2-system)
