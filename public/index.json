@@ -18,7 +18,7 @@
 	"title": "Create an S3 bucket",
 	"tags": [],
 	"description": "",
-	"content": "Create an S3 bucket Access the AWS Management Console Find S3\nSelect S3\nIn the S3 interface Select Buckets Select Create bucket In the Create bucket interface Bucket name, enter s3-workshop-fcj In the Object Ownership section, select ACLs disabled Note: Because the bucket name is unique on a global scale, if the names are the same, the message \u0026ldquo;Bucket with the same name already exists\u0026rdquo; will appear. Therefore, it is necessary to add a few numbers after it to make your bucket name suitable for the policy.\nIn the Block Public Access settings for this bucket section, leave the default The rest remains the default. Scroll down and select Create bucket Finish creating an S3 bucket to store source website "
+	"content": "Create an S3 bucket Access the AWS Management Console\nFind S3\nSelect S3\nIn the S3 interface\nSelect Buckets Select Create bucket In the Create bucket interface\nBucket name, enter s3-workshop-fcj In the Object Ownership section, select ACLs disabled Note: Because the bucket name is unique on a global scale, if the names are the same, the message \u0026ldquo;Bucket with the same name already exists\u0026rdquo; will appear. Therefore, it is necessary to add a few numbers after it to make your bucket name suitable for the policy.\nIn the Block Public Access settings for this bucket section, leave the default The rest remains the default. Scroll down and select Create bucket Finish creating an S3 bucket to store source website\n"
 },
 {
 	"uri": "//localhost:1313/8-api-gateway/1-create-api/",
