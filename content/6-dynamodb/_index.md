@@ -28,3 +28,7 @@ pre = "<b>6. </b>"
    - **Table settings** to default
    - Scroll down and select **Create table**
      ![04-DynamoDB](/images/7/7-dynamodb-04.png?width=90pc)
+
+#### Reference Links
+
+- [Working with tables and data in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.html)

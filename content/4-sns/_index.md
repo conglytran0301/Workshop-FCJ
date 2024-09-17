@@ -54,3 +54,7 @@ pre = "<b>4. </b>"
    {{% notice note %}}After selecting **Confirm subscription** you just need to exit and you're done. (If you choose **click here to unsubscribe**, you will unsubscribe and will not be able to receive **email** information).
    {{% /notice %}}
    ![09-SNS](/images/5/5-sns-09.png?width=90pc)
+
+   #### Reference Links
+
+   - [How to use Amazon SNS with AWS Lambda Function](https://medium.com/cloudnloud/how-to-use-aws-lambda-function-with-amazon-sns-e8fe38097725)

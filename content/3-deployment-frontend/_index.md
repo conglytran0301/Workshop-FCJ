@@ -14,3 +14,11 @@ The web frontend in this architecture is the user interface part of the applicat
 2. [Configure Cloudfront](3-deployment-frontend/2-Cloudfront)
 3. [Configure Route 53 and Certificate Manager](3-deployment-frontend/3-Route53-ACM)
 4. [WAF Initialization](3-deployment-frontend/4-WAF)
+
+#### Reference Links
+
+- [Uploading objects - Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/upload-objects.html)
+- [Improve Your Architecture With Amazon CloudFront](https://catalog.us-east-1.prod.workshops.aws/workshops/4557215e-2a5c-4522-a69b-8d058aba088c/en-US/basic-configuration)
+- [Tutorials - Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Tutorials.html)
+- [DNS validation - AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/dns-validation.html)
+- [Use AWS WAF protections](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-awswaf.html)

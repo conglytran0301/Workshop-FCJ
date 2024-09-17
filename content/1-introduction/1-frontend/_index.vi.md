@@ -28,10 +28,10 @@ Lợi ích: WAF cho phép bạn tạo ra các quy tắc bảo mật tùy chỉnh
 
 Lợi ích: Việc quản lý chứng chỉ SSL/TLS một cách tự động giúp bảo mật giao tiếp giữa người dùng và ứng dụng của bạn mà không cần phải lo lắng về việc gia hạn hoặc cấu hình thủ công các chứng chỉ.
 
-### Liên kết tham khảo
+### Tài liệu tham khảo
 
-- [Amazon Route 53 Documentation](https://docs.aws.amazon.com/Route53/latest/)
-- [Amazon CloudFront Documentation](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-- [Amazon S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
-- [AWS WAF Documentation](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html)
-- [AWS Certificate Manager Documentation](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html)
+- [Tutorials - Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Tutorials.html)
+- [Improve Your Architecture With Amazon CloudFront](https://catalog.us-east-1.prod.workshops.aws/workshops/4557215e-2a5c-4522-a69b-8d058aba088c/en-US/basic-configuration)
+- [Uploading objects - Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/upload-objects.html)
+- [Use AWS WAF protections](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-awswaf.html)
+- [DNS validation - AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/dns-validation.html)

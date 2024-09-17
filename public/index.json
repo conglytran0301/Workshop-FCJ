@@ -1,244 +1,244 @@
 [
 {
-	"uri": "/5-cognito/1-create-userpool/",
+	"uri": "//localhost:1313/5-cognito/1-create-userpool/",
 	"title": "Initialize Cognito User pool",
 	"tags": [],
 	"description": "",
 	"content": "Initialize Cognito User pool Access the AWS Management Console\nFind Cognito Select Cognito In the Cognito interface\nSelect Create user pool In the Create user pool interface\nIn Step 1 Configure sign-in experience\nFind Cognito user pool sign-in options, select User name and Email Select Next In Step 2 Configure security requirements\nPassword policy mode select Cognito defaults Multi-factor authentication select No MFA\nSelf-service account recovery select Enable self-service account recovery - Recommended\nDelivery method for user account recovery messages select Email only\nSelect Next In Step 3 Configure sign-up experience\nAll to default - Select Next In Step 4 Configure message delivery\nEmail select Send email with Cognito FROM email address select no-reply@verificationemail.com Select Next In Step 5 Integrate your app\nUser pool name enter FCJUserPool\nSelect Use the Cognito Hosted UI\nDomain type select Use a Cognito domain\nCognito domain enter Cognito login domain name that you want App type select Public client\nApp client name enter FCJ-Client\nAllowed callback URLs enter http://\u0026lsquo;domain name assigned to your website\u0026rsquo;/contact-me.html\nThe 1st web interface is /index.html and the 2nd web interface is /contact-me.html. When filling in Allowed callback URLs there must be /contact-me.html after your domain name, so that from the interface of /index.html can callback to /contact-me.html.\nScroll down to find Advanced app client settings\nOAuth 2.0 grant types, uncheck Authorization code grant and select Implicit grant\nOpenID Connect scopes select OpenID, Phone, Email, aws.cognito.signin.user.admin, Profile\nAllowed sign-out URLs - optional enter http://\u0026lsquo;domain name assigned to your site\u0026rsquo;/index.html Scroll down and select Next In Step 6 Review and create\nCheck again and select Create user pool "
 },
 {
-	"uri": "/2-preparation/1-clone-code/",
+	"uri": "//localhost:1313/2-preparation/1-clone-code/",
 	"title": "Clone a Repository from Github",
 	"tags": [],
 	"description": "",
 	"content": "Clone a Repository from Github Go to the directory where you want to clone the repository from Github.\nOpen Command Prompt Run the following command to clone the repository to your computer: git clone https://github.com/conglytran0301/Serverless.git\nYou need to install Git on your computer to be able to use the git clone command.\nAfter the git clone command is complete, you will have a copy of the repository on your computer and be able to work with that source code. The code in the repository includes: Front-end website, Python for Lambda function and Backend API.\n"
 },
 {
-	"uri": "/3-deployment-frontend/1-s3-bucket/1-create-s3/",
+	"uri": "//localhost:1313/3-deployment-frontend/1-s3-bucket/1-create-s3/",
 	"title": "Create an S3 bucket",
 	"tags": [],
 	"description": "",
 	"content": "Create an S3 bucket Access the AWS Management Console\nFind S3 Select S3 In the S3 interface\nSelect Buckets Select Create bucket In the Create bucket interface\nBucket name, enter s3-workshop-fcj\nIn the Object Ownership section, select ACLs disabled Note: Because the bucket name is unique on a global scale, if the names are the same, the message \u0026ldquo;Bucket with the same name already exists\u0026rdquo; will appear. Therefore, it is necessary to add a few numbers after it to make your bucket name suitable for the policy.\nIn the Block Public Access settings for this bucket section, leave the default The rest remains the default. Scroll down and select Create bucket Finish creating an S3 bucket to store source website "
 },
 {
-	"uri": "/8-api-gateway/1-create-api/",
+	"uri": "//localhost:1313/8-api-gateway/1-create-api/",
 	"title": "Create API",
 	"tags": [],
 	"description": "",
 	"content": "Create API Access the AWS Management Console\nFind API Select API Gateway In the APIs interface Select Create API\nIn the Create API interface\nFind REST API and select Build In the Create REST API interface\nSelect New API API name enter FCJ-APIGateway API endpoint type select Regional Select Create API After creating the API\nGo to Resources Select Create resource In the Create resource interface\nResource name enter serverless Select Create resource "
 },
 {
-	"uri": "/3-deployment-frontend/2-cloudfront/1-create-cloudfront/",
+	"uri": "//localhost:1313/3-deployment-frontend/2-cloudfront/1-create-cloudfront/",
 	"title": "Create Cloudfront",
 	"tags": [],
 	"description": "",
 	"content": "Create Cloudfront Access the AWS Management Console\nFind Cloudfront Select Cloudfront In the Cloudfront interface\nSelect Distributions Select Create distribution In the Create distribution interface\nOrigin domain, select the name of the created S3 bucket\nOrigin access, select Origin access control settings (recommended)\nOrigin access control, select Create new OAC In the Create new OAC interface, leave it to default. Then select Create After Create new OAC, select the OAC you just created Scroll down to the Viewer protocol policy section, select Redirect HTTP to HTTPS\nIn the Allowed HTTP methods section, select GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE In the Web Application Firewall (WAF) section, select Do not enable security protections The rest is left to default. Scroll down and select Create distribution Congratulations on successfully creating Distribution\nThe initialization process will take 4-5 minutes to complete.\n"
 },
 {
-	"uri": "/3-deployment-frontend/1-s3-bucket/",
+	"uri": "//localhost:1313/3-deployment-frontend/1-s3-bucket/",
 	"title": "Initialize an S3 Bucket",
 	"tags": [],
 	"description": "",
 	"content": "Initialize an S3 bucket In this lab, we\u0026rsquo;ll create an S3 bucket and then upload the data to prepare for hosting a static website.\nContent Create an S3 bucket Upload Data Enable Static website hosting "
 },
 {
-	"uri": "/1-introduction/",
+	"uri": "//localhost:1313/1-introduction/",
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
 	"content": "Workflow 1. User Accesses the Application via Web Browser\nWhen a user wants to access the application, they enter the website URL in the browser. This can be a website providing static content (HTML, CSS, JavaScript) or interactive features like login, registration, or data manipulation. The access request is sent from the browser over the Internet to the AWS system for processing. 2. Route 53 Resolves Domain Name and Directs Request\nFirst, the request from the browser is sent to Amazon Route 53, AWS’s DNS (Domain Name System) service. Route 53\u0026rsquo;s job is to resolve the domain name of the application into a specific IP address, helping to route traffic to the correct resources in the AWS system. Route 53 can be configured to support load balancing between multiple servers or geographical regions to optimize access speed and ensure high availability.\nOnce the domain is resolved, the user\u0026rsquo;s request is forwarded to CloudFront, AWS’s content delivery network (CDN).\n3. CloudFront Receives Request and Checks Cache\nAmazon CloudFront acts as a Content Delivery Network (CDN), distributing content from edge locations (network points closest to the user) to reduce latency and improve website performance.\nWhen CloudFront receives the request from the user, it checks if static resources (like HTML, CSS, JavaScript files, images) are available in the cache of the closest edge location. If the resource is cached, CloudFront returns it immediately without needing to access the backend, reducing response time.\nIf the resource is not cached, CloudFront fetches the static files from Amazon S3, the main storage for the application’s static content, and delivers it to the user.\n4. Amazon S3 Supplies Static Content to CloudFront\nAmazon S3 (Simple Storage Service) is used to store static files for the application such as images, videos, CSS, and JavaScript. It’s a highly durable and scalable storage service. When CloudFront doesn’t find the resource in its cache, it requests the static content from S3 and caches it temporarily for future requests. 5. Web Application Firewall (WAF) Protects the System\nAWS WAF (Web Application Firewall) is integrated with CloudFront to protect the system from common attacks, such as SQL Injection, Cross-Site Scripting (XSS), and DDoS (Distributed Denial of Service) attacks.\nWAF can be configured with specific security rules to inspect and block malicious requests before they reach the application, thus safeguarding the system from common vulnerabilities.\n6. Certificate Manager Handles SSL Certificates for Data Encryption\nAmazon Certificate Manager (ACM) manages SSL/TLS certificates for the system, ensuring that all communications between the user and the system are encrypted, protecting information from man-in-the-middle attacks.\nCertificate Manager automatically handles SSL certificate management and renewal to ensure secure connections are always functional. This is especially crucial in environments where high data security is required.\n7. User Authentication via Cognito User Pool\nFor requests requiring authentication (e.g., login, registration), the user interacts with Amazon Cognito User Pool, a user identity management service.\nCognito allows users to log in or sign up for accounts on the application. When the user provides login credentials (email, password), Cognito authenticates the credentials and issues JWT tokens to authorize subsequent requests from the user.\nAdditionally, Cognito supports multi-factor authentication (MFA) and integrates with external services like Facebook, Google for convenient user login.\n8. API Gateway Handles Dynamic Requests from Users\nFor complex requests such as retrieving data from a database or processing backend tasks, the user’s request is sent from the browser via API Gateway.\nAmazon API Gateway acts as a gateway between the user and backend services. It receives HTTP(S) requests and forwards them to AWS Lambda for processing. API Gateway can integrate with Cognito to verify user tokens before granting access to sensitive resources.\nAdditionally, API Gateway supports version control for APIs, throttling, and request monitoring to ensure performance and security.\n9. Lambda Executes Business Logic\nAWS Lambda is a serverless compute service that only runs when triggered by events. When API Gateway forwards a request from the user, Lambda executes the business logic of the application without the need to manage servers.\nLambda can perform various tasks such as handling login information, retrieving data from the database, or invoking other services for complex processing. Lambda automatically scales to meet the demand and charges only for the execution time, making it cost-effective for the system.\n10. DynamoDB Stores and Retrieves Dynamic Data\nAmazon DynamoDB is a NoSQL database that offers flexible scaling. When Lambda needs to retrieve or write data, it interacts with DynamoDB.\nDynamoDB stores the dynamic data of the application, such as user information, transaction states, or application-related data. DynamoDB supports very fast read/write speeds and handles large data volumes, ensuring smooth operation even when many users access the application simultaneously.\n11. SNS Sends Notifications\nWhen important events or state changes occur in the application (e.g., a new user registration or a new order), Lambda can trigger Amazon SNS (Simple Notification Service) to send notifications.\nSNS can send notifications through various channels such as email, SMS, or to other systems using a pub/sub mechanism. This allows the application to provide real-time information to users or administrators.\n12. User Receives Response\nAfter the requests have been processed by Lambda and data has been retrieved from DynamoDB or other sources, API Gateway receives the response from Lambda and forwards the results back to the user’s browser.\nFinally, the user receives the data they requested, or relevant notifications (such as account registration confirmation, order updates, etc.).\nSummary Each step in the system plays a crucial role in handling user requests from accessing the website, sending requests, to receiving responses. The serverless system leverages services like CloudFront, Lambda, and API Gateway to reduce infrastructure management while ensuring the application’s performance and security. Components such as Cognito, DynamoDB, and SNS provide easy user management, data storage, and notification capabilities, allowing for the development of a highly scalable and robust distributed application.\nContent Routing, Content Distribution, and Security Logic Processing, User Management, and System Interaction "
 },
 {
-	"uri": "/1-introduction/1-frontend/",
+	"uri": "//localhost:1313/1-introduction/1-frontend/",
 	"title": "Routing, Content Distribution, and Security",
 	"tags": [],
 	"description": "",
-	"content": "Overview 1. Route53: is a highly scalable DNS (Domain Name System) service from AWS. It helps convert easy-to-remember domain names that users type into their browsers into the IP addresses of AWS resources.\nBenefits: Route 53 ensures the routing of traffic to the right AWS resources with high reliability and speed. It also offers DNS management, health checks, and geo-based routing, which optimizes the global user experience.\n2. CloudFront: is an AWS content delivery network (CDN) that delivers static content such as images, videos, and documents from the servers closest to the user.\nBenefits: CloudFront minimizes latency and speeds up website loading thanks to global edge locations. It also integrates with AWS security services such as AWS WAF and AWS Shield to protect content from online threats.\n3. S3 (Simple Storage Service): is AWS\u0026rsquo;s highly scalable object storage service, designed to store and retrieve any amount of data from anywhere on the web.\nBenefits: S3 provides reliable, highly secure storage at a reasonable cost. You only pay for the amount and amount of data used, which optimizes operating costs.\n4. WAF (Web Application Firewall): is a web application firewall that helps protect web applications from common attacks such as SQL injection and cross-site scripting (XSS).\nBenefits: WAFs allow you to create custom security rules to protect your applications, while also providing the ability to monitor traffic and prevent threats before they can cause damage.\n5. AWS Certificate Manager: makes it easier to manage SSL/TLS certificates, from issuance, renewal, to deploying them on other AWS services such as CloudFront.\nBenefits: Automated SSL/TLS certificate management secures communication between your users and applications without having to worry about manually renewing or configuring certificates.\nReference Links Amazon Route 53 Documentation Amazon CloudFront Documentation Amazon S3 Documentation AWS WAF Documentation AWS Certificate Manager Documentation "
+	"content": "Overview 1. Route53: is a highly scalable DNS (Domain Name System) service from AWS. It helps convert easy-to-remember domain names that users type into their browsers into the IP addresses of AWS resources.\nBenefits: Route 53 ensures the routing of traffic to the right AWS resources with high reliability and speed. It also offers DNS management, health checks, and geo-based routing, which optimizes the global user experience.\n2. CloudFront: is an AWS content delivery network (CDN) that delivers static content such as images, videos, and documents from the servers closest to the user.\nBenefits: CloudFront minimizes latency and speeds up website loading thanks to global edge locations. It also integrates with AWS security services such as AWS WAF and AWS Shield to protect content from online threats.\n3. S3 (Simple Storage Service): is AWS\u0026rsquo;s highly scalable object storage service, designed to store and retrieve any amount of data from anywhere on the web.\nBenefits: S3 provides reliable, highly secure storage at a reasonable cost. You only pay for the amount and amount of data used, which optimizes operating costs.\n4. WAF (Web Application Firewall): is a web application firewall that helps protect web applications from common attacks such as SQL injection and cross-site scripting (XSS).\nBenefits: WAFs allow you to create custom security rules to protect your applications, while also providing the ability to monitor traffic and prevent threats before they can cause damage.\n5. AWS Certificate Manager: makes it easier to manage SSL/TLS certificates, from issuance, renewal, to deploying them on other AWS services such as CloudFront.\nBenefits: Automated SSL/TLS certificate management secures communication between your users and applications without having to worry about manually renewing or configuring certificates.\nReference Links Tutorials - Amazon Route 53 Improve Your Architecture With Amazon CloudFront Uploading objects - Amazon S3 Use AWS WAF protections DNS validation - AWS Certificate Manager "
 },
 {
-	"uri": "/",
+	"uri": "//localhost:1313/",
 	"title": "Serverless Web Application Building on AWS",
 	"tags": [],
 	"description": "",
 	"content": "Serverless Web Application Building on AWS Overview In this article, we will build a Web application system that uses Serverless services on the AWS platform. It leverages services such as S3 for static content storage, API Gateway for managing and routing API requests, Lambda for business logic processing, and DynamoDB for dynamic data storage. Additional services such as Route53, CloudFront, and WAF help ensure high performance and security for applications. In addition, Cognito is used to manage user authentication, and SNS helps send instant notifications. Overall, this architecture provides flexibility, scalability, and cost-effectiveness, while optimizing user experience and system security.\nContent Introduction Preparation Steps Front-end deployment Initialize SNS Initialize Cognito Initialize DynamoDB Deploy Lambda function Setting up API Gateway Check Web Application Clean up resources "
 },
 {
-	"uri": "/5-cognito/2-test-userpool/",
+	"uri": "//localhost:1313/5-cognito/2-test-userpool/",
 	"title": "Check out Cognito User pool",
 	"tags": [],
 	"description": "",
 	"content": "Check out Cognito User pool In the User pool interface\nSelect the User pool that you just created Select App integration Scroll down to the App clients and analytics section\nSelect the App client name you created Scroll down to the Hosted UI section\nSelect View Hosted UI You have opened the account registration page of Cognito, but you have not yet entered the 1st interface (/index.html). To access this interface, you need to add the link URL of Cognito to your website code.\nIn the Login interface of Cognito\nSelect copy the link on Cognito\u0026rsquo;s login page Open the code you cloned\nSelect the file index.html. Find line \u0026ldquo;Change - Sign in Link\u0026rdquo; and paste the link. Next, select the file contact-me.html. Find line \u0026ldquo;Change - SignOut URL\u0026rdquo; and paste the link. //The SignIn and SignOut paths have the following structure:\rMAKE URL OF SIGN IN /login?client_id=\u0026amp;response_type=token\u0026amp;scope=aws.cognito.signin.user.admin+email+openid+phone+profile\u0026amp;redirect_uri=\rMAKE URL OF SIGN OUT /logout?client_id=\u0026amp;response_type=token\u0026amp;scope=aws.cognito.signin.user.admin+email+openid+phone+profile\u0026amp;redirect_uri= Then go to the main.js file\nFind window.location.href and paste your domain name with the /index.html. Then update again on your S3.\nGo back to the website interface\nAfter updating on S3, you return to the Hosted UI interface\nSelect View Hosted UI\nAt this time, you have entered the 1st website\nSelect LOGIN Select Sign up to register for an account Username enter \u0026lsquo;Your Username\u0026rsquo;\nEmail enter \u0026lsquo;Your Email\u0026rsquo;\nPassword enter \u0026lsquo;Your Password\u0026rsquo; Go to the Email you just registered to get code Code has been sent to your Email Copy the code and paste it into the box of Verification code\nThen select Confirm account Congratulations, you have successfully registered an account and entered the 2nd interface "
 },
 {
-	"uri": "/3-deployment-frontend/2-cloudfront/2-cloudfront-s3policy/",
+	"uri": "//localhost:1313/3-deployment-frontend/2-cloudfront/2-cloudfront-s3policy/",
 	"title": "Cloudfront Origin request policy",
 	"tags": [],
 	"description": "",
 	"content": "Cloudfront Origin request policy In the Distributions interface\nSelect the Distributions you just created Select Origins - Select the Origin name you just created\nSelect Edit On the Edit origin interface - Select the OAC you just created.\nSelect Copy policy - Redirect to the S3 bucket you created After entering your Bucket, select Permissions Scroll down to find Bucket policy, select Edit Paste the code into the S3 Bucket policy - Select Save changes You have successfully created an Origin request policy\n"
 },
 {
-	"uri": "/3-deployment-frontend/2-cloudfront/",
+	"uri": "//localhost:1313/3-deployment-frontend/2-cloudfront/",
 	"title": "Configure Cloudfront",
 	"tags": [],
 	"description": "",
 	"content": "Configure Cloudfront CloudFront is AWS\u0026rsquo;s CDN, accelerating content delivery from origins like S3. Configuring Origin Request Policy and Lambda@Edge helps optimize and customize requests before reaching the origin.\nContent Create Cloudfront Cloudfront Origin request policy Lambda@Edge Configuration for Origin Website "
 },
 {
-	"uri": "/8-api-gateway/2-create-method/",
+	"uri": "//localhost:1313/8-api-gateway/2-create-method/",
 	"title": "Create Method",
 	"tags": [],
 	"description": "",
 	"content": "Create Method In the Resources interface\nSelect Create method In the Create method interface\nMethod type select GET\nIntegration type select Lambda function Lambda function select the Lambda named FCJ-LambdaFunction that you created\nScroll down and select Create method "
 },
 {
-	"uri": "/2-preparation/2-domain-name/",
+	"uri": "//localhost:1313/2-preparation/2-domain-name/",
 	"title": "Domain Name Registration",
 	"tags": [],
 	"description": "",
 	"content": "Register a domain name with Amazon Route 53 Access the AWS Management Console\nFind Route 53 Select Route 53 In the Route 53 interface\nSelect Registered domains In the Registered domains interface\nEnter the domain name you want to register\nSelect Search\nClick Select the domain name you want to register\nSelect Proceed to checkout In the Pricing section\nChoice of subscription and renewal time\nSelect Next In the Contact information section\nFill in contact information\nSelect Next In the Review and submit section\nDouble-check information Select Submit Check the domain name\nGo to Registered domains to check the registered domain name information. If your domain name registration fails, please contact AWS Support for assistance.\nRegister a domain name with another domain provider Go to the Console of the domain provider you purchased\nSelect Manage Domain Name\nSelect the domain name that you registered Select Name Server\nEnter the Name Server provided in Route53\u0026rsquo;s Hosted zones To be able to create DNS from another domain provider to AWS, you need to create Hosted zones in Route 53. Then enter the Name Server provided by Route 53 into the Name Server import of another domain provider. steps to register for Hosted zones you see the instructions at here: \u0026ldquo;Configure Route 53 and Certificate Manager\u0026rdquo;. Note: Changes may take up to 24 hours to take effect.\n"
 },
 {
-	"uri": "/1-introduction/2-system/",
+	"uri": "//localhost:1313/1-introduction/2-system/",
 	"title": "Logic Processing, User Management, and System Interaction",
 	"tags": [],
 	"description": "",
-	"content": "Overview 1. API Gateway: is a powerful AWS API management service that helps you create, deploy, and manage RESTful APIs with ease.\nBenefits: API Gateway provides traffic management, performance monitoring, and API security, helping to ensure that your application can handle millions of requests with high reliability and performance.\n2. Lambda: is a serverless computing service that allows you to run code without managing servers. All you need to do is provide the code, and Lambda will automatically handle everything needed to run and scale the code.\nBenefits: With Lambda, you only pay for the execution time of your code, which optimizes costs and eliminates the need to manage infrastructure. Lambda also automatically scales to meet the needs of the application.\n3. DynamoDB: is a highly scalable NoSQL database designed to handle any workload with low latency.\nBenefits: DynamoDB provides reliable performance, with auto-scaling, helping you build applications that can handle millions of requests per second without performance struggles.\n4. Cognito: provides user management and authentication services, allowing users to securely register, log in, and access resources.\nBenefits: Cognito simplifies user management and integrates with other AWS services to provide comprehensive security and easy access management.\n5. SNS (Simple Notification Service): is AWS\u0026rsquo;s global messaging service that allows you to send notifications from the system to users via email, SMS, or to other systems.\nBenefits: SNS helps ensure that important notifications and information are sent quickly and efficiently, supporting the tracking and management of app activity.\nReference Links Amazon API Gateway Documentation AWS Lambda Documentation Amazon DynamoDB Documentation Amazon Cognito Documentation Amazon SNS Documentation "
+	"content": "Overview 1. API Gateway: is a powerful AWS API management service that helps you create, deploy, and manage RESTful APIs with ease.\nBenefits: API Gateway provides traffic management, performance monitoring, and API security, helping to ensure that your application can handle millions of requests with high reliability and performance.\n2. Lambda: is a serverless computing service that allows you to run code without managing servers. All you need to do is provide the code, and Lambda will automatically handle everything needed to run and scale the code.\nBenefits: With Lambda, you only pay for the execution time of your code, which optimizes costs and eliminates the need to manage infrastructure. Lambda also automatically scales to meet the needs of the application.\n3. DynamoDB: is a highly scalable NoSQL database designed to handle any workload with low latency.\nBenefits: DynamoDB provides reliable performance, with auto-scaling, helping you build applications that can handle millions of requests per second without performance struggles.\n4. Cognito: provides user management and authentication services, allowing users to securely register, log in, and access resources.\nBenefits: Cognito simplifies user management and integrates with other AWS services to provide comprehensive security and easy access management.\n5. SNS (Simple Notification Service): is AWS\u0026rsquo;s global messaging service that allows you to send notifications from the system to users via email, SMS, or to other systems.\nBenefits: SNS helps ensure that important notifications and information are sent quickly and efficiently, supporting the tracking and management of app activity.\nReference Links API Gateway REST APIs Building Lambda functions with Python Working with tables and data in DynamoDB Amazon Cognito - Control access to REST APIs using Amazon Cognito user pools as an authorizer How to use Amazon SNS with AWS Lambda Function "
 },
 {
-	"uri": "/2-preparation/",
+	"uri": "//localhost:1313/2-preparation/",
 	"title": "Preparation steps",
 	"tags": [],
 	"description": "",
 	"content": "Thorough preparation of each component will help you implement this architecture efficiently and ensure that the application works stably.\nContent Clone repository from Github Domain name registration "
 },
 {
-	"uri": "/3-deployment-frontend/1-s3-bucket/2-upload-s3/",
+	"uri": "//localhost:1313/3-deployment-frontend/1-s3-bucket/2-upload-s3/",
 	"title": "Upload Data",
 	"tags": [],
 	"description": "",
 	"content": "Upload Data we\u0026rsquo;ll upload source code to the S3 bucket for storage. If you haven\u0026rsquo;t downloaded the source code yet, go back to 2.1.Clone repository from Github to clone the repo.\nIn the S3 bucket you just created\nThere is currently no Object in Bucket Select Upload to upload your data In the Upload interface\nGo to the Folder named FCJ-Serverless that was cloned from Github in the above step\nPress CRLT + A key combination to select all folders\nThen drag the entire Folder and File and drop it into the Upload interface of the S3 bucket. Once all folders have been selected, drop them into Bucket Scroll down to the bottom of the page and select Upload Once the Upload is complete, you will see the files that have been added to the S3 Bucket "
 },
 {
-	"uri": "/3-deployment-frontend/3-route53-acm/",
+	"uri": "//localhost:1313/3-deployment-frontend/3-route53-acm/",
 	"title": "Configure Route 53 and Certificate Manager",
 	"tags": [],
 	"description": "",
-	"content": "Configure Route 53 Access the AWS Management Console\nFind Route 53 Select Route 53 Trong giao diện Route 53\nFind Hosted zones Select Create hosted zone In the Create hosted zone interface\nWrite the Domain name registered in the previous post In the Type section, select Public hosted zone Select Create hosted zone Return to the Hosted zones interface\nGo to the Hosted zone name you just created Select Create record\nIn the Create record interface\nRecord type select CNAME Record name enter \u0026lsquo;workshop\u0026rsquo; Value enter Distribution domain name of Cloudfront (e.g. \u0026lsquo;https://d23akwur3rh4c.cloudfront.net\u0026rsquo;) - Select Create records Configuring the Certificate Manager Access the AWS Management Console\nFind Certificate Manager Select Certificate Manager In the Certificate Manager interface\nMoved Region to N.Virginia Select Request certificate\nCertificate type select Request a public certificate\nSelect Next In the Request public certificate section\nDomain names enter workshop.conglyblog.id.vn The rest keeps the default - Scroll down and select Request After the Request is successful\nFind Domains\nSelect Create records in Route 53 records have now been created Go to Route 53 and check again Congratulations, you have successfully created a Certificate for your domain name.\n"
+	"content": "Configure Route 53 Access the AWS Management Console\nFind Route 53 Select Route 53 Trong giao diện Route 53\nFind Hosted zones Select Create hosted zone In the Create hosted zone interface\nWrite the Domain name registered in the previous post In the Type section, select Public hosted zone Select Create hosted zone Return to the Hosted zones interface\nGo to the Hosted zone name you just created Select Create record\nIn the Create record interface\nRecord type select CNAME Record name enter \u0026lsquo;workshop\u0026rsquo; Value enter Distribution domain name of Cloudfront (e.g. \u0026lsquo;https://d23akwur3rh4c.cloudfront.net\u0026rsquo;) - Select Create records Configuring the Certificate Manager Access the AWS Management Console\nFind Certificate Manager Select Certificate Manager In the Certificate Manager interface\nMoved Region to N.Virginia Select Request certificate\nCertificate type select Request a public certificate\nSelect Next In the Request public certificate section\nDomain names enter workshop.conglyblog.id.vn The rest keeps the default - Scroll down and select Request After the Request is successful\nFind Domains\nSelect Create records in Route 53 records have now been created Go to Route 53 and check again Congratulations, you have successfully created a Certificate for your domain name.\nReference Links "
 },
 {
-	"uri": "/8-api-gateway/3-create-authorizers/",
+	"uri": "//localhost:1313/8-api-gateway/3-create-authorizers/",
 	"title": "Create Authorizer",
 	"tags": [],
 	"description": "",
 	"content": "Create Authorizer In the API\nSelect Authorizers Select Create authorizer In the Create authorizer interface\nAuthorizer name enter FCJ-Auth Authorizer type select Cognito Cognito user pool select FCJ-UserPool Token source enter Authorization Select Create authorizer Go to the Resources interface\nSelect GET\nSelect Method request\nSelect Edit 4. In the Edit method request interface\nAuthorization select FCJ-Auth\nAuthorization scopes enter email, then select add\nScroll down and select Save "
 },
 {
-	"uri": "/3-deployment-frontend/1-s3-bucket/3-web-hosting/",
+	"uri": "//localhost:1313/3-deployment-frontend/1-s3-bucket/3-web-hosting/",
 	"title": "Enable Static website hosting",
 	"tags": [],
 	"description": "",
 	"content": "Enable Static website hosting Go to the created S3 bucke\nSelect Properties In the Properties interface\nScroll down to find Static website hosting and select Edit In the interface Edit static website hosting\nIn the Static website hosting section, select Enable\nIn the Hosting type section, select Host a static website\nIn the Index document section, enter index.html\nIn the Error document section, enter error.html Scroll down and select Save changes "
 },
 {
-	"uri": "/3-deployment-frontend/",
+	"uri": "//localhost:1313/3-deployment-frontend/",
 	"title": "Front-end Web Deployment",
 	"tags": [],
 	"description": "",
-	"content": "The web frontend in this architecture is the user interface part of the application, which is deployed and managed on AWS services to ensure efficiency and security. Frontend static content, including HTML, CSS, and JavaScript, is stored on an object hosting service, which is then delivered to users through a content delivery network (CDN). This helps to ensure that the website loads quickly and works stably across the globe. For security, the frontend is protected by a web application firewall (WAF) and uses SSL/TLS certificates, which are managed through AWS services, ensuring user data is encrypted and secure. In addition, the AWS DNS system is configured to direct domain names to the necessary resources, creating a robust and secure frontend web architecture.\nContent Initialize an S3 Bucket Configure Cloudfront Configure Route 53 and Certificate Manager WAF Initialization "
+	"content": "The web frontend in this architecture is the user interface part of the application, which is deployed and managed on AWS services to ensure efficiency and security. Frontend static content, including HTML, CSS, and JavaScript, is stored on an object hosting service, which is then delivered to users through a content delivery network (CDN). This helps to ensure that the website loads quickly and works stably across the globe. For security, the frontend is protected by a web application firewall (WAF) and uses SSL/TLS certificates, which are managed through AWS services, ensuring user data is encrypted and secure. In addition, the AWS DNS system is configured to direct domain names to the necessary resources, creating a robust and secure frontend web architecture.\nContent Initialize an S3 Bucket Configure Cloudfront Configure Route 53 and Certificate Manager WAF Initialization Reference Links Uploading objects - Amazon S3 Improve Your Architecture With Amazon CloudFront Tutorials - Amazon Route 53 DNS validation - AWS Certificate Manager Use AWS WAF protections "
 },
 {
-	"uri": "/3-deployment-frontend/2-cloudfront/3-lambda-edge/",
+	"uri": "//localhost:1313/3-deployment-frontend/2-cloudfront/3-lambda-edge/",
 	"title": "Lambda@Edge Configuration for Origin Website",
 	"tags": [],
 	"description": "",
 	"content": "Lambda@Edge Configuration for Origin Website In the Cloudfront interface\nSelect Functions Select Create function In the Create function interface\nEnter Name: fcj-lambda-edge In the Runtime section, select cloudfront-js-2.0 Select Create function In the Functions interface\nSelect the Functions that you just created Scroll down to the Build section\nIn the Function code section, select Development\nCopy this code to:\nfunction handler(event) {\rvar request = event.request;\rvar uri = request.uri;\r// Check whether the URI is missing a file name.\rif (uri.endsWith(\u0026#39;/\u0026#39;)) {\rrequest.uri += \u0026#39;index.html\u0026#39;;\r}\r// Check whether the URI is missing a file extension.\relse if (!uri.includes(\u0026#39;.\u0026#39;)) {\rrequest.uri += \u0026#39;/index.html\u0026#39;;\r}\rreturn request;\r} Then select Save changes Go to Publish\nSelect Publish function Return to the Distributions interface\nSelect the Distributions you created Select Behaviors Select Behavior with origin forward to your S3 Then select Edit In the Edit interface\nScroll down to find Function associations- optional Configuration with Viewer request Function type select CloudFront Functions Function ARN/Name select fcj-lambda-edge you just created above Select Save changes "
 },
 {
-	"uri": "/4-sns/",
+	"uri": "//localhost:1313/4-sns/",
 	"title": "Initialize SNS",
 	"tags": [],
 	"description": "",
-	"content": "Initialize SNS Access the AWS Management Console\nFind SNS Select Simple Notification Servicet In the interface of SNS\nIn the Create topic section, enter the Topic name: FCJ-SNSTopic Select Next step In the interface of Create topic\nIn the Type section, select Standard. The rest keeps the default\nScroll down to the bottom of the page and select Create topic After creating a topic, select Subscriptions in the left sidebar\nSelect Create subscription In the Create subscription interface\nIn the Topic ARN section, select the Topic you just created Protocol select Email Endpoint enter your personal email Then select Create subscription After Create subscription\nGo to the email you entered when you created your subscription\nSelect Confirm subscription to confirm the subscription You have completed Confirm subscription\nAfter selecting Confirm subscription you just need to exit and you\u0026rsquo;re done. (If you choose click here to unsubscribe, you will unsubscribe and will not be able to receive email information).\n"
+	"content": "Initialize SNS Access the AWS Management Console\nFind SNS Select Simple Notification Servicet In the interface of SNS\nIn the Create topic section, enter the Topic name: FCJ-SNSTopic Select Next step In the interface of Create topic\nIn the Type section, select Standard. The rest keeps the default\nScroll down to the bottom of the page and select Create topic After creating a topic, select Subscriptions in the left sidebar\nSelect Create subscription In the Create subscription interface\nIn the Topic ARN section, select the Topic you just created Protocol select Email Endpoint enter your personal email Then select Create subscription After Create subscription\nGo to the email you entered when you created your subscription\nSelect Confirm subscription to confirm the subscription You have completed Confirm subscription\nAfter selecting Confirm subscription you just need to exit and you\u0026rsquo;re done. (If you choose click here to unsubscribe, you will unsubscribe and will not be able to receive email information).\nReference Links How to use Amazon SNS with AWS Lambda Function "
 },
 {
-	"uri": "/8-api-gateway/4-create-stages/",
+	"uri": "//localhost:1313/8-api-gateway/4-create-stages/",
 	"title": "Create Stage",
 	"tags": [],
 	"description": "",
 	"content": "Create Stage In the API interface you created\nSelect Resources Select Deploy API In the Deploy API interface\nStage Select New stage Stage name enter Dev Select Deploy "
 },
 {
-	"uri": "/3-deployment-frontend/4-waf/",
+	"uri": "//localhost:1313/3-deployment-frontend/4-waf/",
 	"title": "WAF Initialization",
 	"tags": [],
 	"description": "",
 	"content": "WAF Initialization When you create a Web ACL, it will cost you $5 for 1 month of use.\nAccess the AWS Management Console\nFind WAF Select WAF In the WAF interface\nSelect Create web ACL In the Create web ACL interface\nStep 1 Describe web ACL and associate it to AWS resources\nResource type select Amazon CloudFront distributions\nName enter WAF-Demo Associated AWS resources select Add AWS resources Select the domain name you registered for Cloudfront\nThen select Add CloudFront distributions select Default\nSelect Next Step 2 Add rules and rule groups\nRules select Add rules\nSelect Add managed rule groups Select AWS managed rule groups Find the Free rule groups section\nAmazon IP reputation list select Add to web ACL Scroll down and select Add rules Default action select Allow\nSelect Next Step 3 Set rule priority\nSelect Next Step 4 Configure metrics\nSelect Next Double-check and select Create web ACL "
 },
 {
-	"uri": "/5-cognito/",
+	"uri": "//localhost:1313/5-cognito/",
 	"title": "Initialize Cognito",
 	"tags": [],
 	"description": "",
-	"content": "Content:\nInitialize Cognito User pool Check out Cognito User pool "
+	"content": "Content Initialize Cognito User pool Check out Cognito User pool Reference Links Amazon Cognito - Control access to REST APIs using Amazon Cognito user pools as an authorizer "
 },
 {
-	"uri": "/8-api-gateway/5-enable-cors/",
+	"uri": "//localhost:1313/8-api-gateway/5-enable-cors/",
 	"title": "CORS Configuration Setup",
 	"tags": [],
 	"description": "",
 	"content": "CORS Configuration Setup In the API interface\nSelect Resources Select /serverless Select Enable CORS In the Enable CORS interface\nGateway responses select Default 4XX and Default 5XX Access-Control-Allow-Methods select GET Access-Control-Allow-Headers enter Authorization at the end of the line Select Save "
 },
 {
-	"uri": "/8-api-gateway/6-config-api/",
+	"uri": "//localhost:1313/8-api-gateway/6-config-api/",
 	"title": "API Configuration",
 	"tags": [],
 	"description": "",
 	"content": "API Configuration In the API interface Select Stages Select Dev Copy Invoke URL \u0026lsquo;https://7s5pb02ska.execute-api.ap-southeast-1.amazonaws.com/Dev' In the code web interface Find the file api.js Paste the Invoke URL into line 8 and add /serverless after it. Save and upload to S3 "
 },
 {
-	"uri": "/6-dynamodb/",
+	"uri": "//localhost:1313/6-dynamodb/",
 	"title": "Initialize DynamoDB",
 	"tags": [],
 	"description": "",
-	"content": "Initialize DynamoDB Access the AWS Management Console\nFind DynamoDB Select DynamoDB In the Dashboard interface of DynamoDB - Select Create table In the Create table interface\nTable name enter FCJ-DynamoDB\nPartition key enter id select string\nSort key enter name select string Table settings to default\nScroll down and select Create table "
+	"content": "Initialize DynamoDB Access the AWS Management Console\nFind DynamoDB Select DynamoDB In the Dashboard interface of DynamoDB - Select Create table In the Create table interface\nTable name enter FCJ-DynamoDB\nPartition key enter id select string\nSort key enter name select string Table settings to default\nScroll down and select Create table Reference Links Working with tables and data in DynamoDB "
 },
 {
-	"uri": "/7-lambda-function/",
+	"uri": "//localhost:1313/7-lambda-function/",
 	"title": "Deploy Lambda function",
 	"tags": [],
 	"description": "",
-	"content": "Deploy Lambda function Access the AWS Management Console\nFind Lambda Select Lambda In the Lambda interface\nSelect Create a function In the Create function interface\nSelect Author from scratch\nFunction name enter FCJ-LambdaFunction\nRuntime select Python 3.9\nArchitecture select x86_64\nScroll down and select Create function Once created, you will see the following interface Enter the Source code for the Lambda Function\nSelect Code Paste code into the import boto3\rimport uuid\r# Tạo tài nguyên DynamoDB\rdynamodb = boto3.resource(\u0026#39;dynamodb\u0026#39;)\r# Đặt tên bảng DynamoDB\rtable = dynamodb.Table(\u0026#39;FCJ-DynamoDB\u0026#39;)\r# Tạo một SNS Client\rclient_sns = boto3.client(\u0026#39;sns\u0026#39;)\r# Hàm này sẽ được kích hoạt bởi API Gateway\rdef lambda_handler(event, context):\rtry:\r# Kiểm tra sự tồn tại của các key bắt buộc\rrequired_keys = [\u0026#39;name\u0026#39;, \u0026#39;email\u0026#39;, \u0026#39;subject\u0026#39;, \u0026#39;description\u0026#39;]\rfor key in required_keys:\rif key not in event:\rraise KeyError(f\u0026#34;Missing required key: {key}\u0026#34;)\r# Tạo một ID người dùng\rid = str(uuid.uuid4())\r# Gửi tin nhắn đến SNS\rhandle_sns(id, event)\r# Lưu trữ dữ liệu vào DynamoDB\rstatusCode = handle_dynamo_db(id, event)\rreturn {\r\u0026#39;statusCode\u0026#39;: statusCode,\r}\rexcept KeyError as ke:\rreturn {\r\u0026#39;statusCode\u0026#39;: 400,\r\u0026#39;body\u0026#39;: json.dumps(f\u0026#34;Missing required key: {str(ke)}\u0026#34;)\r}\rexcept Exception as e:\rreturn {\r\u0026#39;statusCode\u0026#39;: 500,\r\u0026#39;body\u0026#39;: json.dumps(\u0026#39;Error occurred: \u0026#39; + str(e))\r}\r# Gửi một tin nhắn đến SNS\rdef handle_sns(id, event):\rtry:\rsns_message = f\u0026#34;\u0026#34;\u0026#34;\rYou got a new Message from https://workshop.conglyblog.id.vn\rThe message is as follows\rid : {id}\rName : {event[\u0026#39;name\u0026#39;]}\remail : {event[\u0026#39;email\u0026#39;]}\rMessage : {event[\u0026#39;description\u0026#39;]}\rSubject : {event[\u0026#39;subject\u0026#39;]}\r\u0026#34;\u0026#34;\u0026#34;\rclient_sns.publish(\r# Thay đổi ARN với ARN của SNS của bạn\rTopicArn=\u0026#39;arn:aws:sns:ap-southeast-1:336760284039:FCJ-SNSTopic\u0026#39;,\rMessage=sns_message,\rSubject=event[\u0026#39;subject\u0026#39;]\r)\rexcept KeyError as ke:\rprint(f\u0026#34;Key error: {ke}\u0026#34;)\rraise\rexcept Exception as e:\rprint(f\u0026#34;An error occurred when sending SNS: {e}\u0026#34;)\rraise\r# Thêm một mục vào bảng DynamoDB\rdef handle_dynamo_db(id, event):\rtry:\rresponse = table.put_item(\rItem={\r\u0026#39;id\u0026#39;: id,\r\u0026#39;name\u0026#39;: event[\u0026#39;name\u0026#39;],\r\u0026#39;email\u0026#39;: event[\u0026#39;email\u0026#39;],\r\u0026#39;subject\u0026#39;: event[\u0026#39;subject\u0026#39;],\r\u0026#39;description\u0026#39;: event[\u0026#39;description\u0026#39;],\r}\r)\rreturn response[\u0026#39;ResponseMetadata\u0026#39;][\u0026#39;HTTPStatusCode\u0026#39;]\rexcept Exception as e:\rprint(f\u0026#34;An error occurred when writing to DynamoDB: {e}\u0026#34;)\rraise Change this domain name of the code above: \u0026ldquo;You got a new Message from https://workshop.conglyblog.id.vn\u0026rdquo; to your domain name.\nSelect Deploy Configure IAM Roles for Lambda\nSelect Configuration Select Permissions Redirect to IAM Roles In the Permissions interface\nSelect Add permissions\nSelect Attach policies Search for SNS\nSelect AmazonSNSFullAccess Go ahead, looking for DynamoDB\nSelect AmazonDynamoDBFullAccess\nSelect Add permissions "
+	"content": "Deploy Lambda function Access the AWS Management Console\nFind Lambda Select Lambda In the Lambda interface\nSelect Create a function In the Create function interface\nSelect Author from scratch\nFunction name enter FCJ-LambdaFunction\nRuntime select Python 3.9\nArchitecture select x86_64\nScroll down and select Create function Once created, you will see the following interface Enter the Source code for the Lambda Function\nSelect Code Paste code into the import boto3\rimport uuid\r# Tạo tài nguyên DynamoDB\rdynamodb = boto3.resource(\u0026#39;dynamodb\u0026#39;)\r# Đặt tên bảng DynamoDB\rtable = dynamodb.Table(\u0026#39;FCJ-DynamoDB\u0026#39;)\r# Tạo một SNS Client\rclient_sns = boto3.client(\u0026#39;sns\u0026#39;)\r# Hàm này sẽ được kích hoạt bởi API Gateway\rdef lambda_handler(event, context):\rtry:\r# Kiểm tra sự tồn tại của các key bắt buộc\rrequired_keys = [\u0026#39;name\u0026#39;, \u0026#39;email\u0026#39;, \u0026#39;subject\u0026#39;, \u0026#39;description\u0026#39;]\rfor key in required_keys:\rif key not in event:\rraise KeyError(f\u0026#34;Missing required key: {key}\u0026#34;)\r# Tạo một ID người dùng\rid = str(uuid.uuid4())\r# Gửi tin nhắn đến SNS\rhandle_sns(id, event)\r# Lưu trữ dữ liệu vào DynamoDB\rstatusCode = handle_dynamo_db(id, event)\rreturn {\r\u0026#39;statusCode\u0026#39;: statusCode,\r}\rexcept KeyError as ke:\rreturn {\r\u0026#39;statusCode\u0026#39;: 400,\r\u0026#39;body\u0026#39;: json.dumps(f\u0026#34;Missing required key: {str(ke)}\u0026#34;)\r}\rexcept Exception as e:\rreturn {\r\u0026#39;statusCode\u0026#39;: 500,\r\u0026#39;body\u0026#39;: json.dumps(\u0026#39;Error occurred: \u0026#39; + str(e))\r}\r# Gửi một tin nhắn đến SNS\rdef handle_sns(id, event):\rtry:\rsns_message = f\u0026#34;\u0026#34;\u0026#34;\rYou got a new Message from https://workshop.conglyblog.id.vn\rThe message is as follows\rid : {id}\rName : {event[\u0026#39;name\u0026#39;]}\remail : {event[\u0026#39;email\u0026#39;]}\rMessage : {event[\u0026#39;description\u0026#39;]}\rSubject : {event[\u0026#39;subject\u0026#39;]}\r\u0026#34;\u0026#34;\u0026#34;\rclient_sns.publish(\r# Thay đổi ARN với ARN của SNS của bạn\rTopicArn=\u0026#39;arn:aws:sns:ap-southeast-1:336760284039:FCJ-SNSTopic\u0026#39;,\rMessage=sns_message,\rSubject=event[\u0026#39;subject\u0026#39;]\r)\rexcept KeyError as ke:\rprint(f\u0026#34;Key error: {ke}\u0026#34;)\rraise\rexcept Exception as e:\rprint(f\u0026#34;An error occurred when sending SNS: {e}\u0026#34;)\rraise\r# Thêm một mục vào bảng DynamoDB\rdef handle_dynamo_db(id, event):\rtry:\rresponse = table.put_item(\rItem={\r\u0026#39;id\u0026#39;: id,\r\u0026#39;name\u0026#39;: event[\u0026#39;name\u0026#39;],\r\u0026#39;email\u0026#39;: event[\u0026#39;email\u0026#39;],\r\u0026#39;subject\u0026#39;: event[\u0026#39;subject\u0026#39;],\r\u0026#39;description\u0026#39;: event[\u0026#39;description\u0026#39;],\r}\r)\rreturn response[\u0026#39;ResponseMetadata\u0026#39;][\u0026#39;HTTPStatusCode\u0026#39;]\rexcept Exception as e:\rprint(f\u0026#34;An error occurred when writing to DynamoDB: {e}\u0026#34;)\rraise Change this domain name of the code above: \u0026ldquo;You got a new Message from https://workshop.conglyblog.id.vn\u0026rdquo; to your domain name.\nSelect Deploy Configure IAM Roles for Lambda\nSelect Configuration Select Permissions Redirect to IAM Roles In the Permissions interface\nSelect Add permissions\nSelect Attach policies Search for SNS\nSelect AmazonSNSFullAccess Go ahead, looking for DynamoDB\nSelect AmazonDynamoDBFullAccess\nSelect Add permissions Reference Links Building Lambda functions with Python "
 },
 {
-	"uri": "/8-api-gateway/",
+	"uri": "//localhost:1313/8-api-gateway/",
 	"title": "Setting up API Gateway",
 	"tags": [],
 	"description": "",
-	"content": "Nội dung:\nCreate API Create Method Create Authorizer Create Stage CORS Configuration Setup API Configuration "
+	"content": "Content Create API Create Method Create Authorizer Create Stage CORS Configuration Setup API Configuration Reference Links API Gateway REST APIs "
 },
 {
-	"uri": "/9-test-webapp/",
+	"uri": "//localhost:1313/9-test-webapp/",
 	"title": "Check Web Application",
 	"tags": [],
 	"description": "",
 	"content": "Check Web Application Enter the browser interface\nEnter the domain name you created for your website (e.g. \u0026lsquo;https://workshop.conglyblog.id.vn/index.html') Select LOGIN In the Login interface\nEnter Username Enter Password Select Sign in In the Contact interface - Enter your information\nSelect Send Message If the message is Successfully Sent the Message, you\u0026rsquo;ve sent the message. Go to Email to check\nGo to the Email you registered on SNS\nYou can see, the message has been sent to your Email. Go to DynamoDB test\nGo to DynamoDB\nSelect Explore items\nSelect the Items returned that you received When you enter, you will see the sender\u0026rsquo;s information "
 },
 {
-	"uri": "/10-clean-resource/",
+	"uri": "//localhost:1313/10-clean-resource/",
 	"title": "Clean up resources",
 	"tags": [],
 	"description": "",
 	"content": "We will proceed with the following steps to delete the resources we created in this exercise.\nDelete S3 Access the interface of S3 Select Buckets Select the Bucket name you created Select Delete Remove Cloudfront Access the interface of Cloudfront Select Distributions Select the Distribution ID you created Select Disable Wait for a few minutes, then select Delete Delete Route 53 Access the interface of Route 53 Select Hosted zones Select the Hosted zone name you created Select Delete Delete SNS Access the interface of SNS Select Topics Select the Topic name you created Select Delete Remove Cognito Access the interface of Cognito Select User pools Select the User pool name you have created Select Delete Deleting DynamoDB Access the interface of DynamoDB Select Tables Select the Table name you created Select Delete Deleting Lambda Access the interface of Lambda Select Functions Select the Function name you created Select Actions Select Delete Deleting API Gateway Access the interface of API Gateway Select APIs Select the API name you created Select Delete Delete WAF Access the interface of WAF Select Web ACLs Select the Web ACL name you created Select Delete "
 },
 {
-	"uri": "/categories/",
+	"uri": "//localhost:1313/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/",
+	"uri": "//localhost:1313/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

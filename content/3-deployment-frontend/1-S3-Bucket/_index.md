@@ -3,7 +3,7 @@ title = "Initialize an S3 Bucket"
 date = 2020-05-14T00:38:32+07:00
 weight = 1
 chapter = false
-pre = "<b>3.1.1 </b>"
+pre = "<b>3.1 </b>"
 +++
 
 #### Initialize an S3 bucket

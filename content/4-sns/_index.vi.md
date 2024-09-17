@@ -53,3 +53,7 @@ pre = "<b>4. </b>"
    {{% notice note %}}Sau khi chọn **Confirm subscription** bạn chỉ cần thoát ra là hoàn thành. (Nếu chọn **click here to unsubcribe** bạn sẽ hủy đăng ký và không thể nhận thông tin về **email**).
    {{% /notice %}}
    ![09-SNS](/images/5/5-sns-09.png?width=90pc)
+
+#### Tài liệu tham khảo
+
+- [How to use Amazon SNS with AWS Lambda Function](https://medium.com/cloudnloud/how-to-use-aws-lambda-function-with-amazon-sns-e8fe38097725)

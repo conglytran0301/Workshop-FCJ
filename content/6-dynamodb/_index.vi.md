@@ -30,3 +30,7 @@ pre = "<b>6. </b>"
    - **Table settings** để mặc định
    - Kéo xuống và chọn **Create table**
      ![04-DynamoDB](/images/7/7-dynamodb-04.png?width=90pc)
+
+#### Tài liệu tham khảo
+
+- [Working with tables and data in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.html)

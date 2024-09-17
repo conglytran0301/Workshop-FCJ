@@ -160,3 +160,7 @@ pre = "<b>7. </b>"
    - Select **AmazonDynamoDBFullAccess**
    - Select **Add permissions**
      ![10-Lambda](/images/8/8-lambda-10.png?width=90pc)
+
+#### Reference Links
+
+- [Building Lambda functions with Python](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html)

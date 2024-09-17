@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.131.0">
@@ -12,21 +12,21 @@
     <title>Dọn dẹp tài nguyên :: AWS Serverless</title>
 
     
-    <link href="/css/nucleus.css?1726540566" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726540566" rel="stylesheet">
-    <link href="/css/hybrid.css?1726540566" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726540566" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726540566" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726540566" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726540566" rel="stylesheet">
-    <link href="/css/theme.css?1726540566" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726540566" rel="stylesheet">
+    <link href="/css/nucleus.css?1726592259" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726592259" rel="stylesheet">
+    <link href="/css/hybrid.css?1726592259" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726592259" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726592259" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726592259" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726592259" rel="stylesheet">
+    <link href="/css/theme.css?1726592259" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726592259" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1726540566" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1726592259" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1726540566"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726592259"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1726540566"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1726540566"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1726592259"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1726592259"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/\/vi";
+        var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1726540566"></script>
+<script type="text/javascript" src="/js/search.js?1726592259"></script>
 
     
   </div>
@@ -1069,7 +1069,7 @@
                   
                     
                     
-                      <option id="en" value="/10-clean-resource/">English</option>
+                      <option id="en" value="//localhost:1313/10-clean-resource/">English</option>
                     
                   
               
@@ -1083,7 +1083,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/10-clean-resource/" selected>Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/10-clean-resource/" selected>Tiếng Việt</option>
                     
                   
               
@@ -1215,17 +1215,61 @@
 	<p>Chúng ta sẽ tiến hành các bước sau để xóa các tài nguyên chúng ta đã tạo trong bài thực hành này.</p>
 <h4 id="xóa-s3">Xóa S3</h4>
 <ol>
-<li>Truy cập vào giao diện của <strong>S3</strong></li>
-<li>Chọn <strong>Buckets</strong></li>
-<li>Chọn <strong>Bucket name</strong> bạn đã tạo</li>
-<li>Chọn <strong>Delete</strong></li>
+<li>
+<p>Truy cập vào giao diện của <strong>S3</strong></p>
+</li>
+<li>
+<p>Chọn <strong>Buckets</strong></p>
+</li>
+<li>
+<p>Chọn <strong>Bucket name</strong> bạn đã tạo</p>
+</li>
+<li>
+<p>Chọn <strong>Delete</strong>
+<img alt="01-clean" src="/images/11/11-clean-01.png?width=90pc"></p>
+</li>
+<li>
+<p>Trong giao diện <strong>Delete bucket</strong></p>
+<ul>
+<li>Chọn <strong>Empty bucket</strong>
+<img alt="02-clean" src="/images/11/11-clean-02.png?width=90pc"></li>
+</ul>
+</li>
+<li>
+<p>Trong giao diện <strong>Empty bucket</strong></p>
+<ul>
+<li>Nhập <code>permanently delete</code> vào mục <strong>confirm</strong></li>
+<li>Chọn <strong>Empty</strong>
+<img alt="03-clean" src="/images/11/11-clean-03.png?width=90pc"></li>
+</ul>
+</li>
+<li>
+<p>Sau khi <strong>Empty</strong> thành công</p>
+<ul>
+<li>Chọn <strong>Bucket</strong></li>
+<li>Chọn lại <strong>Bucket name</strong> mà bạn muốn xóa</li>
+<li>Chọn <strong>Delete</strong>
+<img alt="01-clean" src="/images/11/11-clean-01.png?width=90pc"></li>
+</ul>
+</li>
+<li>
+<p>Trong giao diện <strong>Delete bucket</strong></p>
+<ul>
+<li>Copy <strong>Bucket name</strong> mà bạn đã tạo</li>
+<li>Dán vào mục <strong>confirm</strong></li>
+<li>Chọn <strong>Delete bucket</strong>
+<img alt="04-clean" src="/images/11/11-clean-04.png?width=90pc"></li>
+</ul>
+</li>
 </ol>
 <h4 id="xóa-cloudfront">Xóa Cloudfront</h4>
 <ol>
 <li>Truy cập vào giao diện của <strong>Cloudfront</strong></li>
 <li>Chọn <strong>Distributions</strong></li>
 <li>Chọn <strong>Distribution ID</strong> bạn đã tạo</li>
-<li>Chọn <strong>Disable</strong></li>
+<li>Chọn <strong>Disable</strong>
+<img alt="05-clean" src="/images/11/11-clean-05.png?width=90pc">
+<img alt="06-clean" src="/images/11/11-clean-06.png?width=90pc"></li>
 <li>Đợi khoảng vài phút, sau đó chọn <strong>Delete</strong></li>
 </ol>
 <h4 id="xóa-route-53">Xóa Route 53</h4>
@@ -1233,28 +1277,62 @@
 <li>Truy cập vào giao diện của <strong>Route 53</strong></li>
 <li>Chọn <strong>Hosted zones</strong></li>
 <li>Chọn <strong>Hosted zone name</strong> bạn đã tạo</li>
-<li>Chọn <strong>Delete</strong></li>
+<li>Chọn <strong>Delete</strong>
+<img alt="07-clean" src="/images/11/11-clean-07.png?width=90pc"></li>
+<li>Trong giao diện <strong>Delete hosted zone</strong>
+<ul>
+<li>Nhập <code>delete</code> vào mục <strong>confirm</strong></li>
+<li>Chọn <strong>Delete</strong>
+<img alt="08-clean" src="/images/11/11-clean-08.png?width=90pc"></li>
+</ul>
+</li>
 </ol>
 <h4 id="xóa-sns">Xóa SNS</h4>
 <ol>
 <li>Truy cập vào giao diện của <strong>SNS</strong></li>
 <li>Chọn <strong>Topics</strong></li>
 <li>Chọn <strong>Topic name</strong> bạn đã tạo</li>
-<li>Chọn <strong>Delete</strong></li>
+<li>Chọn <strong>Delete</strong>
+<img alt="09-clean" src="/images/11/11-clean-09.png?width=90pc"></li>
+<li>Trong giao diện <strong>Delete topic</strong>
+<ul>
+<li>Nhập <code>delete me</code> vào mục <strong>confirm</strong></li>
+<li>Chọn <strong>Delete</strong>
+<img alt="10-clean" src="/images/11/11-clean-10.png?width=90pc"></li>
+</ul>
+</li>
 </ol>
 <h4 id="xóa-cognito">Xóa Cognito</h4>
 <ol>
 <li>Truy cập vào giao diện của <strong>Cognito</strong></li>
 <li>Chọn <strong>User pools</strong></li>
 <li>Chọn <strong>User pool name</strong> bạn đã tạo</li>
-<li>Chọn <strong>Delete</strong></li>
+<li>Chọn <strong>Delete</strong>
+<img alt="11-clean" src="/images/11/11-clean-11.png?width=90pc"></li>
+<li>Trong giao diện <strong>Delete user pool</strong>
+<ul>
+<li>Chọn <strong>Delete Cognito domain <em>fcj06f03</em> that you assigned</strong> và <strong>Deactivate deletion protection</strong></li>
+<li>Nhập tên <strong>user pool</strong> của bạn vào mục <strong>confirm</strong></li>
+<li>Chọn <strong>Delete</strong>
+<img alt="12-clean" src="/images/11/11-clean-12.png?width=90pc"></li>
+</ul>
+</li>
 </ol>
 <h4 id="xóa-dynamodb">Xóa DynamoDB</h4>
 <ol>
 <li>Truy cập vào giao diện của <strong>DynamoDB</strong></li>
 <li>Chọn <strong>Tables</strong></li>
 <li>Chọn <strong>Table name</strong> bạn đã tạo</li>
-<li>Chọn <strong>Delete</strong></li>
+<li>Chọn <strong>Delete</strong>
+<img alt="13-clean" src="/images/11/11-clean-13.png?width=90pc"></li>
+<li>Trong giao diện <strong>Delete table</strong>
+<ul>
+<li>Chọn <strong>Delete all CloudWatch alarms for FCJ-DynamoDB.</strong></li>
+<li>Nhập <code>confirm</code> vào mục <strong>confirm</strong></li>
+<li>Chọn <strong>Delete</strong>
+<img alt="14-clean" src="/images/11/11-clean-14.png?width=90pc"></li>
+</ul>
+</li>
 </ol>
 <h4 id="xóa-lambda">Xóa Lambda</h4>
 <ol>
@@ -1262,21 +1340,57 @@
 <li>Chọn <strong>Functions</strong></li>
 <li>Chọn <strong>Function name</strong> bạn đã tạo</li>
 <li>Chọn <strong>Actions</strong></li>
-<li>Chọn <strong>Delete</strong></li>
+<li>Chọn <strong>Delete</strong>
+<img alt="15-clean" src="/images/11/11-clean-15.png?width=90pc"></li>
+<li>Trong giao diện <strong>Delete functions</strong>
+<ul>
+<li>Nhập <code>delete</code> vào mục <strong>confirm</strong></li>
+<li>Chọn <strong>Delete</strong>
+<img alt="16-clean" src="/images/11/11-clean-16.png?width=90pc"></li>
+</ul>
+</li>
 </ol>
 <h4 id="xóa-api-gateway">Xóa API Gateway</h4>
 <ol>
 <li>Truy cập vào giao diện của <strong>API Gateway</strong></li>
 <li>Chọn <strong>APIs</strong></li>
 <li>Chọn <strong>API name</strong> bạn đã tạo</li>
-<li>Chọn <strong>Delete</strong></li>
+<li>Chọn <strong>Delete</strong>
+<img alt="17-clean" src="/images/11/11-clean-17.png?width=90pc"></li>
+<li>Trong giao diện <strong>Delete API</strong>
+<ul>
+<li>Nhập <code>confirm</code> vào mục <strong>confirm</strong></li>
+<li>Chọn <strong>Delete</strong>
+<img alt="18-clean" src="/images/11/11-clean-18.png?width=90pc"></li>
+</ul>
+</li>
 </ol>
 <h4 id="xóa-waf">Xóa WAF</h4>
 <ol>
 <li>Truy cập vào giao diện của <strong>WAF</strong></li>
 <li>Chọn <strong>Web ACLs</strong></li>
 <li>Chọn <strong>Web ACL name</strong> bạn đã tạo</li>
-<li>Chọn <strong>Delete</strong></li>
+<li>Chọn <strong>Associated AWS resources</strong></li>
+<li>Chọn <strong>Disassociate</strong>
+<img alt="21-clean" src="/images/11/11-clean-21.png?width=90pc"></li>
+<li>Trong giao diện <strong>Disassociate</strong>
+<ul>
+<li>Nhập <code>remove</code> vào mục <strong>confirm Disassociation</strong></li>
+<li>Chọn <strong>Disassociate</strong>
+<img alt="22-clean" src="/images/11/11-clean-22.png?width=90pc"></li>
+</ul>
+</li>
+<li>Vào lại <strong>Web ACLs</strong></li>
+<li>Chọn <strong>Web ACL name</strong> bạn đã tạo</li>
+<li>Chọn <strong>Delete</strong>
+<img alt="19-clean" src="/images/11/11-clean-19.png?width=90pc"></li>
+<li>Trong giao diện <strong>Delete</strong>
+<ul>
+<li>Nhập <code>delete</code> vào mục <strong>confirm</strong></li>
+<li>Chọn <strong>Delete</strong>
+<img alt="20-clean" src="/images/11/11-clean-20.png?width=90pc"></li>
+</ul>
+</li>
 </ol>
 
 
@@ -1865,19 +1979,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1726540566"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726540566"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726540566"></script>
-    <script src="/js/jquery.sticky.js?1726540566"></script>
-    <script src="/js/featherlight.min.js?1726540566"></script>
-    <script src="/js/highlight.pack.js?1726540566"></script>
+    <script src="/js/clipboard.min.js?1726592259"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726592259"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726592259"></script>
+    <script src="/js/jquery.sticky.js?1726592259"></script>
+    <script src="/js/featherlight.min.js?1726592259"></script>
+    <script src="/js/highlight.pack.js?1726592259"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726540566"></script>
-    <script src="/js/learn.js?1726540566"></script>
-    <script src="/js/hugo-learn.js?1726540566"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726592259"></script>
+    <script src="/js/learn.js?1726592259"></script>
+    <script src="/js/hugo-learn.js?1726592259"></script>
 
-    <link href="/mermaid/mermaid.css?1726540566" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1726540566"></script>
+    <link href="/mermaid/mermaid.css?1726592259" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1726592259"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
