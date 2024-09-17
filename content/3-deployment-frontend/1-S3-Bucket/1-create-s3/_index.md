@@ -9,7 +9,7 @@ pre = "<b>3.1.1 </b>"
 #### Create an S3 bucket
 
 1.  Access the
-    [AWS Management Console](https://ap-southeast-1.console.aws.amazon.com/console/home?region=ap-southeast-1#)
+    [AWS Management Console](https://ap-southeast-1.console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin&region=ap-southeast-1)
 
     - Find **S3**
     - Select **S3**
