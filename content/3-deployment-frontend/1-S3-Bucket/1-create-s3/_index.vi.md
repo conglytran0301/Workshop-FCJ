@@ -27,11 +27,10 @@ pre = "<b>3.1.1 </b>"
     - Ở phần **Object Ownership**, chọn **ACLs disabled**
       ![03-S3](/images/3/3-s3-03.png?width=90pc)
 
-    {{% notice info %}}
-    Lưu ý: Vì **Bucket name** là duy nhất trên mức độ toàn cầu, nếu đặt trùng tên với nhau thì sẽ xuất hiện thông báo: _**“Bucket with the same name already exists”**_. Do đó, cần thêm vài số phía sau để Bucket name của bạn phù hợp với policy.
-    {{% /notice %}}
+      {{% notice info %}}Lưu ý: Vì **Bucket name** là duy nhất trên mức độ toàn cầu, nếu đặt trùng tên với nhau thì sẽ xuất hiện thông báo: _**“Bucket with the same name already exists”**_. Do đó, cần thêm vài số phía sau để Bucket name của bạn phù hợp với policy.
+      {{% /notice %}}
 
-        ![04-S3](/images/3/3-s3-04.png?width=90pc)
+      ![04-S3](/images/3/3-s3-04.png?width=90pc)
 
     - Ở phần **Block Public Access settings for this bucket**, giữ nguyên mặc định
       ![05-S3](/images/3/3-s3-05.png?width=90pc)

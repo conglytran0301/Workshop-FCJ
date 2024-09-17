@@ -10,35 +10,29 @@ pre = "<b>2.2.2 </b>"
 
 1. Ở giao diện **Distributions**
 
-- Chọn **Distributions** bạn vừa tạo
+   - Chọn **Distributions** bạn vừa tạo
+     ![09-Cloudfront](/images/4/4-cloudfront-09.png?width=90pc)
 
-![09-Cloudfront](/images/4/4-cloudfront-09.png?width=90pc)
-
-- Chọn **Origins**
-- Chọn **Origin name** bạn vừa tạo
-- Chọn **Edit**
-
-![10-Cloudfront](/images/4/4-cloudfront-10.png?width=90pc)
+   - Chọn **Origins**
+   - Chọn **Origin name** bạn vừa tạo
+   - Chọn **Edit**
+     ![10-Cloudfront](/images/4/4-cloudfront-10.png?width=90pc)
 
 2. Ở giao diện **Edit origin**
 
-- Chọn **OAC** vừa tạo.
-- Chọn **Copy policy**
-- Chuyển hướng đến **S3 bucket** bạn đã tạo
+   - Chọn **OAC** vừa tạo.
+   - Chọn **Copy policy**
+   - Chuyển hướng đến **S3 bucket** bạn đã tạo
+     ![05-Cloudfront](/images/4/4-cloudfront-05.png?width=90pc)
 
-![05-Cloudfront](/images/4/4-cloudfront-05.png?width=90pc)
+   - Sau khi vào **Bucket** của bạn, chọn **Permissions**
+     ![12-Cloudfront](/images/4/4-cloudfront-12.png?width=90pc)
 
-- Sau khi vào **Bucket** của bạn, chọn **Permissions**
+   - Kéo xuống tìm **Bucket policy**, chọn **Edit**
+     ![13-Cloudfront](/images/4/4-cloudfront-13.png?width=90pc)
 
-![12-Cloudfront](/images/4/4-cloudfront-12.png?width=90pc)
+   - Dán mã vào **Bucket policy** của S3
+   - Chọn **Save changes**
+     ![14-Cloudfront](/images/4/4-cloudfront-14.png?width=90pc)
 
-- Kéo xuống tìm **Bucket policy**, chọn **Edit**
-
-![13-Cloudfront](/images/4/4-cloudfront-13.png?width=90pc)
-
-- Dán mã vào **Bucket policy** của S3
-- Chọn **Save changes**
-
-![14-Cloudfront](/images/4/4-cloudfront-14.png?width=90pc)
-
-- Bạn đã tạo thành công **Origin request policy**
+   - Bạn đã tạo thành công **Origin request policy**

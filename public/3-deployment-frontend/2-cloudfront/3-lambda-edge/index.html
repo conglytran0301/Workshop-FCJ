@@ -12,21 +12,21 @@
     <title>Lambda@Edge Configuration for Origin Website :: AWS Account Setup</title>
 
     
-    <link href="/css/nucleus.css?1726531628" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726531628" rel="stylesheet">
-    <link href="/css/hybrid.css?1726531628" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726531628" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726531628" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726531628" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726531628" rel="stylesheet">
-    <link href="/css/theme.css?1726531628" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726531628" rel="stylesheet">
+    <link href="/css/nucleus.css?1726535303" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726535303" rel="stylesheet">
+    <link href="/css/hybrid.css?1726535303" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726535303" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726535303" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726535303" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726535303" rel="stylesheet">
+    <link href="/css/theme.css?1726535303" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726535303" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1726531628" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1726535303" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1726531628"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726535303"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1726531628"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1726531628"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1726535303"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1726535303"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1726531628"></script>
+<script type="text/javascript" src="/js/search.js?1726535303"></script>
 
     
   </div>
@@ -1226,79 +1226,91 @@
 
 	<h4 id="lambdaedge-configuration-for-origin-website">Lambda@Edge Configuration for Origin Website</h4>
 <ol>
-<li>In the <strong>Cloudfront</strong> interface</li>
-</ol>
+<li>
+<p>In the <strong>Cloudfront</strong> interface</p>
 <ul>
 <li>Select <strong>Functions</strong></li>
-<li>Select <strong>Create function</strong></li>
+<li>Select <strong>Create function</strong>
+<img alt="16-Cloudfront" src="/images/4/4-cloudfront-16.png?width=90pc"></li>
 </ul>
-<p><img alt="16-Cloudfront" src="/images/4/4-cloudfront-16.png?width=90pc"></p>
-<ol start="2">
-<li>In the <strong>Create function</strong> interface</li>
-</ol>
+</li>
+<li>
+<p>In the <strong>Create function</strong> interface</p>
 <ul>
 <li>Enter <strong>Name</strong>: <code>fcj-lambda-edge</code></li>
 <li>In the Runtime section, select cloudfront-js-2.0</li>
-<li>Select <strong>Create function</strong></li>
+<li>Select <strong>Create function</strong>
+<img alt="17-Cloudfront" src="/images/4/4-cloudfront-17.png?width=90pc"></li>
 </ul>
-<p><img alt="17-Cloudfront" src="/images/4/4-cloudfront-17.png?width=90pc"></p>
-<ol start="3">
-<li>In the <strong>Functions</strong> interface</li>
-</ol>
+</li>
+<li>
+<p>In the <strong>Functions</strong> interface</p>
 <ul>
-<li>Select the <strong>Functions</strong> that you just created</li>
-</ul>
-<p><img alt="18-Cloudfront" src="/images/4/4-cloudfront-18.png?width=90pc"></p>
-<ul>
-<li>Scroll down to the <strong>Build</strong> section</li>
-<li>In the <strong>Function code</strong> section, select <strong>Development</strong></li>
-<li>Copy this code to:</li>
+<li>
+<p>Select the <strong>Functions</strong> that you just created
+<img alt="18-Cloudfront" src="/images/4/4-cloudfront-18.png?width=90pc"></p>
+</li>
+<li>
+<p>Scroll down to the <strong>Build</strong> section</p>
+</li>
+<li>
+<p>In the <strong>Function code</strong> section, select <strong>Development</strong></p>
+</li>
+<li>
+<p>Copy this code to:</p>
+</li>
 </ul>
 <pre tabindex="0"><code>function handler(event) {
-    var request = event.request;
-    var uri = request.uri;
+var request = event.request;
+var uri = request.uri;
 
-    // Check whether the URI is missing a file name.
-    if (uri.endsWith(&#39;/&#39;)) {
-        request.uri += &#39;index.html&#39;;
-    }
-    // Check whether the URI is missing a file extension.
-    else if (!uri.includes(&#39;.&#39;)) {
-        request.uri += &#39;/index.html&#39;;
-    }
+// Check whether the URI is missing a file name.
+if (uri.endsWith(&#39;/&#39;)) {
+    request.uri += &#39;index.html&#39;;
+}
+// Check whether the URI is missing a file extension.
+else if (!uri.includes(&#39;.&#39;)) {
+    request.uri += &#39;/index.html&#39;;
+}
 
-    return request;
+return request;
 }
 </code></pre><ul>
-<li>Then select <strong>Save changes</strong></li>
+<li>
+<p>Then select <strong>Save changes</strong>
+<img alt="19-Cloudfront" src="/images/4/4-cloudfront-19.png?width=90pc"></p>
+</li>
+<li>
+<p>Go to <strong>Publish</strong></p>
+</li>
+<li>
+<p>Select <strong>Publish function</strong>
+<img alt="20-Cloudfront" src="/images/4/4-cloudfront-20.png?width=90pc"></p>
+</li>
 </ul>
-<p><img alt="19-Cloudfront" src="/images/4/4-cloudfront-19.png?width=90pc"></p>
-<ul>
-<li>Go to <strong>Publish</strong></li>
-<li>Select <strong>Publish function</strong></li>
-</ul>
-<p><img alt="20-Cloudfront" src="/images/4/4-cloudfront-20.png?width=90pc"></p>
-<ol start="4">
-<li>Return to the <strong>Distributions</strong> interface</li>
-</ol>
+</li>
+<li>
+<p>Return to the <strong>Distributions</strong> interface</p>
 <ul>
 <li>Select the <strong>Distributions</strong> you created</li>
 <li>Select <strong>Behaviors</strong></li>
 <li>Select Behavior with origin forward to your S3</li>
-<li>Then select <strong>Edit</strong></li>
+<li>Then select <strong>Edit</strong>
+<img alt="21-Cloudfront" src="/images/4/4-cloudfront-21.png?width=90pc"></li>
 </ul>
-<p><img alt="21-Cloudfront" src="/images/4/4-cloudfront-21.png?width=90pc"></p>
-<ol start="5">
-<li>In the <strong>Edit</strong> interface</li>
-</ol>
+</li>
+<li>
+<p>In the <strong>Edit</strong> interface</p>
 <ul>
 <li>Scroll down to find <strong>Function associations- optional</strong></li>
 <li>Configuration with <strong>Viewer request</strong></li>
 <li><strong>Function type</strong> select <strong>CloudFront Functions</strong></li>
 <li><strong>Function ARN/Name</strong> select <strong>fcj-lambda-edge</strong> you just created above</li>
-<li>Select <strong>Save changes</strong></li>
+<li>Select <strong>Save changes</strong>
+<img alt="22-Cloudfront" src="/images/4/4-cloudfront-22.png?width=90pc"></li>
 </ul>
-<p><img alt="22-Cloudfront" src="/images/4/4-cloudfront-22.png?width=90pc"></p>
+</li>
+</ol>
 
 
 
@@ -1897,19 +1909,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1726531628"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726531628"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726531628"></script>
-    <script src="/js/jquery.sticky.js?1726531628"></script>
-    <script src="/js/featherlight.min.js?1726531628"></script>
-    <script src="/js/highlight.pack.js?1726531628"></script>
+    <script src="/js/clipboard.min.js?1726535303"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726535303"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726535303"></script>
+    <script src="/js/jquery.sticky.js?1726535303"></script>
+    <script src="/js/featherlight.min.js?1726535303"></script>
+    <script src="/js/highlight.pack.js?1726535303"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726531628"></script>
-    <script src="/js/learn.js?1726531628"></script>
-    <script src="/js/hugo-learn.js?1726531628"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726535303"></script>
+    <script src="/js/learn.js?1726535303"></script>
+    <script src="/js/hugo-learn.js?1726535303"></script>
 
-    <link href="/mermaid/mermaid.css?1726531628" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1726531628"></script>
+    <link href="/mermaid/mermaid.css?1726535303" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1726535303"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
