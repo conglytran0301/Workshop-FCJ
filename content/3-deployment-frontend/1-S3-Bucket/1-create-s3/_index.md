@@ -27,11 +27,10 @@ pre = "<b>3.1.1 </b>"
     - In the Object Ownership section, select **ACLs disabled**
       ![03-S3](/images/3/3-s3-03.png?width=90pc)
 
-    {{% notice info %}}
-    Note: Because the bucket name is unique on a global scale, if the names are the same, the message "Bucket with the same name already exists" will appear. Therefore, it is necessary to add a few numbers after it to make your bucket name suitable for the policy.
-    {{% /notice %}}
+      {{% notice info %}}Note: Because the bucket name is unique on a global scale, if the names are the same, the message "Bucket with the same name already exists" will appear. Therefore, it is necessary to add a few numbers after it to make your bucket name suitable for the policy.
+      {{% /notice %}}
 
-    ![04-S3](/images/3/3-s3-04.png?width=90pc)
+      ![04-S3](/images/3/3-s3-04.png?width=90pc)
 
     - In the Block Public Access settings for this bucket section, leave the default
       ![05-S3](/images/3/3-s3-05.png?width=90pc)
