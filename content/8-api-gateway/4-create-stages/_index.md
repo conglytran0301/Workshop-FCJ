@@ -10,15 +10,13 @@ pre = "<b>8.4 </b>"
 
 1. In the **API** interface you created
 
-- Select **Resources**
-- Select **Deploy API**
-
-![14-API](/images/9/9-api-14.png?width=90pc)
+   - Select **Resources**
+   - Select **Deploy API**
+     ![14-API](/images/9/9-api-14.png?width=90pc)
 
 2. In the **Deploy API** interface
 
-- **Stage** Select **New stage**
-- **Stage name** enter `Dev`
-- Select **Deploy**
-
-![15-API](/images/9/9-api-15.png?width=90pc)
+   - **Stage** Select **New stage**
+   - **Stage name** enter `Dev`
+   - Select **Deploy**
+     ![15-API](/images/9/9-api-15.png?width=90pc)

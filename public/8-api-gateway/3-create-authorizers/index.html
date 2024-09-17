@@ -12,21 +12,21 @@
     <title>Create Authorizer :: AWS Account Setup</title>
 
     
-    <link href="/css/nucleus.css?1726531628" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726531628" rel="stylesheet">
-    <link href="/css/hybrid.css?1726531628" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726531628" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726531628" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726531628" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726531628" rel="stylesheet">
-    <link href="/css/theme.css?1726531628" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726531628" rel="stylesheet">
+    <link href="/css/nucleus.css?1726539111" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726539111" rel="stylesheet">
+    <link href="/css/hybrid.css?1726539111" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726539111" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726539111" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726539111" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726539111" rel="stylesheet">
+    <link href="/css/theme.css?1726539111" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726539111" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1726531628" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1726539111" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1726531628"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726539111"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1726531628"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1726531628"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1726539111"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1726539111"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1726531628"></script>
+<script type="text/javascript" src="/js/search.js?1726539111"></script>
 
     
   </div>
@@ -1220,39 +1220,51 @@
 
 	<h4 id="create-authorizer">Create Authorizer</h4>
 <ol>
-<li>In the <strong>API</strong></li>
-</ol>
+<li>
+<p>In the <strong>API</strong></p>
 <ul>
 <li>Select <strong>Authorizers</strong></li>
-<li>Select <strong>Create authorizer</strong></li>
+<li>Select <strong>Create authorizer</strong>
+<img alt="10-API" src="/images/9/9-api-10.png?width=90pc"></li>
 </ul>
-<p><img alt="10-API" src="/images/9/9-api-10.png?width=90pc"></p>
-<ol start="2">
-<li>In the <strong>Create authorizer</strong> interface</li>
-</ol>
+</li>
+<li>
+<p>In the <strong>Create authorizer</strong> interface</p>
 <ul>
 <li><strong>Authorizer name</strong> enter <code>FCJ-Auth</code></li>
 <li><strong>Authorizer type</strong> select <strong>Cognito</strong></li>
 <li><strong>Cognito user pool</strong> select <strong>FCJ-UserPool</strong></li>
 <li><strong>Token source</strong> enter <code>Authorization</code></li>
-<li>Select <strong>Create authorizer</strong></li>
+<li>Select <strong>Create authorizer</strong>
+<img alt="11-API" src="/images/9/9-api-11.png?width=90pc"></li>
 </ul>
-<p><img alt="11-API" src="/images/9/9-api-11.png?width=90pc"></p>
-<ol start="3">
-<li>Go to the <strong>Resources</strong> interface</li>
+</li>
+<li>
+<p>Go to the <strong>Resources</strong> interface</p>
+<ul>
+<li>
+<p>Select <strong>GET</strong></p>
+</li>
+<li>
+<p>Select <strong>Method request</strong></p>
+</li>
+<li>
+<p>Select <strong>Edit</strong>
+<img alt="12-API" src="/images/9/9-api-12.png?width=90pc"> 4. In the <strong>Edit method request</strong> interface</p>
+</li>
+<li>
+<p><strong>Authorization</strong> select <strong>FCJ-Auth</strong></p>
+</li>
+<li>
+<p><strong>Authorization scopes</strong> enter <code>email</code>, then select <strong>add</strong></p>
+</li>
+<li>
+<p>Scroll down and select <strong>Save</strong>
+<img alt="13-API" src="/images/9/9-api-13.png?width=90pc"></p>
+</li>
+</ul>
+</li>
 </ol>
-<ul>
-<li>Select <strong>GET</strong></li>
-<li>Select <strong>Method request</strong></li>
-<li>Select <strong>Edit</strong></li>
-</ul>
-<p><img alt="12-API" src="/images/9/9-api-12.png?width=90pc"> 4. In the <strong>Edit method request</strong> interface</p>
-<ul>
-<li><strong>Authorization</strong> select <strong>FCJ-Auth</strong></li>
-<li><strong>Authorization scopes</strong> enter <code>email</code>, then select <strong>add</strong></li>
-<li>Scroll down and select <strong>Save</strong></li>
-</ul>
-<p><img alt="13-API" src="/images/9/9-api-13.png?width=90pc"></p>
 
 
 
@@ -1847,19 +1859,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1726531628"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726531628"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726531628"></script>
-    <script src="/js/jquery.sticky.js?1726531628"></script>
-    <script src="/js/featherlight.min.js?1726531628"></script>
-    <script src="/js/highlight.pack.js?1726531628"></script>
+    <script src="/js/clipboard.min.js?1726539111"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726539111"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726539111"></script>
+    <script src="/js/jquery.sticky.js?1726539111"></script>
+    <script src="/js/featherlight.min.js?1726539111"></script>
+    <script src="/js/highlight.pack.js?1726539111"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726531628"></script>
-    <script src="/js/learn.js?1726531628"></script>
-    <script src="/js/hugo-learn.js?1726531628"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726539111"></script>
+    <script src="/js/learn.js?1726539111"></script>
+    <script src="/js/hugo-learn.js?1726539111"></script>
 
-    <link href="/mermaid/mermaid.css?1726531628" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1726531628"></script>
+    <link href="/mermaid/mermaid.css?1726539111" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1726539111"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

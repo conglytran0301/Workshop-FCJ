@@ -12,21 +12,21 @@
     <title>WAF Initialization :: AWS Account Setup</title>
 
     
-    <link href="/css/nucleus.css?1726531628" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726531628" rel="stylesheet">
-    <link href="/css/hybrid.css?1726531628" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726531628" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726531628" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726531628" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726531628" rel="stylesheet">
-    <link href="/css/theme.css?1726531628" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726531628" rel="stylesheet">
+    <link href="/css/nucleus.css?1726539111" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726539111" rel="stylesheet">
+    <link href="/css/hybrid.css?1726539111" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726539111" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726539111" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726539111" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726539111" rel="stylesheet">
+    <link href="/css/theme.css?1726539111" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726539111" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1726531628" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1726539111" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1726531628"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726539111"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1726531628"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1726531628"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1726539111"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1726539111"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1726531628"></script>
+<script type="text/javascript" src="/js/search.js?1726539111"></script>
 
     
   </div>
@@ -1224,89 +1224,102 @@
 </div>
 
 <ol>
-<li>Access the <a href="https://aws.amazon.com/vi/free/?gclid=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE&trk=c4f45c53-585c-4b31-8fbf-d39fbcdc603a&sc_channel=ps&ef_id=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE:G:s&s_kwcid=AL!4422!3!637354294239!e!!g!!aws!19043613274!143453611386&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">AWS Management Console</a></li>
-</ol>
+<li>
+<p>Access the
+<a href="https://aws.amazon.com/vi/free/?gclid=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE&trk=c4f45c53-585c-4b31-8fbf-d39fbcdc603a&sc_channel=ps&ef_id=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE:G:s&s_kwcid=AL!4422!3!637354294239!e!!g!!aws!19043613274!143453611386&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">AWS Management Console</a></p>
 <ul>
 <li>Find <strong>WAF</strong></li>
-<li>Select <strong>WAF</strong></li>
+<li>Select <strong>WAF</strong>
+<img alt="01-WAF" src="/images/3/3-waf-01.png?width=90pc"></li>
 </ul>
-<p><img alt="01-WAF" src="/images/3/3-waf-01.png?width=90pc"></p>
-<ol start="2">
-<li>In the <strong>WAF</strong> interface</li>
-</ol>
+</li>
+<li>
+<p>In the <strong>WAF</strong> interface</p>
 <ul>
-<li>Select <strong>Create web ACL</strong></li>
+<li>Select <strong>Create web ACL</strong>
+<img alt="02-WAF" src="/images/3/3-waf-02.png?width=90pc"></li>
 </ul>
-<p><img alt="02-WAF" src="/images/3/3-waf-02.png?width=90pc"></p>
-<ol start="3">
-<li>In the <strong>Create web ACL</strong> interface</li>
-</ol>
+</li>
+<li>
+<p>In the <strong>Create web ACL</strong> interface</p>
 <p>Step 1 <strong>Describe web ACL and associate it to AWS resources</strong></p>
 <ul>
-<li><strong>Resource type</strong> select <strong>Amazon CloudFront distributions</strong></li>
-<li><strong>Name</strong> enter <code>WAF-Demo</code></li>
-</ul>
-<p><img alt="03-WAF" src="/images/3/3-waf-03.png?width=90pc"></p>
-<ul>
-<li><strong>Associated AWS resources</strong> select <strong>Add AWS resources</strong></li>
-</ul>
-<p><img alt="04-WAF" src="/images/3/3-waf-04.png?width=90pc"></p>
-<ul>
+<li>
+<p><strong>Resource type</strong> select <strong>Amazon CloudFront distributions</strong></p>
+</li>
+<li>
+<p><strong>Name</strong> enter <code>WAF-Demo</code>
+<img alt="03-WAF" src="/images/3/3-waf-03.png?width=90pc"></p>
+</li>
+<li>
+<p><strong>Associated AWS resources</strong> select <strong>Add AWS resources</strong>
+<img alt="04-WAF" src="/images/3/3-waf-04.png?width=90pc"></p>
+</li>
 <li>
 <p>Select the domain name you registered for <strong>Cloudfront</strong></p>
 </li>
 <li>
-<p>Then select <strong>Add</strong></p>
+<p>Then select <strong>Add</strong>
+<img alt="05-WAF" src="/images/3/3-waf-05.png?width=90pc"></p>
+</li>
+<li>
+<p>CloudFront distributions select <strong>Default</strong></p>
+</li>
+<li>
+<p>Select <strong>Next</strong>
+<img alt="06-WAF" src="/images/3/3-waf-06.png?width=90pc"></p>
 </li>
 </ul>
-<p><img alt="05-WAF" src="/images/3/3-waf-05.png?width=90pc"></p>
-<ul>
-<li>CloudFront distributions select <strong>Default</strong></li>
-<li>Select <strong>Next</strong></li>
-</ul>
-<p><img alt="06-WAF" src="/images/3/3-waf-06.png?width=90pc"></p>
 <p>Step 2 <strong>Add rules and rule groups</strong></p>
 <ul>
 <li>
 <p><strong>Rules</strong> select <strong>Add rules</strong></p>
 </li>
 <li>
-<p>Select <strong>Add managed rule groups</strong></p>
+<p>Select <strong>Add managed rule groups</strong>
+<img alt="07-WAF" src="/images/3/3-waf-07.png?width=90pc"></p>
+</li>
+<li>
+<p>Select AWS managed rule groups
+<img alt="08-WAF" src="/images/3/3-waf-08.png?width=90pc"></p>
+</li>
+<li>
+<p>Find the <strong>Free rule groups</strong> section</p>
+</li>
+<li>
+<p><strong>Amazon IP reputation list</strong> select <strong>Add to web ACL</strong>
+<img alt="09-WAF" src="/images/3/3-waf-09.png?width=90pc"></p>
+</li>
+<li>
+<p>Scroll down and select <strong>Add rules</strong>
+<img alt="10-WAF" src="/images/3/3-waf-10.png?width=90pc"></p>
+</li>
+<li>
+<p><strong>Default action</strong> select <strong>Allow</strong></p>
+</li>
+<li>
+<p>Select <strong>Next</strong>
+<img alt="11-WAF" src="/images/3/3-waf-11.png?width=90pc"></p>
 </li>
 </ul>
-<p><img alt="07-WAF" src="/images/3/3-waf-07.png?width=90pc"></p>
-<ul>
-<li>Select AWS managed rule groups</li>
-</ul>
-<p><img alt="08-WAF" src="/images/3/3-waf-08.png?width=90pc"></p>
-<ul>
-<li>Find the <strong>Free rule groups</strong> section</li>
-<li><strong>Amazon IP reputation list</strong> select <strong>Add to web ACL</strong></li>
-</ul>
-<p><img alt="09-WAF" src="/images/3/3-waf-09.png?width=90pc"></p>
-<ul>
-<li>Scroll down and select <strong>Add rules</strong></li>
-</ul>
-<p><img alt="10-WAF" src="/images/3/3-waf-10.png?width=90pc"></p>
-<ul>
-<li><strong>Default action</strong> select <strong>Allow</strong></li>
-<li>Select <strong>Next</strong></li>
-</ul>
-<p><img alt="11-WAF" src="/images/3/3-waf-11.png?width=90pc"></p>
 <p>Step 3 <strong>Set rule priority</strong></p>
 <ul>
-<li>Select <strong>Next</strong></li>
+<li>Select <strong>Next</strong>
+<img alt="12-WAF" src="/images/3/3-waf-12.png?width=90pc"></li>
 </ul>
-<p><img alt="12-WAF" src="/images/3/3-waf-12.png?width=90pc"></p>
 <p>Step 4 <strong>Configure metrics</strong></p>
 <ul>
-<li>Select <strong>Next</strong></li>
+<li>
+<p>Select <strong>Next</strong>
+<img alt="13-WAF" src="/images/3/3-waf-13.png?width=90pc"></p>
+</li>
+<li>
+<p>Double-check and select <strong>Create web ACL</strong>
+<img alt="14-WAF" src="/images/3/3-waf-14.png?width=90pc"></p>
+</li>
 </ul>
-<p><img alt="13-WAF" src="/images/3/3-waf-13.png?width=90pc"></p>
-<ul>
-<li>Double-check and select <strong>Create web ACL</strong></li>
-</ul>
-<p><img alt="14-WAF" src="/images/3/3-waf-14.png?width=90pc"></p>
+</li>
+</ol>
 
 
 
@@ -1901,19 +1914,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1726531628"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726531628"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726531628"></script>
-    <script src="/js/jquery.sticky.js?1726531628"></script>
-    <script src="/js/featherlight.min.js?1726531628"></script>
-    <script src="/js/highlight.pack.js?1726531628"></script>
+    <script src="/js/clipboard.min.js?1726539111"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726539111"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726539111"></script>
+    <script src="/js/jquery.sticky.js?1726539111"></script>
+    <script src="/js/featherlight.min.js?1726539111"></script>
+    <script src="/js/highlight.pack.js?1726539111"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726531628"></script>
-    <script src="/js/learn.js?1726531628"></script>
-    <script src="/js/hugo-learn.js?1726531628"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726539111"></script>
+    <script src="/js/learn.js?1726539111"></script>
+    <script src="/js/hugo-learn.js?1726539111"></script>
 
-    <link href="/mermaid/mermaid.css?1726531628" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1726531628"></script>
+    <link href="/mermaid/mermaid.css?1726539111" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1726539111"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

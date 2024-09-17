@@ -12,21 +12,21 @@
     <title>Check out Cognito User pool :: AWS Account Setup</title>
 
     
-    <link href="/css/nucleus.css?1726531628" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726531628" rel="stylesheet">
-    <link href="/css/hybrid.css?1726531628" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726531628" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726531628" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726531628" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726531628" rel="stylesheet">
-    <link href="/css/theme.css?1726531628" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726531628" rel="stylesheet">
+    <link href="/css/nucleus.css?1726539111" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726539111" rel="stylesheet">
+    <link href="/css/hybrid.css?1726539111" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726539111" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726539111" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726539111" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726539111" rel="stylesheet">
+    <link href="/css/theme.css?1726539111" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726539111" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1726531628" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1726539111" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1726531628"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726539111"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1726531628"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1726531628"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1726539111"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1726539111"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1726531628"></script>
+<script type="text/javascript" src="/js/search.js?1726539111"></script>
 
     
   </div>
@@ -1220,97 +1220,126 @@
 
 	<h4 id="check-out-cognito-user-pool">Check out Cognito User pool</h4>
 <ol>
-<li>In the <strong>User pool</strong> interface</li>
-</ol>
+<li>
+<p>In the <strong>User pool</strong> interface</p>
 <ul>
-<li>Select the <strong>User pool</strong> that you just created</li>
+<li>
+<p>Select the <strong>User pool</strong> that you just created
+<img alt="14-Cognito" src="/images/6/6-cognito-14.png?width=90pc"></p>
+</li>
+<li>
+<p>Select <strong>App integration</strong>
+<img alt="15-Cognito" src="/images/6/6-cognito-15.png?width=90pc"></p>
+</li>
+<li>
+<p>Scroll down to the <strong>App clients and analytics</strong> section</p>
+</li>
+<li>
+<p>Select the <strong>App client name</strong> you created
+<img alt="16-Cognito" src="/images/6/6-cognito-16.png?width=90pc"></p>
+</li>
+<li>
+<p>Scroll down to the <strong>Hosted UI</strong> section</p>
+</li>
+<li>
+<p>Select <strong>View Hosted UI</strong>
+<img alt="17-Cognito" src="/images/6/6-cognito-17.png?width=90pc"></p>
+</li>
 </ul>
-<p><img alt="14-Cognito" src="/images/6/6-cognito-14.png?width=90pc"></p>
-<ul>
-<li>Select <strong>App integration</strong></li>
-</ul>
-<p><img alt="15-Cognito" src="/images/6/6-cognito-15.png?width=90pc"></p>
-<ul>
-<li>Scroll down to the <strong>App clients and analytics</strong> section</li>
-<li>Select the <strong>App client name</strong> you created</li>
-</ul>
-<p><img alt="16-Cognito" src="/images/6/6-cognito-16.png?width=90pc"></p>
-<ul>
-<li>Scroll down to the <strong>Hosted UI</strong> section</li>
-<li>Select <strong>View Hosted UI</strong></li>
-</ul>
-<p><img alt="17-Cognito" src="/images/6/6-cognito-17.png?width=90pc">
 
 <div class="notices note" ><p>You have opened the account registration page of <strong>Cognito</strong>, but you have not yet entered the 1st interface (/index.html). To access this interface, you need to add the <em>link URL</em> of Cognito to your website code.</p>
 </div>
-</p>
-<ol start="2">
-<li>In the Login interface of <strong>Cognito</strong></li>
-</ol>
-<ul>
-<li>Select <strong>copy</strong> the link on <strong>Cognito&rsquo;s login page</strong></li>
-</ul>
-<p><img alt="26-Cognito" src="/images/6/6-cognito-26.png?width=90pc"></p>
-<ul>
-<li>Open the <strong>code</strong> you cloned</li>
-<li>Select the file <strong>index.html</strong>. Find line &ldquo;Change - Sign in Link&rdquo; and paste the link.</li>
-</ul>
-<p><img alt="30-Cognito" src="/images/6/6-cognito-30.png?width=90pc"></p>
-<ul>
-<li>Next, select the file <strong>contact-me.html</strong>. Find line &ldquo;Change - SignOut URL&rdquo; and paste the link.</li>
-</ul>
-<p><img alt="29-Cognito" src="/images/6/6-cognito-29.png?width=90pc"></p>
 
-<div class="notices note" ><p><strong>The SignIn and SignOut paths have the following structure:</strong></p>
-<p>MAKE URL OF SIGN IN /login?client_id=&amp;response_type=token&amp;scope=aws.cognito.signin.user.admin+email+openid+phone+profile&amp;redirect_uri=</p>
-<p>MAKE URL OF SIGN OUT /logout?client_id=&amp;response_type=token&amp;scope=aws.cognito.signin.user.admin+email+openid+phone+profile&amp;redirect_uri=</p>
-</div>
+</li>
+<li>
+<p>In the Login interface of <strong>Cognito</strong></p>
+<ul>
+<li>
+<p>Select <strong>copy</strong> the link on <strong>Cognito&rsquo;s login page</strong>
+<img alt="26-Cognito" src="/images/6/6-cognito-26.png?width=90pc"></p>
+</li>
+<li>
+<p>Open the <strong>code</strong> you cloned</p>
+</li>
+<li>
+<p>Select the file <strong>index.html</strong>. Find line &ldquo;Change - Sign in Link&rdquo; and paste the link.
+<img alt="30-Cognito" src="/images/6/6-cognito-30.png?width=90pc"></p>
+</li>
+<li>
+<p>Next, select the file <strong>contact-me.html</strong>. Find line &ldquo;Change - SignOut URL&rdquo; and paste the link.
+<img alt="29-Cognito" src="/images/6/6-cognito-29.png?width=90pc"></p>
+</li>
+</ul>
+<pre tabindex="0"><code>//The SignIn and SignOut paths have the following structure:
 
-<ul>
-<li>Then go to the <strong>main.js</strong> file</li>
-<li>Find <strong>window.location.href</strong> and paste your domain name with the <code>/index.html</code>.</li>
+MAKE URL OF SIGN IN /login?client_id=&amp;response_type=token&amp;scope=aws.cognito.signin.user.admin+email+openid+phone+profile&amp;redirect_uri=
+
+MAKE URL OF SIGN OUT /logout?client_id=&amp;response_type=token&amp;scope=aws.cognito.signin.user.admin+email+openid+phone+profile&amp;redirect_uri=
+</code></pre><ul>
+<li>
+<p>Then go to the <strong>main.js</strong> file</p>
+</li>
+<li>
+<p>Find <strong>window.location.href</strong> and paste your domain name with the <code>/index.html</code>.
+<img alt="28-Cognito" src="/images/6/6-cognito-28.png?width=90pc"></p>
+</li>
+<li>
+<p>Then update again on your S3.</p>
+</li>
 </ul>
-<p><img alt="28-Cognito" src="/images/6/6-cognito-28.png?width=90pc"></p>
+</li>
+<li>
+<p>Go back to the website interface</p>
 <ul>
-<li>Then update again on your S3.</li>
+<li>
+<p>After updating on S3, you return to the <strong>Hosted UI</strong> interface</p>
+</li>
+<li>
+<p>Select <strong>View Hosted UI</strong></p>
+</li>
+<li>
+<p>At this time, you have entered the 1st website</p>
+</li>
+<li>
+<p>Select <strong>LOGIN</strong>
+<img alt="18-Cognito" src="/images/6/6-cognito-18.png?width=90pc"></p>
+</li>
+<li>
+<p>Select <strong>Sign up</strong> to register for an account
+<img alt="19-Cognito" src="/images/6/6-cognito-19.png?width=90pc"></p>
+</li>
+<li>
+<p><strong>Username</strong> enter &lsquo;<em>Your Username</em>&rsquo;</p>
+</li>
+<li>
+<p><strong>Email</strong> enter &lsquo;<em>Your Email</em>&rsquo;</p>
+</li>
+<li>
+<p><strong>Password</strong> enter &lsquo;<em>Your Password</em>&rsquo;
+<img alt="20-Cognito" src="/images/6/6-cognito-20.png?width=90pc"></p>
+</li>
+<li>
+<p>Go to the <strong>Email</strong> you just registered to get <strong>code</strong>
+<img alt="21-Cognito" src="/images/6/6-cognito-21.png?width=90pc"></p>
+</li>
+<li>
+<p><strong>Code</strong> has been sent to your <strong>Email</strong>
+<img alt="22-Cognito" src="/images/6/6-cognito-22.png?width=90pc"></p>
+</li>
+<li>
+<p>Copy the <strong>code</strong> and paste it into the box of <strong>Verification code</strong></p>
+</li>
+<li>
+<p>Then select <strong>Confirm account</strong>
+<img alt="23-Cognito" src="/images/6/6-cognito-23.png?width=90pc"></p>
+</li>
+<li>
+<p>Congratulations, you have successfully registered an account and entered the 2nd interface
+<img alt="25-Cognito" src="/images/6/6-cognito-25.png?width=90pc"></p>
+</li>
 </ul>
-<ol start="3">
-<li>Go back to the website interface</li>
+</li>
 </ol>
-<ul>
-<li>After updating on S3, you return to the <strong>Hosted UI</strong> interface</li>
-<li>Select <strong>View Hosted UI</strong></li>
-<li>At this time, you have entered the 1st website</li>
-<li>Select <strong>LOGIN</strong></li>
-</ul>
-<p><img alt="18-Cognito" src="/images/6/6-cognito-18.png?width=90pc"></p>
-<ul>
-<li>Select <strong>Sign up</strong> to register for an account</li>
-</ul>
-<p><img alt="19-Cognito" src="/images/6/6-cognito-19.png?width=90pc"></p>
-<ul>
-<li><strong>Username</strong> enter &lsquo;<em>Your Username</em>&rsquo;</li>
-<li><strong>Email</strong> enter &lsquo;<em>Your Email</em>&rsquo;</li>
-<li><strong>Password</strong> enter &lsquo;<em>Your Password</em>&rsquo;</li>
-</ul>
-<p><img alt="20-Cognito" src="/images/6/6-cognito-20.png?width=90pc"></p>
-<ul>
-<li>Go to the <strong>Email</strong> you just registered to get <strong>code</strong></li>
-</ul>
-<p><img alt="21-Cognito" src="/images/6/6-cognito-21.png?width=90pc"></p>
-<ul>
-<li><strong>Code</strong> has been sent to your <strong>Email</strong></li>
-</ul>
-<p><img alt="22-Cognito" src="/images/6/6-cognito-22.png?width=90pc"></p>
-<ul>
-<li>Copy the <strong>code</strong> and paste it into the box of <strong>Verification code</strong></li>
-<li>Then select <strong>Confirm account</strong></li>
-</ul>
-<p><img alt="23-Cognito" src="/images/6/6-cognito-23.png?width=90pc"></p>
-<ul>
-<li>Congratulations, you have successfully registered an account and entered the 2nd interface</li>
-</ul>
-<p><img alt="25-Cognito" src="/images/6/6-cognito-25.png?width=90pc"></p>
 
 
 
@@ -1905,19 +1934,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1726531628"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726531628"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726531628"></script>
-    <script src="/js/jquery.sticky.js?1726531628"></script>
-    <script src="/js/featherlight.min.js?1726531628"></script>
-    <script src="/js/highlight.pack.js?1726531628"></script>
+    <script src="/js/clipboard.min.js?1726539111"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726539111"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726539111"></script>
+    <script src="/js/jquery.sticky.js?1726539111"></script>
+    <script src="/js/featherlight.min.js?1726539111"></script>
+    <script src="/js/highlight.pack.js?1726539111"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726531628"></script>
-    <script src="/js/learn.js?1726531628"></script>
-    <script src="/js/hugo-learn.js?1726531628"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726539111"></script>
+    <script src="/js/learn.js?1726539111"></script>
+    <script src="/js/hugo-learn.js?1726539111"></script>
 
-    <link href="/mermaid/mermaid.css?1726531628" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1726531628"></script>
+    <link href="/mermaid/mermaid.css?1726539111" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1726539111"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -12,21 +12,21 @@
     <title>Configure Route 53 and Certificate Manager :: AWS Account Setup</title>
 
     
-    <link href="/css/nucleus.css?1726531628" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726531628" rel="stylesheet">
-    <link href="/css/hybrid.css?1726531628" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726531628" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726531628" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726531628" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726531628" rel="stylesheet">
-    <link href="/css/theme.css?1726531628" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726531628" rel="stylesheet">
+    <link href="/css/nucleus.css?1726539111" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726539111" rel="stylesheet">
+    <link href="/css/hybrid.css?1726539111" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726539111" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726539111" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726539111" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726539111" rel="stylesheet">
+    <link href="/css/theme.css?1726539111" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726539111" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1726531628" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1726539111" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1726531628"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726539111"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1726531628"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1726531628"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1726539111"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1726539111"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1726531628"></script>
+<script type="text/javascript" src="/js/search.js?1726539111"></script>
 
     
   </div>
@@ -1220,100 +1220,122 @@
 
 	<h4 id="configure-route-53">Configure Route 53</h4>
 <ol>
-<li>Access the <a href="https://aws.amazon.com/vi/free/?gclid=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE&trk=c4f45c53-585c-4b31-8fbf-d39fbcdc603a&sc_channel=ps&ef_id=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE:G:s&s_kwcid=AL!4422!3!637354294239!e!!g!!aws!19043613274!143453611386&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">AWS Management Console</a></li>
-</ol>
+<li>
+<p>Access the
+<a href="https://aws.amazon.com/vi/free/?gclid=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE&trk=c4f45c53-585c-4b31-8fbf-d39fbcdc603a&sc_channel=ps&ef_id=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE:G:s&s_kwcid=AL!4422!3!637354294239!e!!g!!aws!19043613274!143453611386&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">AWS Management Console</a></p>
 <ul>
 <li>Find <strong>Route 53</strong></li>
-<li>Select <strong>Route 53</strong></li>
+<li>Select <strong>Route 53</strong>
+<img alt="01-Route53-ACM" src="/images/3/3-route53-acm-01.png?width=90pc"></li>
 </ul>
-<p><img alt="01-Route53-ACM" src="/images/3/3-route53-acm-01.png?width=90pc"></p>
-<ol start="2">
-<li>Trong giao diện <strong>Route 53</strong></li>
-</ol>
+</li>
+<li>
+<p>Trong giao diện <strong>Route 53</strong></p>
 <ul>
 <li>Find <strong>Hosted zones</strong></li>
-<li>Select <strong>Create hosted zone</strong></li>
+<li>Select <strong>Create hosted zone</strong>
+<img alt="02-Route53-ACM" src="/images/3/3-route53-acm-02.png?width=90pc"></li>
 </ul>
-<p><img alt="02-Route53-ACM" src="/images/3/3-route53-acm-02.png?width=90pc"></p>
-<ol start="3">
-<li>In the <strong>Create hosted zone</strong> interface</li>
-</ol>
+</li>
+<li>
+<p>In the <strong>Create hosted zone</strong> interface</p>
 <ul>
 <li>Write the <strong>Domain name</strong> registered in the previous post</li>
 <li>In the Type section, select Public hosted zone</li>
-<li>Select <strong>Create hosted zone</strong></li>
+<li>Select <strong>Create hosted zone</strong>
+<img alt="03-Route53-ACM" src="/images/3/3-route53-acm-03.png?width=90pc"></li>
 </ul>
-<p><img alt="03-Route53-ACM" src="/images/3/3-route53-acm-03.png?width=90pc"></p>
-<ol start="4">
-<li>Return to the <strong>Hosted zones</strong> interface</li>
+</li>
+<li>
+<p>Return to the <strong>Hosted zones</strong> interface</p>
+<ul>
+<li>
+<p>Go to the Hosted zone name you just created
+<img alt="04-Route53-ACM" src="/images/3/3-route53-acm-04.png?width=90pc"></p>
+</li>
+<li>
+<p>Select <strong>Create record</strong></p>
+</li>
+</ul>
+</li>
 </ol>
-<ul>
-<li>Go to the Hosted zone name you just created</li>
-</ul>
-<p><img alt="04-Route53-ACM" src="/images/3/3-route53-acm-04.png?width=90pc"></p>
-<ul>
-<li>Select <strong>Create record</strong></li>
-</ul>
 <p><img alt="05-Route53-ACM" src="/images/3/3-route53-acm-05.png?width=90pc"></p>
 <ol start="5">
-<li>In the <strong>Create record</strong> interface</li>
-</ol>
+<li>
+<p>In the <strong>Create record</strong> interface</p>
 <ul>
 <li><strong>Record type</strong> select <strong>CNAME</strong></li>
 <li><strong>Record name</strong> enter &lsquo;workshop&rsquo;</li>
-<li><strong>Value</strong> enter <strong>Distribution domain name</strong> of <strong>Cloudfront</strong> (e.g. &lsquo;<a href="https://d23akwur3rh4c.cloudfront.net">https://d23akwur3rh4c.cloudfront.net</a>&rsquo;) - Select <strong>Create records</strong></li>
+<li><strong>Value</strong> enter <strong>Distribution domain name</strong> of <strong>Cloudfront</strong> (e.g. &lsquo;<a href="https://d23akwur3rh4c.cloudfront.net">https://d23akwur3rh4c.cloudfront.net</a>&rsquo;) - Select <strong>Create records</strong>
+<img alt="06-Route53-ACM" src="/images/3/3-route53-acm-06.png?width=90pc"></li>
 </ul>
-<p><img alt="06-Route53-ACM" src="/images/3/3-route53-acm-06.png?width=90pc"></p>
+</li>
+</ol>
 <h4 id="configuring-the-certificate-manager">Configuring the Certificate Manager</h4>
 <ol>
-<li>Access the <a href="https://aws.amazon.com/vi/free/?gclid=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE&trk=c4f45c53-585c-4b31-8fbf-d39fbcdc603a&sc_channel=ps&ef_id=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE:G:s&s_kwcid=AL!4422!3!637354294239!e!!g!!aws!19043613274!143453611386&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">AWS Management Console</a></li>
-</ol>
+<li>
+<p>Access the
+<a href="https://aws.amazon.com/vi/free/?gclid=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE&trk=c4f45c53-585c-4b31-8fbf-d39fbcdc603a&sc_channel=ps&ef_id=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE:G:s&s_kwcid=AL!4422!3!637354294239!e!!g!!aws!19043613274!143453611386&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">AWS Management Console</a></p>
 <ul>
 <li>Find <code>Certificate Manager</code></li>
-<li>Select <strong>Certificate Manager</strong></li>
+<li>Select <strong>Certificate Manager</strong>
+<img alt="08-Route53-ACM" src="/images/3/3-route53-acm-08.png?width=90pc"></li>
 </ul>
-<p><img alt="08-Route53-ACM" src="/images/3/3-route53-acm-08.png?width=90pc"></p>
-<ol start="2">
-<li>In the <strong>Certificate Manager</strong> interface</li>
+</li>
+<li>
+<p>In the <strong>Certificate Manager</strong> interface</p>
+<ul>
+<li>
+<p>Moved <strong>Region</strong> to <strong>N.Virginia</strong>
+<img alt="07-Route53-ACM" src="/images/3/3-route53-acm-07.png?width=90pc"></p>
+</li>
+<li>
+<p>Select <strong>Request certificate</strong></p>
+</li>
+<li>
+<p><strong>Certificate type</strong> select <strong>Request a public certificate</strong></p>
+</li>
+<li>
+<p>Select <strong>Next</strong>
+<img alt="09-Route53-ACM" src="/images/3/3-route53-acm-09.png?width=90pc"></p>
+</li>
+<li>
+<p>In the <strong>Request public certificate</strong> section</p>
+</li>
+<li>
+<p><strong>Domain names</strong> enter <strong>workshop.conglyblog.id.vn</strong>
+<img alt="10-Route53-ACM" src="/images/3/3-route53-acm-10.png?width=90pc"></p>
+</li>
+<li>
+<p>The rest keeps the default - Scroll down and select <strong>Request</strong>
+<img alt="11-Route53-ACM" src="/images/3/3-route53-acm-11.png?width=90pc"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>After the <strong>Request</strong> is successful</p>
+<ul>
+<li>
+<p>Find <strong>Domains</strong></p>
+</li>
+<li>
+<p>Select <strong>Create records in Route 53</strong>
+<img alt="12-Route53-ACM" src="/images/3/3-route53-acm-12.png?width=90pc"></p>
+</li>
+<li>
+<p><strong>records</strong> have now been created
+<img alt="14-Route53-ACM" src="/images/3/3-route53-acm-14.png?width=90pc"></p>
+</li>
+<li>
+<p>Go to <strong>Route 53</strong> and check again
+<img alt="13-Route53-ACM" src="/images/3/3-route53-acm-13.png?width=90pc"></p>
+</li>
+<li>
+<p>Congratulations, you have successfully created a <strong>Certificate</strong> for your domain name.</p>
+</li>
+</ul>
+</li>
 </ol>
-<ul>
-<li>Moved <strong>Region</strong> to <strong>N.Virginia</strong></li>
-</ul>
-<p><img alt="07-Route53-ACM" src="/images/3/3-route53-acm-07.png?width=90pc"></p>
-<ul>
-<li>Select <strong>Request certificate</strong></li>
-<li><strong>Certificate type</strong> select <strong>Request a public certificate</strong></li>
-<li>Select <strong>Next</strong></li>
-</ul>
-<p><img alt="09-Route53-ACM" src="/images/3/3-route53-acm-09.png?width=90pc"></p>
-<ul>
-<li>In the <strong>Request public certificate</strong> section</li>
-<li><strong>Domain names</strong> enter <strong>workshop.conglyblog.id.vn</strong></li>
-</ul>
-<p><img alt="10-Route53-ACM" src="/images/3/3-route53-acm-10.png?width=90pc"></p>
-<ul>
-<li>The rest keeps the default - Scroll down and select <strong>Request</strong></li>
-</ul>
-<p><img alt="11-Route53-ACM" src="/images/3/3-route53-acm-11.png?width=90pc"></p>
-<ol start="3">
-<li>After the <strong>Request</strong> is successful</li>
-</ol>
-<ul>
-<li>Find <strong>Domains</strong></li>
-<li>Select <strong>Create records in Route 53</strong></li>
-</ul>
-<p><img alt="12-Route53-ACM" src="/images/3/3-route53-acm-12.png?width=90pc"></p>
-<ul>
-<li><strong>records</strong> have now been created</li>
-</ul>
-<p><img alt="14-Route53-ACM" src="/images/3/3-route53-acm-14.png?width=90pc"></p>
-<ul>
-<li>Go to <strong>Route 53</strong> and check again</li>
-</ul>
-<p><img alt="13-Route53-ACM" src="/images/3/3-route53-acm-13.png?width=90pc"></p>
-<ul>
-<li>Congratulations, you have successfully created a <strong>Certificate</strong> for your domain name.</li>
-</ul>
 
 
 
@@ -1908,19 +1930,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1726531628"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726531628"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726531628"></script>
-    <script src="/js/jquery.sticky.js?1726531628"></script>
-    <script src="/js/featherlight.min.js?1726531628"></script>
-    <script src="/js/highlight.pack.js?1726531628"></script>
+    <script src="/js/clipboard.min.js?1726539111"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726539111"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726539111"></script>
+    <script src="/js/jquery.sticky.js?1726539111"></script>
+    <script src="/js/featherlight.min.js?1726539111"></script>
+    <script src="/js/highlight.pack.js?1726539111"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726531628"></script>
-    <script src="/js/learn.js?1726531628"></script>
-    <script src="/js/hugo-learn.js?1726531628"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726539111"></script>
+    <script src="/js/learn.js?1726539111"></script>
+    <script src="/js/hugo-learn.js?1726539111"></script>
 
-    <link href="/mermaid/mermaid.css?1726531628" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1726531628"></script>
+    <link href="/mermaid/mermaid.css?1726539111" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1726539111"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

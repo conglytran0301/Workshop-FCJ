@@ -12,21 +12,21 @@
     <title>Tạo Authorizer :: Thiết lập AWS Account</title>
 
     
-    <link href="/css/nucleus.css?1726531629" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726531629" rel="stylesheet">
-    <link href="/css/hybrid.css?1726531629" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726531629" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726531629" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726531629" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726531629" rel="stylesheet">
-    <link href="/css/theme.css?1726531629" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726531629" rel="stylesheet">
+    <link href="/css/nucleus.css?1726538768" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726538768" rel="stylesheet">
+    <link href="/css/hybrid.css?1726538768" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726538768" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726538768" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726538768" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726538768" rel="stylesheet">
+    <link href="/css/theme.css?1726538768" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726538768" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1726531629" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1726538768" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1726531629"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726538768"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1726531629"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1726531629"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1726538768"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1726538768"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1726531629"></script>
+<script type="text/javascript" src="/js/search.js?1726538768"></script>
 
     
   </div>
@@ -1220,42 +1220,44 @@
 
 	<h4 id="tạo-authorizer">Tạo Authorizer</h4>
 <ol>
-<li>Trong gia diện <strong>API</strong></li>
-</ol>
+<li>
+<p>Trong gia diện <strong>API</strong></p>
 <ul>
 <li>Chọn <strong>Authorizers</strong></li>
-<li>Chọn <strong>Create authorizer</strong></li>
+<li>Chọn <strong>Create authorizer</strong>
+<img alt="10-API" src="/images/9/9-api-10.png?width=90pc"></li>
 </ul>
-<p><img alt="10-API" src="/images/9/9-api-10.png?width=90pc"></p>
-<ol start="2">
-<li>Trong giao diện <strong>Create authorizer</strong></li>
-</ol>
+</li>
+<li>
+<p>Trong giao diện <strong>Create authorizer</strong></p>
 <ul>
 <li><strong>Authorizer name</strong> nhập <code>FCJ-Auth</code></li>
 <li><strong>Authorizer type</strong> chọn <strong>Cognito</strong></li>
 <li><strong>Cognito user pool</strong> chọn <strong>FCJ-UserPool</strong></li>
 <li><strong>Token source</strong> nhập <code>Authorization</code></li>
-<li>Chọn <strong>Create authorizer</strong></li>
+<li>Chọn <strong>Create authorizer</strong>
+<img alt="11-API" src="/images/9/9-api-11.png?width=90pc"></li>
 </ul>
-<p><img alt="11-API" src="/images/9/9-api-11.png?width=90pc"></p>
-<ol start="3">
-<li>Vào giao diện <strong>Resources</strong></li>
-</ol>
+</li>
+<li>
+<p>Vào giao diện <strong>Resources</strong></p>
 <ul>
 <li>Chọn <strong>GET</strong></li>
 <li>Chọn <strong>Method request</strong></li>
-<li>Chọn <strong>Edit</strong></li>
+<li>Chọn <strong>Edit</strong>
+<img alt="12-API" src="/images/9/9-api-12.png?width=90pc"></li>
 </ul>
-<p><img alt="12-API" src="/images/9/9-api-12.png?width=90pc"></p>
-<ol start="4">
-<li>Trong giao diện <strong>Edit method request</strong></li>
-</ol>
+</li>
+<li>
+<p>Trong giao diện <strong>Edit method request</strong></p>
 <ul>
 <li><strong>Authorization</strong> chọn <strong>FCJ-Auth</strong></li>
 <li><strong>Authorization scopes</strong> nhập <code>email</code>, sau đó chọn <strong>add</strong></li>
-<li>Kéo xuống và chọn <strong>Save</strong></li>
+<li>Kéo xuống và chọn <strong>Save</strong>
+<img alt="13-API" src="/images/9/9-api-13.png?width=90pc"></li>
 </ul>
-<p><img alt="13-API" src="/images/9/9-api-13.png?width=90pc"></p>
+</li>
+</ol>
 
 
 
@@ -1850,19 +1852,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1726531629"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726531629"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726531629"></script>
-    <script src="/js/jquery.sticky.js?1726531629"></script>
-    <script src="/js/featherlight.min.js?1726531629"></script>
-    <script src="/js/highlight.pack.js?1726531629"></script>
+    <script src="/js/clipboard.min.js?1726538768"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726538768"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726538768"></script>
+    <script src="/js/jquery.sticky.js?1726538768"></script>
+    <script src="/js/featherlight.min.js?1726538768"></script>
+    <script src="/js/highlight.pack.js?1726538768"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726531629"></script>
-    <script src="/js/learn.js?1726531629"></script>
-    <script src="/js/hugo-learn.js?1726531629"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726538768"></script>
+    <script src="/js/learn.js?1726538768"></script>
+    <script src="/js/hugo-learn.js?1726538768"></script>
 
-    <link href="/mermaid/mermaid.css?1726531629" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1726531629"></script>
+    <link href="/mermaid/mermaid.css?1726538768" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1726538768"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

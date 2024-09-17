@@ -12,21 +12,21 @@
     <title>Kiểm tra Cognito User pool :: Thiết lập AWS Account</title>
 
     
-    <link href="/css/nucleus.css?1726531629" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726531629" rel="stylesheet">
-    <link href="/css/hybrid.css?1726531629" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726531629" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726531629" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726531629" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726531629" rel="stylesheet">
-    <link href="/css/theme.css?1726531629" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726531629" rel="stylesheet">
+    <link href="/css/nucleus.css?1726539111" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726539111" rel="stylesheet">
+    <link href="/css/hybrid.css?1726539111" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726539111" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726539111" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726539111" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726539111" rel="stylesheet">
+    <link href="/css/theme.css?1726539111" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726539111" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1726531629" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1726539111" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1726531629"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726539111"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1726531629"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1726531629"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1726539111"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1726539111"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1726531629"></script>
+<script type="text/javascript" src="/js/search.js?1726539111"></script>
 
     
   </div>
@@ -1220,97 +1220,126 @@
 
 	<h4 id="kiểm-tra-cognito-user-pool">Kiểm tra Cognito User pool</h4>
 <ol>
-<li>Trong giao diện <strong>User pool</strong></li>
-</ol>
+<li>
+<p>Trong giao diện <strong>User pool</strong></p>
 <ul>
-<li>Chọn <strong>User pool</strong> mà bạn vừa tạo</li>
+<li>
+<p>Chọn <strong>User pool</strong> mà bạn vừa tạo
+<img alt="14-Cognito" src="/images/6/6-cognito-14.png?width=90pc"></p>
+</li>
+<li>
+<p>Chọn <strong>App integration</strong>
+<img alt="15-Cognito" src="/images/6/6-cognito-15.png?width=90pc"></p>
+</li>
+<li>
+<p>Kéo xuống phần <strong>App clients and analytics</strong></p>
+</li>
+<li>
+<p>Chọn <strong>App client name</strong> bạn đã tạo
+<img alt="16-Cognito" src="/images/6/6-cognito-16.png?width=90pc"></p>
+</li>
+<li>
+<p>Kéo xuống phần <strong>Hosted UI</strong></p>
+</li>
+<li>
+<p>Chọn <strong>View Hosted UI</strong>
+<img alt="17-Cognito" src="/images/6/6-cognito-17.png?width=90pc"></p>
+</li>
 </ul>
-<p><img alt="14-Cognito" src="/images/6/6-cognito-14.png?width=90pc"></p>
-<ul>
-<li>Chọn <strong>App integration</strong></li>
-</ul>
-<p><img alt="15-Cognito" src="/images/6/6-cognito-15.png?width=90pc"></p>
-<ul>
-<li>Kéo xuống phần <strong>App clients and analytics</strong></li>
-<li>Chọn <strong>App client name</strong> bạn đã tạo</li>
-</ul>
-<p><img alt="16-Cognito" src="/images/6/6-cognito-16.png?width=90pc"></p>
-<ul>
-<li>Kéo xuống phần <strong>Hosted UI</strong></li>
-<li>Chọn <strong>View Hosted UI</strong></li>
-</ul>
-<p><img alt="17-Cognito" src="/images/6/6-cognito-17.png?width=90pc"></p>
 
 <div class="notices note" ><p>Bạn đã mở được trang đăng ký tài khoản của <strong>Cognito</strong>, nhưng vẫn chưa vào được giao diện thứ 1 (/index.html). Để vào được giao diện này, bạn cần thêm <em>link URL</em> của <strong>Cognito</strong> vào <strong>code website</strong> của bạn.</p>
 </div>
 
-<ol start="2">
-<li>Trong giao diện Login của <strong>Cognito</strong></li>
-</ol>
+</li>
+<li>
+<p>Trong giao diện Login của <strong>Cognito</strong></p>
 <ul>
-<li>Chọn <strong>copy</strong> đường dẫn trên trang đăng nhập của <strong>Cognito</strong></li>
+<li>
+<p>Chọn <strong>copy</strong> đường dẫn trên trang đăng nhập của <strong>Cognito</strong>
+<img alt="26-Cognito" src="/images/6/6-cognito-26.png?width=90pc"></p>
+</li>
+<li>
+<p>Mở <strong>code</strong> bạn đã clone</p>
+</li>
+<li>
+<p>Chọn file <strong>index.html</strong>. Tìm dòng &lsquo;Change - Sign in Link&rsquo; và dán đường dẫn vào.
+<img alt="30-Cognito" src="/images/6/6-cognito-30.png?width=90pc"></p>
+</li>
+<li>
+<p>Tiếp theo chọn file <strong>contact-me.html</strong>. Tìm dòng &lsquo;Change - SignOut URL&rsquo; và dán đường dẫn cũ vào.
+<img alt="29-Cognito" src="/images/6/6-cognito-29.png?width=90pc"></p>
+</li>
 </ul>
-<p><img alt="26-Cognito" src="/images/6/6-cognito-26.png?width=90pc"></p>
-<ul>
-<li>Mở <strong>code</strong> bạn đã clone</li>
-<li>Chọn file <strong>index.html</strong>. Tìm dòng &lsquo;Change - Sign in Link&rsquo; và dán đường dẫn vào.</li>
-</ul>
-<p><img alt="30-Cognito" src="/images/6/6-cognito-30.png?width=90pc"></p>
-<ul>
-<li>Tiếp theo chọn file <strong>contact-me.html</strong>. Tìm dòng &lsquo;Change - SignOut URL&rsquo; và dán đường dẫn cũ vào.</li>
-</ul>
-<p><img alt="29-Cognito" src="/images/6/6-cognito-29.png?width=90pc"></p>
+<pre tabindex="0"><code>//Đường dẫn SignIn và SignOut có cấu trúc như sau:
 
-<div class="notices note" ><p><strong>Đường dẫn SignIn và SignOut có cấu trúc như sau:</strong></p>
-<p>MAKE URL OF SIGN IN /login?client_id=&amp;response_type=token&amp;scope=aws.cognito.signin.user.admin+email+openid+phone+profile&amp;redirect_uri=</p>
-<p>MAKE URL OF SIGN OUT /logout?client_id=&amp;response_type=token&amp;scope=aws.cognito.signin.user.admin+email+openid+phone+profile&amp;redirect_uri=</p>
-</div>
+MAKE URL OF SIGN IN /login?client_id=&amp;response_type=token&amp;scope=aws.cognito.signin.user.admin+email+openid+phone+profile&amp;redirect_uri=
 
-<ul>
-<li>Sau đó vào file <strong>main.js</strong></li>
-<li>Tìm <strong>window.location.href</strong> và dán tên miền có đuôi <code>/index.html</code> của bạn.</li>
+MAKE URL OF SIGN OUT /logout?client_id=&amp;response_type=token&amp;scope=aws.cognito.signin.user.admin+email+openid+phone+profile&amp;redirect_uri=
+</code></pre><ul>
+<li>
+<p>Sau đó vào file <strong>main.js</strong></p>
+</li>
+<li>
+<p>Tìm <strong>window.location.href</strong> và dán tên miền có đuôi <code>/index.html</code> của bạn.
+<img alt="28-Cognito" src="/images/6/6-cognito-28.png?width=90pc"></p>
+</li>
+<li>
+<p>Cuối cùng update lại trên S3 của bạn.</p>
+</li>
 </ul>
-<p><img alt="28-Cognito" src="/images/6/6-cognito-28.png?width=90pc"></p>
+</li>
+<li>
+<p>Quay lại giao diện trang web</p>
 <ul>
-<li>Cuối cùng update lại trên S3 của bạn.</li>
+<li>
+<p>Sau khi đã update trên S3, bạn quay lại giao diện <strong>Hosted UI</strong></p>
+</li>
+<li>
+<p>Chọn <strong>View Hosted UI</strong></p>
+</li>
+<li>
+<p>Lúc này, bạn đã vào được trang web thứ 1</p>
+</li>
+<li>
+<p>Chọn <strong>LOGIN</strong>
+<img alt="18-Cognito" src="/images/6/6-cognito-18.png?width=90pc"></p>
+</li>
+<li>
+<p>Chọn <strong>Sign up</strong> để đăng kí tài khoản
+<img alt="19-Cognito" src="/images/6/6-cognito-19.png?width=90pc"></p>
+</li>
+<li>
+<p><strong>Username</strong> nhập &lsquo;<em>Username của bạn</em>&rsquo;</p>
+</li>
+<li>
+<p><strong>Email</strong> nhập &lsquo;<em>Email của bạn</em>&rsquo;</p>
+</li>
+<li>
+<p><strong>Password</strong> nhập &lsquo;<em>Password của bạn</em>&rsquo;
+<img alt="20-Cognito" src="/images/6/6-cognito-20.png?width=90pc"></p>
+</li>
+<li>
+<p>Vào <strong>Email</strong> bạn vừa đăng ký để lấy <strong>code</strong>
+<img alt="21-Cognito" src="/images/6/6-cognito-21.png?width=90pc"></p>
+</li>
+<li>
+<p><strong>Code</strong> đã được gửi vào <strong>Email</strong> của bạn
+<img alt="22-Cognito" src="/images/6/6-cognito-22.png?width=90pc"></p>
+</li>
+<li>
+<p>Copy <strong>code</strong> và dán vào ô của <strong>Verification code</strong></p>
+</li>
+<li>
+<p>Sau đó chọn <strong>Confirm account</strong>
+<img alt="23-Cognito" src="/images/6/6-cognito-23.png?width=90pc"></p>
+</li>
+<li>
+<p>Chúc mừng, bạn đã đăng ký tài khoản thành công và vào được giao diện thứ 2
+<img alt="25-Cognito" src="/images/6/6-cognito-25.png?width=90pc"></p>
+</li>
 </ul>
-<ol start="3">
-<li>Quay lại giao diện trang web</li>
+</li>
 </ol>
-<ul>
-<li>Sau khi đã update trên S3, bạn quay lại giao diện <strong>Hosted UI</strong></li>
-<li>Chọn <strong>View Hosted UI</strong></li>
-<li>Lúc này, bạn đã vào được trang web thứ 1</li>
-<li>Chọn <strong>LOGIN</strong></li>
-</ul>
-<p><img alt="18-Cognito" src="/images/6/6-cognito-18.png?width=90pc"></p>
-<ul>
-<li>Chọn <strong>Sign up</strong> để đăng kí tài khoản</li>
-</ul>
-<p><img alt="19-Cognito" src="/images/6/6-cognito-19.png?width=90pc"></p>
-<ul>
-<li><strong>Username</strong> nhập &lsquo;<em>Username của bạn</em>&rsquo;</li>
-<li><strong>Email</strong> nhập &lsquo;<em>Email của bạn</em>&rsquo;</li>
-<li><strong>Password</strong> nhập &lsquo;<em>Password của bạn</em>&rsquo;</li>
-</ul>
-<p><img alt="20-Cognito" src="/images/6/6-cognito-20.png?width=90pc"></p>
-<ul>
-<li>Vào <strong>Email</strong> bạn vừa đăng ký để lấy <strong>code</strong></li>
-</ul>
-<p><img alt="21-Cognito" src="/images/6/6-cognito-21.png?width=90pc"></p>
-<ul>
-<li><strong>Code</strong> đã được gửi vào <strong>Email</strong> của bạn</li>
-</ul>
-<p><img alt="22-Cognito" src="/images/6/6-cognito-22.png?width=90pc"></p>
-<ul>
-<li>Copy <strong>code</strong> và dán vào ô của <strong>Verification code</strong></li>
-<li>Sau đó chọn <strong>Confirm account</strong></li>
-</ul>
-<p><img alt="23-Cognito" src="/images/6/6-cognito-23.png?width=90pc"></p>
-<ul>
-<li>Chúc mừng, bạn đã đăng ký tài khoản thành công và vào được giao diện thứ 2</li>
-</ul>
-<p><img alt="25-Cognito" src="/images/6/6-cognito-25.png?width=90pc"></p>
 
 
 
@@ -1905,19 +1934,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1726531629"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726531629"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726531629"></script>
-    <script src="/js/jquery.sticky.js?1726531629"></script>
-    <script src="/js/featherlight.min.js?1726531629"></script>
-    <script src="/js/highlight.pack.js?1726531629"></script>
+    <script src="/js/clipboard.min.js?1726539111"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726539111"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726539111"></script>
+    <script src="/js/jquery.sticky.js?1726539111"></script>
+    <script src="/js/featherlight.min.js?1726539111"></script>
+    <script src="/js/highlight.pack.js?1726539111"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726531629"></script>
-    <script src="/js/learn.js?1726531629"></script>
-    <script src="/js/hugo-learn.js?1726531629"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726539111"></script>
+    <script src="/js/learn.js?1726539111"></script>
+    <script src="/js/hugo-learn.js?1726539111"></script>
 
-    <link href="/mermaid/mermaid.css?1726531629" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1726531629"></script>
+    <link href="/mermaid/mermaid.css?1726539111" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1726539111"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

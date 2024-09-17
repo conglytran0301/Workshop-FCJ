@@ -10,18 +10,15 @@ pre = "<b>8.2 </b>"
 
 1. Trong giao diện **Resources**
 
-- Chọn **Create method**
-
-![07-API](/images/9/9-api-07.png?width=90pc)
+   - Chọn **Create method**
+     ![07-API](/images/9/9-api-07.png?width=90pc)
 
 2. Trong giao diện **Create method**
 
-- **Method type** chọn **GET**
-- **Integration type** chọn **Lambda function**
+   - **Method type** chọn **GET**
+   - **Integration type** chọn **Lambda function**
+     ![08-API](/images/9/9-api-08.png?width=90pc)
 
-![08-API](/images/9/9-api-08.png?width=90pc)
-
-- **Lambda function** chọn Lambda có tên **FCJ-LambdaFunction** bạn đã tạo
-- Kéo xuống và chọn **Create method**
-
-![09-API](/images/9/9-api-09.png?width=90pc)
+   - **Lambda function** chọn Lambda có tên **FCJ-LambdaFunction** bạn đã tạo
+   - Kéo xuống và chọn **Create method**
+     ![09-API](/images/9/9-api-09.png?width=90pc)

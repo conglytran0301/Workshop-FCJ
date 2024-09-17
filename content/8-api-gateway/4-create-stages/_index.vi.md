@@ -10,15 +10,13 @@ pre = "<b>8.4 </b>"
 
 1. Trong giao diện **API** bạn đã tạo
 
-- Chọn **Resources**
-- Chọn **Deploy API**
-
-![14-API](/images/9/9-api-14.png?width=90pc)
+   - Chọn **Resources**
+   - Chọn **Deploy API**
+     ![14-API](/images/9/9-api-14.png?width=90pc)
 
 2. Trong giao diện **Deploy API**
 
-- **Stage** Chọn **New stage**
-- **Stage name** nhập `Dev`
-- Chọn **Deploy**
-
-![15-API](/images/9/9-api-15.png?width=90pc)
+   - **Stage** Chọn **New stage**
+   - **Stage name** nhập `Dev`
+   - Chọn **Deploy**
+     ![15-API](/images/9/9-api-15.png?width=90pc)

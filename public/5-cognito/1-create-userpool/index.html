@@ -12,21 +12,21 @@
     <title>Initialize Cognito User pool :: AWS Account Setup</title>
 
     
-    <link href="/css/nucleus.css?1726531628" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726531628" rel="stylesheet">
-    <link href="/css/hybrid.css?1726531628" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726531628" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726531628" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726531628" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726531628" rel="stylesheet">
-    <link href="/css/theme.css?1726531628" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726531628" rel="stylesheet">
+    <link href="/css/nucleus.css?1726539111" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726539111" rel="stylesheet">
+    <link href="/css/hybrid.css?1726539111" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726539111" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726539111" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726539111" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726539111" rel="stylesheet">
+    <link href="/css/theme.css?1726539111" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726539111" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1726531628" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1726539111" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1726531628"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726539111"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1726531628"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1726531628"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1726539111"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1726539111"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1726531628"></script>
+<script type="text/javascript" src="/js/search.js?1726539111"></script>
 
     
   </div>
@@ -1220,83 +1220,116 @@
 
 	<h4 id="initialize-cognito-user-pool">Initialize Cognito User pool</h4>
 <ol>
-<li>Access the <a href="https://aws.amazon.com/vi/free/?gclid=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE&trk=c4f45c53-585c-4b31-8fbf-d39fbcdc603a&sc_channel=ps&ef_id=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE:G:s&s_kwcid=AL!4422!3!637354294239!e!!g!!aws!19043613274!143453611386&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">AWS Management Console</a></li>
-</ol>
+<li>
+<p>Access the
+<a href="https://aws.amazon.com/vi/free/?gclid=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE&trk=c4f45c53-585c-4b31-8fbf-d39fbcdc603a&sc_channel=ps&ef_id=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE:G:s&s_kwcid=AL!4422!3!637354294239!e!!g!!aws!19043613274!143453611386&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">AWS Management Console</a></p>
 <ul>
 <li>Find <strong>Cognito</strong></li>
-<li>Select <strong>Cognito</strong></li>
+<li>Select <strong>Cognito</strong>
+<img alt="01-Cognito" src="/images/6/6-cognito-01.png?width=90pc"></li>
 </ul>
-<p><img alt="01-Cognito" src="/images/6/6-cognito-01.png?width=90pc"></p>
-<ol start="2">
-<li>In the <strong>Cognito</strong> interface</li>
-</ol>
+</li>
+<li>
+<p>In the <strong>Cognito</strong> interface</p>
 <ul>
-<li>Select <strong>Create user pool</strong></li>
+<li>Select <strong>Create user pool</strong>
+<img alt="02-Cognito" src="/images/6/6-cognito-02.png?width=90pc"></li>
 </ul>
-<p><img alt="02-Cognito" src="/images/6/6-cognito-02.png?width=90pc"></p>
-<ol start="3">
-<li>In the <strong>Create user pool</strong> interface</li>
-</ol>
+</li>
+<li>
+<p>In the <strong>Create user pool</strong> interface</p>
 <p>In Step 1 <strong>Configure sign-in experience</strong></p>
 <ul>
 <li>Find <strong>Cognito user pool sign-in options</strong>, select <strong>User name</strong> and <strong>Email</strong></li>
-<li>Select <strong>Next</strong></li>
+<li>Select <strong>Next</strong>
+<img alt="03-Cognito" src="/images/6/6-cognito-03.png?width=90pc"></li>
 </ul>
-<p><img alt="03-Cognito" src="/images/6/6-cognito-03.png?width=90pc"></p>
 <p>In Step 2 <strong>Configure security requirements</strong></p>
 <ul>
-<li><strong>Password policy mode</strong> select <strong>Cognito defaults</strong></li>
+<li>
+<p><strong>Password policy mode</strong> select <strong>Cognito defaults</strong>
+<img alt="04-Cognito" src="/images/6/6-cognito-04.png?width=90pc"></p>
+</li>
+<li>
+<p><strong>Multi-factor authentication</strong> select <strong>No MFA</strong></p>
+</li>
+<li>
+<p><strong>Self-service account recovery</strong> select <strong>Enable self-service account recovery - Recommended</strong></p>
+</li>
+<li>
+<p><strong>Delivery method for user account recovery messages</strong> select <strong>Email only</strong></p>
+</li>
+<li>
+<p>Select <strong>Next</strong>
+<img alt="05-Cognito" src="/images/6/6-cognito-05.png?width=90pc"></p>
+</li>
 </ul>
-<p><img alt="04-Cognito" src="/images/6/6-cognito-04.png?width=90pc"></p>
-<ul>
-<li><strong>Multi-factor authentication</strong> select <strong>No MFA</strong></li>
-<li><strong>Self-service account recovery</strong> select <strong>Enable self-service account recovery - Recommended</strong></li>
-<li><strong>Delivery method for user account recovery messages</strong> select <strong>Email only</strong></li>
-<li>Select <strong>Next</strong></li>
-</ul>
-<p><img alt="05-Cognito" src="/images/6/6-cognito-05.png?width=90pc"></p>
 <p>In Step 3 <strong>Configure sign-up experience</strong></p>
 <ul>
-<li>All to <strong>default</strong> - Select <strong>Next</strong></li>
+<li>All to <strong>default</strong> - Select <strong>Next</strong>
+<img alt="07-Cognito" src="/images/6/6-cognito-07.png?width=90pc"></li>
 </ul>
-<p><img alt="07-Cognito" src="/images/6/6-cognito-07.png?width=90pc">
-In Step 4 <strong>Configure message delivery</strong></p>
+<p>In Step 4 <strong>Configure message delivery</strong></p>
 <ul>
 <li><strong>Email</strong> select <strong>Send email with Cognito</strong></li>
 <li><strong>FROM email address</strong> select <strong><a href="mailto:no-reply@verificationemail.com">no-reply@verificationemail.com</a></strong></li>
-<li>Select <strong>Next</strong></li>
+<li>Select <strong>Next</strong>
+<img alt="06-Cognito" src="/images/6/6-cognito-06.png?width=90pc"></li>
 </ul>
-<p><img alt="06-Cognito" src="/images/6/6-cognito-06.png?width=90pc"></p>
 <p>In Step 5 <strong>Integrate your app</strong></p>
 <ul>
-<li><strong>User pool name</strong> enter <code>FCJUserPool</code></li>
-<li>Select <strong>Use the Cognito Hosted UI</strong></li>
-<li><strong>Domain type</strong> select <strong>Use a Cognito domain</strong></li>
-<li><strong>Cognito domain</strong> enter <strong>Cognito login domain name that you want</strong></li>
+<li>
+<p><strong>User pool name</strong> enter <code>FCJUserPool</code></p>
+</li>
+<li>
+<p>Select <strong>Use the Cognito Hosted UI</strong></p>
+</li>
+<li>
+<p><strong>Domain type</strong> select <strong>Use a Cognito domain</strong></p>
+</li>
+<li>
+<p><strong>Cognito domain</strong> enter <strong>Cognito login domain name that you want</strong>
+<img alt="08-Cognito" src="/images/6/6-cognito-08.png?width=90pc"></p>
+</li>
+<li>
+<p><strong>App type</strong> select <strong>Public client</strong></p>
+</li>
+<li>
+<p><strong>App client name</strong> enter <code>FCJ-Client</code></p>
+</li>
+<li>
+<p><strong>Allowed callback URLs</strong> enter <strong>http://&lsquo;domain name assigned to your website&rsquo;/contact-me.html</strong></p>
+</li>
 </ul>
-<p><img alt="08-Cognito" src="/images/6/6-cognito-08.png?width=90pc"></p>
-<ul>
-<li><strong>App type</strong> select <strong>Public client</strong></li>
-<li><strong>App client name</strong> enter <code>FCJ-Client</code></li>
-<li><strong>Allowed callback URLs</strong> enter <strong>http://&lsquo;domain name assigned to your website&rsquo;/contact-me.html</strong></li>
-</ul>
-
+<p>
 <div class="notices note" ><p>The 1st web interface is <strong>/index.html</strong> and the 2nd web interface is <strong>/contact-me.html</strong>. When filling in <strong>Allowed callback URLs</strong> there must be <strong>/contact-me.html</strong> after your domain name, so that from the interface of <strong>/index.html</strong> can <strong>callback</strong> to <strong>/contact-me.html</strong>.</p>
 </div>
 
-<p><img alt="12-Cognito" src="/images/6/6-cognito-12.png?width=90pc"></p>
+<img alt="12-Cognito" src="/images/6/6-cognito-12.png?width=90pc"></p>
 <ul>
-<li>Scroll down to find <strong>Advanced app client settings</strong></li>
-<li><strong>OAuth 2.0 grant types</strong>, uncheck <strong>Authorization code grant</strong> and select <strong>Implicit grant</strong></li>
-<li><strong>OpenID Connect scopes</strong> select <strong>OpenID</strong>, <strong>Phone</strong>, <strong>Email</strong>, <strong>aws.cognito.signin.user.admin</strong>, <strong>Profile</strong></li>
-<li><strong>Allowed sign-out URLs - optional</strong> enter <strong>http://&lsquo;domain name assigned to your site&rsquo;/index.html</strong></li>
+<li>
+<p>Scroll down to find <strong>Advanced app client settings</strong></p>
+</li>
+<li>
+<p><strong>OAuth 2.0 grant types</strong>, uncheck <strong>Authorization code grant</strong> and select <strong>Implicit grant</strong></p>
+</li>
+<li>
+<p><strong>OpenID Connect scopes</strong> select <strong>OpenID</strong>, <strong>Phone</strong>, <strong>Email</strong>, <strong>aws.cognito.signin.user.admin</strong>, <strong>Profile</strong></p>
+</li>
+<li>
+<p><strong>Allowed sign-out URLs - optional</strong> enter <strong>http://&lsquo;domain name assigned to your site&rsquo;/index.html</strong>
+<img alt="13-Cognito" src="/images/6/6-cognito-13.png?width=90pc"></p>
+</li>
+<li>
+<p>Scroll down and select <strong>Next</strong> In Step 6 <strong>Review and create</strong></p>
+</li>
+<li>
+<p>Check again and select <strong>Create user pool</strong>
+<img alt="10-Cognito" src="/images/6/6-cognito-10.png?width=90pc"></p>
+</li>
 </ul>
-<p><img alt="13-Cognito" src="/images/6/6-cognito-13.png?width=90pc"></p>
-<ul>
-<li>Scroll down and select <strong>Next</strong> In Step 6 <strong>Review and create</strong></li>
-<li>Check again and select <strong>Create user pool</strong></li>
-</ul>
-<p><img alt="10-Cognito" src="/images/6/6-cognito-10.png?width=90pc"></p>
+</li>
+</ol>
 
 
 
@@ -1888,19 +1921,19 @@ In Step 4 <strong>Configure message delivery</strong></p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1726531628"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726531628"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726531628"></script>
-    <script src="/js/jquery.sticky.js?1726531628"></script>
-    <script src="/js/featherlight.min.js?1726531628"></script>
-    <script src="/js/highlight.pack.js?1726531628"></script>
+    <script src="/js/clipboard.min.js?1726539111"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726539111"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726539111"></script>
+    <script src="/js/jquery.sticky.js?1726539111"></script>
+    <script src="/js/featherlight.min.js?1726539111"></script>
+    <script src="/js/highlight.pack.js?1726539111"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726531628"></script>
-    <script src="/js/learn.js?1726531628"></script>
-    <script src="/js/hugo-learn.js?1726531628"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726539111"></script>
+    <script src="/js/learn.js?1726539111"></script>
+    <script src="/js/hugo-learn.js?1726539111"></script>
 
-    <link href="/mermaid/mermaid.css?1726531628" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1726531628"></script>
+    <link href="/mermaid/mermaid.css?1726539111" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1726539111"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

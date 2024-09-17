@@ -12,21 +12,21 @@
     <title>Deploy Lambda function :: AWS Account Setup</title>
 
     
-    <link href="/css/nucleus.css?1726531628" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726531628" rel="stylesheet">
-    <link href="/css/hybrid.css?1726531628" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726531628" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726531628" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726531628" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726531628" rel="stylesheet">
-    <link href="/css/theme.css?1726531628" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726531628" rel="stylesheet">
+    <link href="/css/nucleus.css?1726539111" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726539111" rel="stylesheet">
+    <link href="/css/hybrid.css?1726539111" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726539111" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726539111" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726539111" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726539111" rel="stylesheet">
+    <link href="/css/theme.css?1726539111" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726539111" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1726531628" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1726539111" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1726531628"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726539111"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1726531628"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1726531628"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1726539111"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1726539111"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1726531628"></script>
+<script type="text/javascript" src="/js/search.js?1726539111"></script>
 
     
   </div>
@@ -1214,43 +1214,54 @@
 
 	<h4 id="deploy-lambda-function">Deploy Lambda function</h4>
 <ol>
-<li>Access the <a href="https://aws.amazon.com/vi/free/?gclid=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE&trk=c4f45c53-585c-4b31-8fbf-d39fbcdc603a&sc_channel=ps&ef_id=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE:G:s&s_kwcid=AL!4422!3!637354294239!e!!g!!aws!19043613274!143453611386&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">AWS Management Console</a></li>
-</ol>
+<li>
+<p>Access the
+<a href="https://aws.amazon.com/vi/free/?gclid=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE&trk=c4f45c53-585c-4b31-8fbf-d39fbcdc603a&sc_channel=ps&ef_id=CjwKCAjw_ZC2BhAQEiwAXSgClvWbbk-Y8aK5QEAweAN7K8tLmdmvIiZuLvrcXaHfX9HrfLJlZr3U2xoC6y4QAvD_BwE:G:s&s_kwcid=AL!4422!3!637354294239!e!!g!!aws!19043613274!143453611386&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">AWS Management Console</a></p>
 <ul>
 <li>Find <strong>Lambda</strong></li>
-<li>Select <strong>Lambda</strong></li>
+<li>Select <strong>Lambda</strong>
+<img alt="01-Lambda" src="/images/8/8-lambda-01.png?width=90pc"></li>
 </ul>
-<p><img alt="01-Lambda" src="/images/8/8-lambda-01.png?width=90pc"></p>
-<ol start="2">
-<li>In the <strong>Lambda</strong> interface</li>
-</ol>
+</li>
+<li>
+<p>In the <strong>Lambda</strong> interface</p>
 <ul>
-<li>Select <strong>Create a function</strong></li>
+<li>Select <strong>Create a function</strong>
+<img alt="02-Lambda" src="/images/8/8-lambda-02.png?width=90pc"></li>
 </ul>
-<p><img alt="02-Lambda" src="/images/8/8-lambda-02.png?width=90pc"></p>
-<ol start="3">
-<li>In the <strong>Create function</strong> interface</li>
-</ol>
+</li>
+<li>
+<p>In the <strong>Create function</strong> interface</p>
 <ul>
-<li>Select <strong>Author from scratch</strong></li>
-<li><strong>Function name</strong> enter <code>FCJ-LambdaFunction</code></li>
-<li><strong>Runtime</strong> select <strong>Python 3.9</strong></li>
-<li><strong>Architecture</strong> select <strong>x86_64</strong></li>
-<li>Scroll down and select <strong>Create function</strong></li>
+<li>
+<p>Select <strong>Author from scratch</strong></p>
+</li>
+<li>
+<p><strong>Function name</strong> enter <code>FCJ-LambdaFunction</code></p>
+</li>
+<li>
+<p><strong>Runtime</strong> select <strong>Python 3.9</strong></p>
+</li>
+<li>
+<p><strong>Architecture</strong> select <strong>x86_64</strong></p>
+</li>
+<li>
+<p>Scroll down and select <strong>Create function</strong>
+<img alt="03-Lambda" src="/images/8/8-lambda-03.png?width=90pc"></p>
+</li>
+<li>
+<p>Once created, you will see the following interface
+<img alt="04-Lambda" src="/images/8/8-lambda-04.png?width=90pc"></p>
+</li>
 </ul>
-<p><img alt="03-Lambda" src="/images/8/8-lambda-03.png?width=90pc"></p>
-<ul>
-<li>Once created, you will see the following interface</li>
-</ul>
-<p><img alt="04-Lambda" src="/images/8/8-lambda-04.png?width=90pc"></p>
-<ol start="4">
-<li>Enter the Source code for the Lambda Function</li>
-</ol>
+</li>
+<li>
+<p>Enter the Source code for the Lambda Function</p>
 <ul>
 <li>Select <strong>Code</strong></li>
-<li>Paste <strong>code</strong> into the</li>
+<li>Paste <strong>code</strong> into the
+<img alt="05-Lambda" src="/images/8/8-lambda-05.png?width=90pc"></li>
 </ul>
-<p><img alt="05-Lambda" src="/images/8/8-lambda-05.png?width=90pc"></p>
 <pre tabindex="0"><code class="language-import" data-lang="import">import boto3
 import uuid
 
@@ -1344,41 +1355,53 @@ def handle_dynamo_db(id, event):
         print(f&#34;An error occurred when writing to DynamoDB: {e}&#34;)
         raise
 </code></pre>
-<div class="notices note" ><p>Change this domain name of the code above: &ldquo;You got a new Message from <a href="https://workshop.conglyblog.id.vn">https://workshop.conglyblog.id.vn</a>&rdquo; to your domain name.</p>
+<div class="notices note" ><p>Change this domain name of the code above: &ldquo;You got a new Message from <a href="https://workshop.conglyblog.id.vn">https://workshop.conglyblog.id.vn</a>&rdquo; to your <strong>domain name</strong>.</p>
 </div>
 
 <ul>
-<li>Select <strong>Deploy</strong></li>
+<li>Select <strong>Deploy</strong>
+<img alt="06-Lambda" src="/images/8/8-lambda-06.png?width=90pc"></li>
 </ul>
-<p><img alt="06-Lambda" src="/images/8/8-lambda-06.png?width=90pc"></p>
-<ol start="5">
-<li>Configure IAM Roles for Lambda</li>
-</ol>
+</li>
+<li>
+<p>Configure IAM Roles for Lambda</p>
 <ul>
 <li>Select <strong>Configuration</strong></li>
 <li>Select <strong>Permissions</strong></li>
-<li>Redirect to IAM Roles</li>
+<li>Redirect to IAM Roles
+<img alt="07-Lambda" src="/images/8/8-lambda-07.png?width=90pc"></li>
 </ul>
-<p><img alt="07-Lambda" src="/images/8/8-lambda-07.png?width=90pc"></p>
-<ol start="6">
-<li>In the <strong>Permissions</strong> interface</li>
+</li>
+<li>
+<p>In the <strong>Permissions</strong> interface</p>
+<ul>
+<li>
+<p>Select <strong>Add permissions</strong></p>
+</li>
+<li>
+<p>Select <strong>Attach policies</strong>
+<img alt="11-Lambda" src="/images/8/8-lambda-11.png?width=90pc"></p>
+</li>
+<li>
+<p>Search for <strong>SNS</strong></p>
+</li>
+<li>
+<p>Select <strong>AmazonSNSFullAccess</strong>
+<img alt="09-Lambda" src="/images/8/8-lambda-09.png?width=90pc"></p>
+</li>
+<li>
+<p>Go ahead, looking for <strong>DynamoDB</strong></p>
+</li>
+<li>
+<p>Select <strong>AmazonDynamoDBFullAccess</strong></p>
+</li>
+<li>
+<p>Select <strong>Add permissions</strong>
+<img alt="10-Lambda" src="/images/8/8-lambda-10.png?width=90pc"></p>
+</li>
+</ul>
+</li>
 </ol>
-<ul>
-<li>Select <strong>Add permissions</strong></li>
-<li>Select <strong>Attach policies</strong></li>
-</ul>
-<p><img alt="11-Lambda" src="/images/8/8-lambda-11.png?width=90pc"></p>
-<ul>
-<li>Search for <strong>SNS</strong></li>
-<li>Select <strong>AmazonSNSFullAccess</strong></li>
-</ul>
-<p><img alt="09-Lambda" src="/images/8/8-lambda-09.png?width=90pc"></p>
-<ul>
-<li>Go ahead, looking for <strong>DynamoDB</strong></li>
-<li>Select <strong>AmazonDynamoDBFullAccess</strong></li>
-<li>Select <strong>Add permissions</strong></li>
-</ul>
-<p><img alt="10-Lambda" src="/images/8/8-lambda-10.png?width=90pc"></p>
 
 
 
@@ -1969,19 +1992,19 @@ def handle_dynamo_db(id, event):
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1726531628"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726531628"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726531628"></script>
-    <script src="/js/jquery.sticky.js?1726531628"></script>
-    <script src="/js/featherlight.min.js?1726531628"></script>
-    <script src="/js/highlight.pack.js?1726531628"></script>
+    <script src="/js/clipboard.min.js?1726539111"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726539111"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726539111"></script>
+    <script src="/js/jquery.sticky.js?1726539111"></script>
+    <script src="/js/featherlight.min.js?1726539111"></script>
+    <script src="/js/highlight.pack.js?1726539111"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726531628"></script>
-    <script src="/js/learn.js?1726531628"></script>
-    <script src="/js/hugo-learn.js?1726531628"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726539111"></script>
+    <script src="/js/learn.js?1726539111"></script>
+    <script src="/js/hugo-learn.js?1726539111"></script>
 
-    <link href="/mermaid/mermaid.css?1726531628" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1726531628"></script>
+    <link href="/mermaid/mermaid.css?1726539111" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1726539111"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
