@@ -12,21 +12,21 @@
     <title>Clean up resources :: AWS Serverless</title>
 
     
-    <link href="/css/nucleus.css?1726592636" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726592636" rel="stylesheet">
-    <link href="/css/hybrid.css?1726592636" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726592636" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726592636" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726592636" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726592636" rel="stylesheet">
-    <link href="/css/theme.css?1726592636" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726592636" rel="stylesheet">
+    <link href="/css/nucleus.css?1726625398" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726625398" rel="stylesheet">
+    <link href="/css/hybrid.css?1726625398" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726625398" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726625398" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726625398" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726625398" rel="stylesheet">
+    <link href="/css/theme.css?1726625398" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726625398" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1726592636" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1726625398" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1726592636"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726625398"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1726592636"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1726592636"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1726625398"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1726625398"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1726592636"></script>
+<script type="text/javascript" src="/js/search.js?1726625398"></script>
 
     
   </div>
@@ -1215,69 +1215,187 @@
 	<p>We will proceed with the following steps to delete the resources we created in this exercise.</p>
 <h4 id="delete-s3">Delete S3</h4>
 <ol>
-<li>Access the interface of <strong>S3</strong></li>
-<li>Select <strong>Buckets</strong></li>
-<li>Select the <strong>Bucket name</strong> you created</li>
-<li>Select <strong>Delete</strong></li>
+<li>
+<p>Access the interface of <strong>S3</strong></p>
+</li>
+<li>
+<p>Select <strong>Buckets</strong></p>
+</li>
+<li>
+<p>Select the <strong>Bucket name</strong> you created</p>
+</li>
+<li>
+<p>Select <strong>Delete</strong>
+<img alt="01-clean" src="/images/11/11-clean-01.png?width=90pc"></p>
+</li>
+<li>
+<p>In the <strong>Delete bucket</strong> interface</p>
+<ul>
+<li>Select <strong>Empty bucket</strong>
+<img alt="02-clean" src="/images/11/11-clean-02.png?width=90pc"></li>
+</ul>
+</li>
+<li>
+<p>In the <strong>Empty bucket</strong> interface</p>
+<ul>
+<li>Type <code>permanently delete</code> in <strong>confirm</strong></li>
+<li>Select <strong>Empty</strong>
+<img alt="03-clean" src="/images/11/11-clean-03.png?width=90pc"></li>
+</ul>
+</li>
+<li>
+<p>After <strong>Empty</strong> is successful</p>
+<ul>
+<li>Select <strong>Bucket</strong></li>
+<li>Re-select the Bucket name that you want to delete</li>
+<li>Select <strong>Delete</strong>
+<img alt="01-clean" src="/images/11/11-clean-01.png?width=90pc"></li>
+</ul>
+</li>
+<li>
+<p>In the <strong>Delete bucket</strong> interface</p>
+<ul>
+<li>Copy the <strong>Bucket name</strong> that you created</li>
+<li>Paste in <strong>confirm</strong></li>
+<li>Select <strong>Delete bucket</strong>
+<img alt="04-clean" src="/images/11/11-clean-04.png?width=90pc"></li>
+</ul>
+</li>
 </ol>
 <h4 id="remove-cloudfront">Remove Cloudfront</h4>
 <ol>
 <li>Access the interface of <strong>Cloudfront</strong></li>
 <li>Select <strong>Distributions</strong></li>
 <li>Select the <strong>Distribution ID</strong> you created</li>
-<li>Select <strong>Disable</strong></li>
+<li>Select <strong>Disable</strong>
+<img alt="05-clean" src="/images/11/11-clean-05.png?width=90pc">
+<img alt="06-clean" src="/images/11/11-clean-06.png?width=90pc"></li>
 <li>Wait for a few minutes, then select <strong>Delete</strong></li>
 </ol>
 <h4 id="delete-route-53">Delete Route 53</h4>
 <ol>
-<li>Access the interface of <strong>Route 53</strong></li>
-<li>Select <strong>Hosted zones</strong></li>
-<li>Select the <strong>Hosted zone name</strong> you created</li>
-<li>Select <strong>Delete</strong></li>
+<li>
+<p>Access the interface of <strong>Route 53</strong></p>
+</li>
+<li>
+<p>Select <strong>Hosted zones</strong></p>
+</li>
+<li>
+<p>Select the <strong>Hosted zone name</strong> you created</p>
+</li>
+<li>
+<p>Select <strong>Delete</strong>
+<img alt="07-clean" src="/images/11/11-clean-07.png?width=90pc"></p>
+</li>
+<li>
+<p>In the <strong>Delete hosted zone</strong> interface</p>
+<ul>
+<li>Type <code>delete</code> in <strong>confirm</strong></li>
+<li>Select <strong>Delete</strong>
+<img alt="08-clean" src="/images/11/11-clean-08.png?width=90pc"></li>
+</ul>
+</li>
 </ol>
 <h4 id="delete-sns">Delete SNS</h4>
 <ol>
 <li>Access the interface of <strong>SNS</strong></li>
 <li>Select <strong>Topics</strong></li>
 <li>Select the <strong>Topic name</strong> you created</li>
-<li>Select <strong>Delete</strong></li>
+<li>Select <strong>Delete</strong>
+<img alt="09-clean" src="/images/11/11-clean-09.png?width=90pc"></li>
+<li>In the <strong>Delete topic</strong> interface</li>
 </ol>
+<ul>
+<li>Type &lsquo;delete me&rsquo; in <strong>confirm</strong></li>
+<li>Select <strong>Delete</strong>
+<img alt="10-clean" src="/images/11/11-clean-10.png?width=90pc"></li>
+</ul>
 <h4 id="remove-cognito">Remove Cognito</h4>
 <ol>
 <li>Access the interface of <strong>Cognito</strong></li>
 <li>Select <strong>User pools</strong></li>
 <li>Select the <strong>User pool name</strong> you have created</li>
-<li>Select <strong>Delete</strong></li>
+<li>Select <strong>Delete</strong>
+<img alt="11-clean" src="/images/11/11-clean-11.png?width=90pc"></li>
+<li>In the <strong>Delete user pool</strong> interface</li>
 </ol>
+<ul>
+<li>Select <strong>Delete Cognito domain <em>fcj06f03</em> that you assigned</strong> and <strong>Deactivate deletion protection</strong></li>
+<li>Enter the name of your <strong>user pool</strong> in <strong>confirm</strong> field</li>
+<li>Select <strong>Delete</strong>
+<img alt="12-clean" src="/images/11/11-clean-12.png?width=90pc"></li>
+</ul>
 <h4 id="deleting-dynamodb">Deleting DynamoDB</h4>
 <ol>
 <li>Access the interface of <strong>DynamoDB</strong></li>
 <li>Select <strong>Tables</strong></li>
 <li>Select the <strong>Table name</strong> you created</li>
-<li>Select <strong>Delete</strong></li>
+<li>Select <strong>Delete</strong>
+<img alt="13-clean" src="/images/11/11-clean-13.png?width=90pc"></li>
+<li>In the <strong>Delete table</strong> interface</li>
 </ol>
+<ul>
+<li>Select <strong>Delete all CloudWatch alarms for FCJ-DynamoDB.</strong></li>
+<li>Type <code>confirm</code> in <strong>confirm</strong></li>
+<li>Select <strong>Delete</strong>
+<img alt="14-clean" src="/images/11/11-clean-14.png?width=90pc"></li>
+</ul>
 <h4 id="deleting-lambda">Deleting Lambda</h4>
 <ol>
 <li>Access the interface of <strong>Lambda</strong></li>
 <li>Select <strong>Functions</strong></li>
 <li>Select the <strong>Function name</strong> you created</li>
 <li>Select <strong>Actions</strong></li>
-<li>Select <strong>Delete</strong></li>
+<li>Select <strong>Delete</strong>
+<img alt="15-clean" src="/images/11/11-clean-15.png?width=90pc"></li>
+<li>In the <strong>Delete functions</strong> interface</li>
 </ol>
+<ul>
+<li>Type <code>delete</code> in <strong>confirm</strong></li>
+<li>Select <strong>Delete</strong>
+<img alt="16-clean" src="/images/11/11-clean-16.png?width=90pc"></li>
+</ul>
 <h4 id="deleting-api-gateway">Deleting API Gateway</h4>
 <ol>
 <li>Access the interface of <strong>API Gateway</strong></li>
 <li>Select <strong>APIs</strong></li>
 <li>Select the <strong>API name</strong> you created</li>
-<li>Select <strong>Delete</strong></li>
+<li>Select <strong>Delete</strong>
+<img alt="17-clean" src="/images/11/11-clean-17.png?width=90pc"></li>
+<li>In the <strong>Delete API</strong> interface</li>
 </ol>
+<ul>
+<li>Type <code>confirm</code> in <strong>confirm</strong></li>
+<li>Select <strong>Delete</strong>
+<img alt="18-clean" src="/images/11/11-clean-18.png?width=90pc"></li>
+</ul>
 <h4 id="delete-waf">Delete WAF</h4>
 <ol>
 <li>Access the interface of <strong>WAF</strong></li>
 <li>Select <strong>Web ACLs</strong></li>
 <li>Select the <strong>Web ACL name</strong> you created</li>
-<li>Select <strong>Delete</strong></li>
+<li>Select <strong>Associated AWS resources</strong></li>
+<li>Select <strong>Disassociate</strong>
+<img alt="21-clean" src="/images/11/11-clean-21.png?width=90pc"></li>
+<li>In the <strong>Disassociate</strong> interface</li>
 </ol>
+<ul>
+<li>Type <code>remove</code> in <strong>confirm Disassociation</strong></li>
+<li>Select <strong>Disassociate</strong>
+<img alt="22-clean" src="/images/11/11-clean-22.png?width=90pc"></li>
+</ul>
+<ol start="7">
+<li>Re-enter <strong>Web ACLs</strong></li>
+<li>Select the Web ACL name you created</li>
+<li>Select <strong>Delete</strong>
+<img alt="19-clean" src="/images/11/11-clean-19.png?width=90pc"></li>
+<li>In the <strong>Delete</strong> interface</li>
+</ol>
+<ul>
+<li>Type <code>delete</code> in <strong>confirm</strong></li>
+<li>Select <strong>Delete</strong>
+<img alt="20-clean" src="/images/11/11-clean-20.png?width=90pc"></li>
+</ul>
 
 
 
@@ -1865,19 +1983,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1726592636"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726592636"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726592636"></script>
-    <script src="/js/jquery.sticky.js?1726592636"></script>
-    <script src="/js/featherlight.min.js?1726592636"></script>
-    <script src="/js/highlight.pack.js?1726592636"></script>
+    <script src="/js/clipboard.min.js?1726625398"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726625398"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726625398"></script>
+    <script src="/js/jquery.sticky.js?1726625398"></script>
+    <script src="/js/featherlight.min.js?1726625398"></script>
+    <script src="/js/highlight.pack.js?1726625398"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726592636"></script>
-    <script src="/js/learn.js?1726592636"></script>
-    <script src="/js/hugo-learn.js?1726592636"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726625398"></script>
+    <script src="/js/learn.js?1726625398"></script>
+    <script src="/js/hugo-learn.js?1726625398"></script>
 
-    <link href="/mermaid/mermaid.css?1726592636" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1726592636"></script>
+    <link href="/mermaid/mermaid.css?1726625398" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1726625398"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
