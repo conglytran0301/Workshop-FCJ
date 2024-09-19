@@ -8,6 +8,8 @@ pre = "<b>1. </b>"
 
 ### Workflow
 
+![Serverless-FCJ](/images/1/Serverles.png?width=90pc)
+
 **1. User Accesses the Application via Web Browser**
 
 - When a user wants to access the application, they enter the website URL in the browser. This can be a website providing static content (HTML, CSS, JavaScript) or interactive features like login, registration, or data manipulation. The access request is sent from the browser over the Internet to the AWS system for processing.
@@ -81,8 +83,6 @@ pre = "<b>1. </b>"
 - After the requests have been processed by Lambda and data has been retrieved from DynamoDB or other sources, API Gateway receives the response from Lambda and forwards the results back to the user’s browser.
 
 - Finally, the user receives the data they requested, or relevant notifications (such as account registration confirmation, order updates, etc.).
-
-![Serverless-FCJ](/images/1/Serverles.png?width=90pc)
 
 ### Summary
 

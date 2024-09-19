@@ -8,6 +8,8 @@ pre = "<b>1. </b>"
 
 ### Quy trình hoạt động
 
+![Serverless-FCJ](/images/1/Serverles.png?width=90pc)
+
 **1. Người dùng truy cập ứng dụng thông qua trình duyệt web**
 
 - Khi người dùng muốn truy cập ứng dụng, họ sẽ nhập địa chỉ URL của trang web trong trình duyệt. Đây có thể là một trang web cung cấp nội dung tĩnh (HTML, CSS, JavaScript) hoặc các tính năng tương tác như đăng nhập, đăng ký, hoặc thao tác với dữ liệu. Yêu cầu truy cập này sẽ được trình duyệt gửi qua Internet đến hệ thống AWS để xử lý.
@@ -81,8 +83,6 @@ pre = "<b>1. </b>"
 - Sau khi các yêu cầu được xử lý bởi Lambda và dữ liệu đã được lấy từ DynamoDB hoặc các nguồn khác, API Gateway sẽ nhận phản hồi từ Lambda và chuyển tiếp kết quả đó về cho trình duyệt của người dùng.
 
 - Người dùng cuối cùng sẽ nhận được dữ liệu mà họ yêu cầu, hoặc các thông báo liên quan (như xác nhận đăng ký tài khoản, thông báo đơn hàng, v.v.).
-
-![Serverless-FCJ](/images/1/Serverles.png?width=90pc)
 
 ### Tổng kết
 
